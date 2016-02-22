@@ -1,8 +1,0 @@
-URL:                 http://craftwear.com.ua/index.php/admin/sales_order/
-Версия Magento:      2.40.1 (1.7.0.2)
-Версия PHP:          5.4.43
-Время:               2016-01-14 14:53:00 MSK***********************************
-[E_ERROR] Call to a member function setColumn() on a non-object
-File: /home3/pyavcom/public_html/craft3/app/code/core/Mage/Adminhtml/Block/Widget/Grid/Column.php
-Line: 291
-***********************************

@@ -1,1 +1,0 @@
-<default><web><routers><admin><area>admin</area><class>Mage_Core_Controller_Varien_Router_Admin</class></admin><standard><area>frontend</area><class>Df_Core_Controller_Varien_Router_Standard</class></standard></routers></web></default>

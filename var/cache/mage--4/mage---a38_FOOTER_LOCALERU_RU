@@ -1,1 +1,0 @@
-<select name="locale" id="interface_locale" class="" title="Язык интерфейса" style="width:200px"><option value="ru_RU" selected="selected" >Русский</option><option value="en_US" >English</option><option value="uk_UA" >Українська</option></select>

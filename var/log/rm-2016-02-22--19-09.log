@@ -1,9 +1,0 @@
-URL:                 http://craftwear.com.ua/index.php/api/soap/
-Версия Magento:      2.40.1 (1.7.0.2)
-Версия PHP:          5.4.43
-Время:               2016-02-22 19:09:34 MSK***********************************
-[E_ERROR] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/:MageReport SUPEE 6482 check@craftwear.com.ua/index.php/api/soap/index/?wsdl=1' : failed to load external entity "http://localhost/:MageReport%20SUPEE%206482%20check@craftwear.com.ua/index.php/api/soap/index/?wsdl=1"
-
-File: /home3/pyavcom/public_html/craft3/lib/Zend/Soap/Server.php
-Line: 762
-***********************************

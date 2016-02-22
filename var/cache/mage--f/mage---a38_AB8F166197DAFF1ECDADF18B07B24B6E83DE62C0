@@ -1,3 +1,0 @@
-.header .links, .header-container .quick-access .links a {
-	text-transform: lowercase;
-}
