@@ -1,0 +1,35 @@
+<?php if ($this->getItemsCount() && ($this->noCheckValues() || count($this->getValues()))): ?>
+    <div class="filter-<?php echo $this->getVar()?>">
+        <div class="filter-name">
+            <span id="filter-<?php echo $this->getVar()?>" class="<?php if($this->getIsHidden()) :?>filter-hidden-value<?php endif?>"><?php echo $this->__($this->getName()); ?></span>
+            <?php if(trim(strlen($this->getNote()))):?>
+              	<span class="filter-note" title="<?php echo $this->getNote();?>"></span>
+                <?php endif;?>
+                <?php if($this->getShowCount()):?>
+              	<span id="show-count-<?php echo $this->getVar()?>" class="show-count-filter"><?php echo $this->__('Show All');?></span>
+            <?php endif;?> 
+        </div>
+        <div class="clearer"></div>
+        <div class="filter-values <?php if($this->getViewAll()):?>af-arrow-ud<?php endif;?>" id="filter-<?php echo $this->getVar()?>-value">
+            <ol class="attribute-filter-values <?php if($this->getIsHidden()) :?><?php if(!$this->getViewAll()):?>no-display<?php endif;?> a-fsliderclass<?php endif?>" id="<?php echo $this->getVar(); ?>">
+                <?php $i = 0;?>
+                <?php foreach ($this->getValues() as $_item): ?>
+                    <?php if($i == $this->getShowCount() && $i/* && $this->getViewAll()*/): ?>
+                    	<li><ul id="show-count-<?php echo $this->getVar()?>-value" class="<?php if(!$this->getIsHidden()) :?><?php if(!$this->getViewAll()):?>no-display<?php endif;?> a-fsliderclass<?php endif;?>">
+                    <?php endif;?>
+                    	<li><?php echo $_item?></li>        
+                    <?php $i++;?>
+                <?php endforeach ?>
+                    <?php if($this->getShowCount()/* && $this->getViewAll()*/):?>
+                    	</ul></li>
+                    <?php endif;?>        
+            </ol>
+            <p class="af-bottom-filter"><?php if($this->getIsHidden() || $this->getShowCount()) :?><span class="filter-hidden-value-arrow"></span><?php endif?></p>
+        </div>
+    </div>
+    <?php if($this->getViewAll()):?>
+        <script type="text/javascript">     
+        	jQuery('#show-count-<?php echo $this->getVar()?>').html('<?php echo $this->__('Hide All');?>');      
+        </script>
+    <?php endif;?>
+<?php endif;?>

@@ -1,0 +1,10 @@
+URL:                 http://craftwear.com.ua/searchautocomplete/suggest/result/?q=Craft%20Active%20Extreme%20WS%20Underpants%20M%20-%20M%20Black%2FPlatinum
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2015-10-10 10:29:52 MSK
+Оформительская тема: default / default
+***********************************
+[E_PARSE] syntax error, unexpected 'nofollow' (T_STRING), expecting ',' or ';'
+File: /home3/pyavcom/public_html/craft3/app/design/frontend/default/theme392/template/searchautocomplete/suggest.phtml
+Line: 17
+***********************************

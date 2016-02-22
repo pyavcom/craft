@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Olark_Chatbox</name>
+    <version>1.0.9</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Olark Live Chat with CartSaver for Magento</summary>
+    <description>Be your customers' hero. Nothing answers customers or saves the sale faster than Olark live chat. &#xD;
+&#xD;
+With CartSaver for Magento, see in real-time exactly what your customer do on your Magento store and then take action. End abandoned shopping carts. &#xD;
+&#xD;
+Be their favorite salesperson as you can follow along as your customers add and remove items from their shopping carts, so you can talk to them about what they are buying. &#xD;
+&#xD;
+Over 5,000 customers rely on Olark to make their customers happier and buying more.&#xD;
+</description>
+    <notes>Fixes bug with Magento compiler</notes>
+    <authors><author><name>Olark Live Chat</name><user>olark</user><email>support@olark.com</email></author></authors>
+    <date>2013-06-04</date>
+    <time>21:24:21</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="d0a62cece258d792d63a89fb4f46378b"/><file name=".Chatbox.php.swp" hash="c8e6a26700cdc554b0093bf6127eedb2"/></dir><dir name="Helper"><file name="Data.php" hash="6d1e1005a4c4f22ccdd7af419a2ed28a"/></dir><dir name="Model"><file name="Observer.php" hash="e179b730ccc182588dc819d4a44355ba"/></dir><dir name="etc"><file name="config.sunir" hash="3c2ea255f957e37b176ae9e2aaa64a5e"/><file name="config.xml" hash="607b866c3b054789bd403cd54d2f6185"/><file name="widget.xml" hash="e0dd79dcf207489b3067b256b7000377"/></dir><file name=".DS_Store" hash="f41f525169d6272ff2c77dc5440285c6"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

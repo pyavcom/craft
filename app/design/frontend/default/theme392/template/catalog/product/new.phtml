@@ -1,0 +1,108 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php $_helper = $this->helper('catalog/output');
+if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+<div class="box-top"></div>
+    <h2 class="subtitle label"><?php echo $this->__('New Products') ?></h2>      
+          <?php $_columnCount = $this->getColumnCount(); ?>
+            <?php $i=0; foreach ($_products->getItems() as $_product): ?>
+                <?php if ($i++%$_columnCount==0): ?>
+                        <ul class="products-grid">
+                        <?php endif ?>
+                            <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+                                 <div class="height-li-2">
+                                 <?php
+                                 $pyavsku = $_product->getSku();
+                                 $pyavsku = substr($pyavsku, 0, 2);
+                                 if (($pyavsku == 'MP')||($pyavsku == 'BA')||($pyavsku == 'AE')||($pyavsku == 'SA')||($pyavsku == 'SW')||($pyavsku == 'KW')||($pyavsku == 'WW')||($pyavsku == 'CR')||($pyavsku == 'JP')||($pyavsku == 'JA')||($pyavsku == 'JW')){ ?>
+                                 <div style="position:absolute;z-index:999;"><img src="http://craftwear.com.ua/craft-logo_v.gif" style="margin:0px 0 0 0px;height:95px;width:18px;"></div>
+                                 <?php } elseif ($pyavsku == 'NF') {?>
+                                 <div style="position:absolute;z-index:999;"><img src="http://craftwear.com.ua/norfin-logo_v.gif" style="margin:0px 0 0 0px;height:95px;width:31px;"></div>
+                                 <?php } elseif ($pyavsku == 'SV') {?>
+                                 <div style="position:absolute;z-index:999;"><img src="http://craftwear.com.ua/polarico.png" style="margin:0px 0 0 0px;"></div>
+                                 <?php } ?>
+                                         <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(165) ?>" width="165" height="165" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+                                            <div class="height-li">
+                                         <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3> 
+                                            <div class="desc std"> 
+                                                    <?php 
+/*
+                                                    $small_description = strip_tags( $_product->getShortDescription());
+                                                       if (strlen($small_description) < '800') echo($small_description);
+                                                          else {
+                                                            echo substr($small_description, 0, 805);
+                                                            echo '...';
+                                                       }*/
+                                                       echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description')
+                                                    ?> 
+                                                </div>
+<!--                                            <div class="clear"></div>
+                                            <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                                           <div class="clear"></div>
+-->
+                                      </div>                     
+                                          <div class="product-bottom">
+                                            <?php echo $this->getPriceHtml($_product, true, '-new') ?>
+                                            <div class="clear"></div>
+                                        </div>    
+<!--
+                                        <div class="actions">
+                                            <?php if($_product->isSaleable()): ?>
+                                                <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+
+                                            <?php else: ?>
+                                                <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+
+                                            <?php endif; ?>
+
+                                            <ul class="add-to-links">
+                                                <?php  if ($this->helper('wishlist')->isAllow()) : ?>
+                                                    <li><a title="<?php echo $this->__('Add to Wishlist') ?>" href="<?php  echo $this->getAddToWishlistUrl($_product) ?>" class="link-wishlist tooltips"><?php echo $this->__('Add to Wishlist') ?></a></li>
+                                                <?php endif; ?>
+                                                <?php if ($_compareUrl = $this->getAddToCompareUrl($_product)): ?>
+                                                <li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" title="<?php echo $this->__('Add to Compare') ?>" class="link-compare tooltips"><?php echo $this->__('Add to Compare') ?></a></li>
+                                                <?php  endif; ?>
+                                            </ul>
+
+                                            <div class="list-reviews"> <?php // echo $this->getReviewsSummaryHtml($_product) ?> </div>
+                                      </div>
+-->
+                                      <div class="clear"></div>  
+                                 </div>
+                        </li>
+                    <?php if ($i%$_columnCount==0 || $i==count($_products)): ?>
+                    </ul>
+            <?php endif ?>
+        <?php endforeach; ?>
+<div class="box-bottom"></div>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    setHeight('.height-li');
+    setHeight('.height-li-2');
+});
+</script>
+<?php endif; ?>

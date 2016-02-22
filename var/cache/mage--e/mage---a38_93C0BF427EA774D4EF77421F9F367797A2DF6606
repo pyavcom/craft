@@ -1,0 +1,17 @@
+<style type='text/css'>
+	.sidebar .block-title {
+		text-transform: lowercase;
+	}
+	
+	.header .links, .header-container .quick-access .links a {
+		text-transform: lowercase;
+	}
+	
+	.category-products .ratings {
+		display: none;
+	}
+	
+	p.bugs {
+		display: none;
+	}
+</style>

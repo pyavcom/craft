@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xml:lang="ru" lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>Вход - Российская сборка Magento</title>
+
+		
+	
+	<meta name="robots" content="noindex" />
+	
+
+
+
+		<link rel="shortcut icon" href='http://magento-forum.ru/favicon.ico' />
+		<script type='text/javascript'>
+			jsDebug = 0; /* Must come before JS includes */
+			USE_RTE = 0;
+			inACP   = false;
+		</script>
+		
+	
+				
+			<link rel="stylesheet" type="text/css"  href="http://magento-forum.ru/public/style_css/css_4/ipb_mlist_addon.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_help.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/calendar_select.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_editor.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_login_register.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_search.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_styles.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_ucp.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_common.css" />
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" media="print" href="http://magento-forum.ru/public/style_css/css_4/ipb_print.css" />
+		
+	
+	
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" title='Main' media="screen" href="http://magento-forum.ru/public/style_css/css_4/ipb_ie.css" />
+<![endif]-->
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+
+		
+		<script type='text/javascript' src='http://magento-forum.ru/public/js/3rd_party/prototype.js'></script>
+	
+	<script type='text/javascript' src='http://magento-forum.ru/public/js/ipb.js?ipbv=31006&amp;load=quickpm,signin'></script>
+	
+		<script type='text/javascript' src='http://magento-forum.ru/public/js/3rd_party/scriptaculous/scriptaculous-cache.js'></script>
+	
+	<script type="text/javascript" src='http://magento-forum.ru/cache/lang_cache/1/ipb.lang.js' charset='UTF-8'></script><script type='text/javascript' src='http://magento-forum.ru/public/js/ritsu_hide_text.js' charset='UTF-8'></script>
+	
+
+<script type='text/javascript'>
+	var isRTL	= false;
+	var rtlIe	= '';
+	var rtlFull	= '';
+</script>
+
+<script type='text/javascript'>
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://magento-forum.ru/index.php?s=44ca14f442f6e6ad514500e3747fc498&';
+		ipb.vars['board_url']			= 'http://magento-forum.ru';
+		ipb.vars['loading_img'] 		= 'http://magento-forum.ru/public/style_images/light/loading.gif';
+		ipb.vars['active_app']			= 'core';
+		ipb.vars['upload_url']			= 'http://magento-forum.ru/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 0 );
+		ipb.vars['is_supmod']			= parseInt( 0 );
+		ipb.vars['is_admin']			= parseInt( 0 );
+		ipb.vars['secure_hash'] 		= '880ea6a14ea49e853634fbdc5015a024';
+		ipb.vars['session_id']			= '44ca14f442f6e6ad514500e3747fc498';
+		ipb.vars['can_befriend']		= true;
+		ipb.vars['twitter_id']			= 0;
+		ipb.vars['fb_uid']				= 0;
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= '';
+		ipb.vars['cookie_domain'] 		= '';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= 'http://magento-forum.ru/public/style_images/light/bullet_star.png';
+		ipb.vars['rate_img_off']		= 'http://magento-forum.ru/public/style_images/light/bullet_star_off.png';
+		ipb.vars['rate_img_rated']		= 'http://magento-forum.ru/public/style_images/light/bullet_star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://magento-forum.ru/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( '' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false; /* SKINNOTE: Turn off for production */
+		/* ---- other ---- */
+		ipb.vars['live_search_limit'] 	= 4;
+		ipb.vars['highlight_color']		= "#ade57a";
+		ipb.vars['charset']				= "UTF-8";
+		ipb.vars['use_rte']				= 1;
+		ipb.vars['image_resize']		= 0;
+		ipb.vars['image_resize_force']  = 0;
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"\/","end":"\/","varBlock":"\/page__","varSep":"__"};
+		
+		/* Templates/Language */
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'>" + ipb.lang['loading'] + "</div>";
+		ipb.templates['close_popup']	= "<img src='http://magento-forum.ru/public/style_images/light/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		ipb.templates['resized_img']	= new Template("<span>Уменьшено на #{percent}% (#{width} x #{height}) - Нажмите для увеличения</span>");
+		ipb.templates['m_add_friend']	= new Template("<a href='http://magento-forum.ru/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=add&amp;member_id=#{id}' title='Добавить в друзья'><img src='http://magento-forum.ru/public/style_images/light/user_add.png' alt='Добавить в друзья' /></a>");
+		ipb.templates['m_rem_friend']	= new Template("<a href='http://magento-forum.ru/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=remove&amp;member_id=#{id}' title='Удалить из друзей'><img src='http://magento-forum.ru/public/style_images/light/user_delete.png' alt='Удалить из друзей' /></a>");
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}'><img src='#{img}' alt='' width='#{img_w}' height='#{img_h}' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Перейти к странице</h3><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='ОК' class='input_submit add_folder' id='#{id}_submit' /></div>");
+	//]]>
+	</script>
+		<script type='text/javascript'>
+			Loader.boot();
+		</script>
+	</head>
+	<body id='ipboard_body'>
+		<div id='ipbwrapper'>
+
+			<!--noindex-->
+
+				
+
+			<!--/noindex-->
+
+			<div id='header'>
+
+				<!--noindex-->
+
+					<div id='branding'>
+						
+							<a href='http://magento-forum.ru' title='Перейти к списку форумов' rel="home" accesskey='1'><img src='http://magento-forum.ru/public/style_images/light/logo.png' alt='Логотип' /></a>
+						
+					</div>
+
+					
+						<div id='user_navigation' class='not_logged_in'>
+			<a href="/index.php?app=core&module=global&section=login">
+		<img src="/public/style_images/master/vkontakte_login.png" width="154" height="22" alt="">
+	</a>
+							<a href='http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=login' title='Вход'><img src='http://magento-forum.ru/public/style_images/light/key.png' alt='Иконка входа' /> Вход</a>
+							<a href="http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=register" title='Регистрация'><img src='http://magento-forum.ru/public/style_images/light/paste_plain.png' alt='Регистрация' /> Регистрация</a>
+							<a href="http://magento-forum.ru/index.php?app=core&amp;module=help" title='Перейти к помощи' rel="help" accesskey='6'><img src='http://magento-forum.ru/public/style_images/light/help.png' alt='Помощь' /> Помощь</a>
+						</div>
+
+					
+
+				<!--/noindex-->
+
+				<div id='primary_nav'>
+
+
+					<!--noindex-->
+
+						<div class="df-search">
+							<div class="yandexform"
+								 onclick="return {type: 2, logo: 'rb', arrow: true, webopt: false, websearch: false, bg: '#800000', fg: '#000000', fontsize: 16, suggest: true, site_suggest: true, encoding: 'utf-8'}">
+								<form action="http://magento-forum.ru/" method="get"><input type="hidden" name="searchid" value="777268"/><input
+										name="text"/><input type="submit" value="Найти"/></form>
+		
+		
+							</div>
+						</div>
+
+
+					<!--/noindex-->
+
+
+
+					<ul>
+						
+																								<li id='nav_discussion' class='left '><a href='http://magento-forum.ru/' title='Перейти к списку форумов'>Обсуждения</a></li><li id='nav_members' class='left '><a href='http://magento-forum.ru/index.php?app=members&amp;section=view&amp;module=list' title='Перейти к списку пользователей'>Пользователи</a></li>
+						
+							
+								
+							
+
+								
+							
+
+								
+							
+						
+						<li id='nav_services' class='left'><a href='http://magento-forum.ru/topic/365/' title='Услуги для клиентов Российской сборки Magento'>УСЛУГИ</a></li>
+					</ul>
+				</div>
+
+
+				<!--noindex-->
+
+					
+
+				<!--/noindex-->
+
+
+
+				<div id='secondary_nav'>
+
+					<ul id='breadcrumb' class='left'>
+														<li class='first'><a href='http://magento-forum.ru/'>Российская сборка Magento</a></li>
+								
+							
+								<li><span class='nav_sep'>&gt;</span> Вход</li>
+								
+							
+						</ul>
+				</div>
+			</div>
+
+			<div
+				id="yandex-results-outer"
+				onclick="return {encoding: 'utf-8'}"
+			></div>
+
+
+			<div id='content' class='clear'>
+
+
+				<!--noindex-->
+					<a id='j_content'></a>
+				<!--/noindex-->
+
+				
+<div id='login_form' class='clear'>
+	
+	<div id='member_login' class='left'>
+		<h2 class='maintitle'>Вход</h2>
+		<div class='generic_bar'></div>
+		<form action="http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=login&amp;do=process" method="post" id='login'>
+			<input type='hidden' name='auth_key' value='880ea6a14ea49e853634fbdc5015a024' />
+			<input type="hidden" name="referer" value="" />
+			</if>
+			<div id='regular_signin'>
+				<a id='_regularsignin'></a>
+				<h3 class='bar'>Введите ваши имя пользователя и пароль</h3>
+				<ul>
+					<li class='field'>
+						<label for='username'>Имя пользователя (логин). E-mail сюда вводить бесполезно (пока)</label>
+						<input id='username' type='text' class='input_text' name='username' size='25' />
+					</li>
+					<li class='field'>
+						<label for='password'>Пароль:</label>
+						<input id='password' type='password' class='input_text' name='password' size='25' /><br />
+						<a href='http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=lostpass' class='desc' title='Восстановление пароля'>Я забыл свой пароль</a>
+					</li>
+				</ul>
+				
+				<p class='extra'><img src='http://magento-forum.ru/public/style_images/light/openid.gif' alt='Иконка OpenID' /> Есть OpenID? <a href='#_openid' title='Использовать OpenID' id='openid_open'>Вход здесь</a></p>
+				
+				
+				<p class='extra'><img src='http://magento-forum.ru/public/style_images/light/live.gif' alt='Иконка Live' /> Есть Windows Live? <a href='#_live' title='Использовать Windows Live' id='live_open'>Вход здесь</a></p>
+				
+				
+			</div>
+			
+			<div id='openid_signin'>
+				<a id='_openid'></a>
+				<h3 class='bar'>Войти с использованием OpenID</h3>
+				<img src='http://magento-forum.ru/public/style_images/light/openid_logo.png' alt='Логотип OpenID' />
+				<ul>
+					<li class='field'>
+						<label for='openid'>OpenID: </label>
+						<input id='openid' type='text' class='input_text' name='openid_url' value='http://' size='30' /><br />
+						<span class='desc'>Например: http://username.ya.ru</span>
+					</li>
+				</ul>
+				<p class='extra'><img src='http://magento-forum.ru/public/style_images/light/key.png' alt='Иконка входа' /> <a href='#_regularsignin' title='Обычный вход' id='openid_close'>Использовать обычный вход</a></p>
+			</div>
+			
+			
+			<div id='live_signin'>
+				<a id='_live'></a>
+				<h3 class='bar'>Войти с использованием Windows Live</h3>
+				<ul>
+					<li class='field'>
+						<a href='http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=login&amp;do=process&amp;use_live=1'><img src='http://dev.live.com/scripts/base/wlconnect.png' alt='Иконка Live' /></a> <a href='http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=login&amp;do=process&amp;use_live=1'>Нажмите здесь чтобы войти под учетной записью Windows Live</a>
+					</li>
+				</ul>
+				<p class='extra'><img src='http://magento-forum.ru/public/style_images/light/key.png' alt='Иконка входа' /> <a href='#_regularsignin' title='Обычный вход' id='live_close'>Использовать обычный вход</a></p>
+			</div>
+			
+			<hr />
+			<fieldset id='signin_options'>
+				<legend>Опции</legend>
+				<ul>
+					<li class='field checkbox'>
+						<input type='checkbox' id='remember' checked='checked' name='rememberMe' value='1' class='input_check' />
+						<label for='remember'>
+							Запомнить меня<br />
+							<span class='desc'>Не включайте, если используете общедоступный компьютер</span>
+						</label>
+					</li>
+					
+				</ul>
+			</fieldset>
+			<fieldset class='submit'>
+				<input type='submit' class='input_submit' value='Войти' /> или <a href='http://magento-forum.ru' title='Отмена' class='cancel'>Отмена</a>
+			</fieldset>
+		</form>
+	</div>
+	<div id='guest_register' class='right general_box'>
+		
+<h3 class='bar'>Войти Вконтакте</h3>
+<p><div id='vkUserBox'></div><br clear='both' /></p><br />
+<script language="JavaScript" src="http://magento-forum.ru/public/js/ips.vkontakte.js"></script>
+<iframe id="vk_frame" src="http://magento-forum.ru/interface/vkontakte/index.php" style='position:absolute;top: -1000px;'> </iframe>
+<div id='vk-template-button' style='display:none'>
+    Вход с использованием Вконтакте
+    <br /><br /><a href="#" id="vk_login"> <img src="http://magento-forum.ru/public/vkontakte_login.png" alt="" /> </a>
+</div>
+<div id='vk-template-main' style='display:none'>
+    <div style='float:left; margin-right:4px;margin-bottom:3px'>
+        <a href="#" id="openapi_userlink"> <img src="http://vkontakte.ru/images/question_c.gif" id="openapi_userphoto" /> </a>
+    </div>
+    Здравствуйте, <span id="openapi_user"> </span>
+</div>
+<div id='vk-template-linked' style='display:none'>
+    <div class='desc'>
+        Вы вошли в Вконтакте
+    </div>
+    <br clear='both'/>
+    <form action='http://magento-forum.ru/interface/vkontakte/index.php' method='post' name='linkForm' id='vk_linkForm'>
+        <input type='button' class='input_submit' id='vk_complete' value='Войти на форум' />
+    </form>
+</div>		
+		
+		
+		
+			<h3 class='bar'>Вход с использованием Facebook</h3>
+			<p>
+				<div id='fbUserBox'>
+					Вход с использованием Facebook
+					<br />
+					<br />
+					<a href="http://magento-forum.ru/interface/facebook/index.php?reg=1"><img src="http://magento-forum.ru/public/style_images/light/facebook_login.png" alt="" /></a>
+				</div>
+				<br clear='both' />
+			</p>
+			<br />
+		
+
+		<h3 class='bar'>Вход через Вконтакте</h3>
+			<p>
+				<div id='vkUserBox'>
+				</div>
+				<br clear='both' />
+			</p>
+			<br />
+			<h3 class='bar'>Вход через Twitter</h3>
+			<p>
+				Вход с использованием Twitter
+				<br />
+				<br />
+				<a href="http://magento-forum.ru/interface/twitter/index.php?reg=1"><img src="http://magento-forum.ru/public/style_images/light/twitter_login.png" alt="" /></a>
+			</p>
+			<br />
+		
+		<h3 class='bar'>Еще не зарегистрированы? </h3>
+		<p>
+			
+		</p>
+		<br />
+		<p style='text-align: center'>
+			<a href='http://magento-forum.ru/index.php?app=core&amp;module=global&amp;section=register'>Зарегистрироваться</a>
+		</p>
+	</div>
+</div>
+</if>
+<script language="JavaScript" src="http://magento-forum.ru/public/js/ips.vkontakte.js"></script>
+
+<iframe id="vk_frame" src="http://magento-forum.ru/interface/vkontakte/index.php" style='position:absolute;top: -1000px;'></iframe>
+
+<!--VK Template-->
+<div id='vk-template-button' style='display:none'>
+	Вход с использованием Вконтакте
+	<br /><br />
+        <a href="#" id="vk_login"><img src="http://magento-forum.ru/public/style_images/light/vkontakte_login.png" alt="" /></a>
+</div>
+<div id='vk-template-main' style='display:none'>
+	<div style='float:left; margin-right:4px;margin-bottom:3px'>
+		<a href="#" id="openapi_userlink"><img src="http://vkontakte.ru/images/question_c.gif" id="openapi_userphoto" /></a>
+	</div>
+	Здравствуйте, <span id="openapi_user"></span>
+</div>
+<div id='vk-template-linked' style='display:none'>
+	<div class='desc'>
+		Вы вошли в Вконтакте
+	</div>
+	<br clear='both'/>
+	<form action='http://magento-forum.ru/interface/vkontakte/index.php' method='post' name='linkForm' id='vk_linkForm'>
+		<input type='button' class='input_submit' id='vk_complete' value='Войти на форум' />
+	</form>
+</div>
+
+				<br class='clear' />
+			</div>
+
+		</div>
+
+
+		
+
+				<script type="text/javascript">
+
+				  var _gaq = _gaq || [];
+				  _gaq.push(['_setAccount', 'UA-4963515-5']);
+  _gaq.push(['_addOrganic', 'images.google.ru', 'q', true]);
+  _gaq.push(['_addOrganic', 'images.yandex.ru', 'text', true]);
+  _gaq.push(['_addOrganic', 'blogs.yandex.ru', 'text', true]);
+  _gaq.push(['_addOrganic', 'blogsearch.google.ru', 'q', true]);
+  _gaq.push(['_addOrganic', 'go.mail.ru', 'q']);
+  _gaq.push(['_addOrganic', 'win.mail.ru', 'q']);
+  _gaq.push(['_addOrganic', 'gogo.ru', 'q']);
+  _gaq.push(['_addOrganic', 'nova.rambler.ru', 'query']);
+  _gaq.push(['_addOrganic', 'nigma.ru', 's']);
+  _gaq.push(['_addOrganic', 'google.com.ua', 'q']);
+  _gaq.push(['_addOrganic', 'affiliates.quintura.com', 'request']);
+  _gaq.push(['_addOrganic', 'search.qip.ru', 'query']);
+  _gaq.push(['_addOrganic', 'ru.yahoo.com', 'p']);
+  //_gaq.push(['_addOrganic', 'market.yandex.ru', 'test', true]);
+  //_gaq.push(['_addOrganic', 'video.yandex.ru', 'text']);
+  //_gaq.push(['_addOrganic', 'price.ru', 'pnam']);
+  //_gaq.push(['_addOrganic', 'torg.mail.ru', 'q']);
+  _gaq.push(['_addOrganic', 'maps.google.ru', 'q']);
+_gaq.push(['_addOrganic', "meta.ua","q"]);
+_gaq.push(['_addOrganic', "bigmir.net","q"]);
+_gaq.push(['_addOrganic', "search.ukr.net","search_query"]);
+_gaq.push(['_addOrganic', "gogle.com.ua","q"]);
+_gaq.push(['_addOrganic', "google.com.ua","q"]);
+_gaq.push(['_addOrganic', "images.google.com.ua","q"]);
+
+				  _gaq.push(['_trackPageview']);
+
+				  (function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				  })();
+				</script>
+			
+
+
+<script type="text/javascript" src="http://site.yandex.net/load/form/1/form.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://site.yandex.net/load/site.js" charset="utf-8"></script>
+	</body>
+</html>

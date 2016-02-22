@@ -1,0 +1,77 @@
+.widget-catalogsale-products-carousel .new-slider{  
+	
+	position:relative;
+	width:982px;
+	border:1px solid #ddd;
+	padding:10px 20px;
+	margin:10px auto; 
+	background:#fff;
+	border-radius:10px;
+}
+.widget-catalogsale-products-carousel .box-top {
+	overflow:hidden;
+	position:relative; 
+	left:0;
+	float:left;
+	width:970px;
+	height:220px;
+	margin-left:5px;
+}
+.widget-catalogsale-products-carousel .box-top ul {
+	list-style:none;
+	padding:0; 
+	}
+.widget-catalogsale-products-carousel .box-top ul li {  
+	display:block; 
+	float:left;
+	position:relative; 
+	width:220px;
+	margin-right:25px;
+	text-align:center;
+	overflow:hidden;
+}
+.widget-catalogsale-products-carousel #left, #right{ cursor:pointer}
+.widget-catalogsale-products-carousel .box-left,
+.widget-catalogsale-products-carousel .box-right { 
+	position:absolute; 
+	top:84px; 
+	width:21px; 
+	height:35px; 
+	cursor:pointer;
+}
+.widget-catalogsale-products-carousel .box-left {
+	left:5px; 
+	background:url(../images/carousel-img/prev-carousel.png) no-repeat 0 0;
+	}
+.widget-catalogsale-products-carousel .box-right {
+	right:5px;
+	background:url(../images/carousel-img/next-carousel.png) no-repeat 0 bottom;
+	}
+.widget-catalogsale-products-carousel .box-left:hover  {background-position:0 100%;}
+.widget-catalogsale-products-carousel .box-right:hover {background-position:0 0;}
+.widget-catalogsale-products-carousel .product-image {
+	display:block;
+	width:100px;
+	height:100px;
+	margin:0 auto 10px;
+	}
+.widget-catalogsale-products-carousel .product-name {}
+.widget-catalogsale-products-carousel .product-name a {}
+.widget-catalogsale-products-carousel .price-box {margin-bottom:10px;}
+.widget-catalogsale-products-carousel .price-box .price {}
+.widget-catalogsale-products-carousel .price-box .price-label {}
+.widget-catalogsale-products-carousel .link-cart {
+	display:inline-block;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+	height:21px; 
+	line-height:21px;
+	}
+.widget-catalogsale-products-carousel .link-cart span {
+	background:url(../images/bkg_button.gif) no-repeat left top;
+	padding-left:8px;
+	display:inline-block;
+	}
+.widget-catalogsale-products-carousel .link-cart span span {background-position:100% 0; padding:0 16px 0 8px;}

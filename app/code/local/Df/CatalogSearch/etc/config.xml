@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<config>
+	<modules>
+		<Df_CatalogSearch>
+			<version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+		</Df_CatalogSearch>
+	</modules>
+	<global>
+		<blocks><df_catalog_search><class>Df_CatalogSearch_Block</class></df_catalog_search></blocks>
+		<helpers><df_catalog_search><class>Df_CatalogSearch_Helper</class></df_catalog_search></helpers>
+		<models><df_catalog_search><class>Df_CatalogSearch_Model</class></df_catalog_search></models>
+	</global>
+	<adminhtml>
+		<translate>
+			<modules>
+				<Df_CatalogSearch><files><default>Df_CatalogSearch.csv</default></files></Df_CatalogSearch>
+			</modules>
+		</translate>
+	</adminhtml>
+</config>

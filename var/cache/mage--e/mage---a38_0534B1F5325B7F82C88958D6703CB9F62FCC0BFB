@@ -1,0 +1,341 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li  class=" active  level0"> <a href="http://craftwear.com.ua/index.php/admin/dashboard/"   class="active"><span>Сводка</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Продажи</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_order/"   class=""><span>Заказы</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_invoice/"   class=""><span>Счета</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_shipment/"   class=""><span>Доставки</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_creditmemo/"   class=""><span>Возвраты</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_transactions/"   class=""><span>Транзакции</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_recurring_profile/"   class=""><span>Регулярные платежи</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_billing_agreement/"   class=""><span>Профили PayPal</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/checkout_agreement/"   class=""><span>Условия продажи</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Налоги и наценки</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/tax_rule/"   class=""><span>Налоговые правила</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/tax_rate/"   class=""><span>Налоговые ставки</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/tax_rate/importExport/"   class=""><span>Импорт и экспорт ставок</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/tax_class_customer/"   class=""><span>Группы покупателей</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/tax_class_product/"   class=""><span>Группы товаров</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Каталог</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/catalog_product/"   class=""><span>Товары</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/catalog_category/"   class=""><span>Разделы</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Типы и их свойства</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/catalog_product_attribute/"   class=""><span>Свойства товаров</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/catalog_product_set/"   class=""><span>Типы товаров</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/urlrewrite/index/"   class=""><span>Адреса страниц</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/catalog_search/"   class=""><span>Поисковые запросы</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Отзывы и оценочные критерии</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Отзывы покупателей</span></a>
+<ul >
+<li  class="  level3"> <a href="http://craftwear.com.ua/index.php/admin/catalog_product_review/pending/"   class=""><span>Отзывы, ожидающие проверки</span></a>
+</li>
+<li  class="  last level3"> <a href="http://craftwear.com.ua/index.php/admin/catalog_product_review/"   class=""><span>Все отзывы</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/rating/"   class=""><span>Оценочные критерии</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Метки</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/tag/index/"   class=""><span>Все метки</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/tag/pending/"   class=""><span>Метки, ожидающие проверки</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/sitemap/"   class=""><span>Карта сайта</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Приложения</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/mobile/"   class=""><span>Перечень приложений</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/mobile/history/"   class=""><span>Submission History</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/mobile/template/"   class=""><span>Message Templates</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/mobile/queue/"   class=""><span>Message Queue</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Покупатели</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/customer/"   class=""><span>Покупатели</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/customer_group/"   class=""><span>Категории покупателей</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/customer_online/"   class=""><span>Кто сейчас в магазине?</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Ценовые правила</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/promo_catalog/"   class=""><span>Ценовые правила для каталога</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/promo_quote/"   class=""><span>Ценовые правила для корзины</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Рассылка</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/newsletter_template/"   class=""><span>Шаблоны рассылок</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/newsletter_queue/"   class=""><span>Очередь рассылки</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/newsletter_subscriber/"   class=""><span>Подписчики рассылки</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/newsletter_problem/"   class=""><span>Сбои рассылки</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Витрина</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://craftwear.com.ua/index.php/admin/cms_page/"   class=""><span>Самодельные страницы</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/cms_page/"   class=""><span>Страницы</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/cms_hierarchy/"   class=""><span>Оглавление</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/cms_block/"   class=""><span>Самодельные блоки</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/widget_instance/"   class=""><span>Виджеты</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/poll/"   class=""><span>Опросы</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Реклама</span></a>
+<ul >
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/df_banner/adminhtml_banner/"   class=""><span>Рекламные щиты</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/df_banner/adminhtml_banneritem/"   class=""><span>Рекламные объявления</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Расширенная навигация</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/advancedlayernavigation/adminhtml_setup/"   class=""><span>Настройки</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Templates Master</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/tmcore_module/index/"   class=""><span>Modules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Отчёты</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Продажи</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/sales/"   class=""><span>Объём продаж</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/tax/"   class=""><span>Налоги</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/invoiced/"   class=""><span>Счета и платежи</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/shipping/"   class=""><span>Доставка</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/refunded/"   class=""><span>Возвраты</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/coupons/"   class=""><span>Промокоды</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/paypal_reports/"   class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Корзина покупок</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_shopcart/product/"   class=""><span>Товары в корзинах</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/report_shopcart/abandoned/"   class=""><span>Заброшенные корзины</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Товары</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_sales/bestsellers/"   class=""><span>Лидеры продаж</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_product/sold/"   class=""><span>Проданные товары</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_product/viewed/"   class=""><span>Самые посещаемые</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_product/lowstock/"   class=""><span>Заканчивающиеся товары</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/report_product/downloads/"   class=""><span>Скачивания</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Покупатели</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_customer/accounts/"   class=""><span>Новые регистрации</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_customer/totals/"   class=""><span>Покупатели-лидеры по выручке</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/report_customer/orders/"   class=""><span>Покупатели-лидеры по количеству заказов</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Метки</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_tag/customer/"   class=""><span>Группировка по покупателям</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_tag/product/"   class=""><span>Группировка по товарам</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/report_tag/popular/"   class=""><span>Популярные</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Отзывы</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/report_review/customer/"   class=""><span>Группировка по покупателям</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/report_review/product/"   class=""><span>Группировка по товарам</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/report/search/"   class=""><span>Поисковые запросы</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/report_statistics/"   class=""><span>Обновить статистику</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Система</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Локализация</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/df_localization/theme/index/"   class=""><span>Оформительские темы</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/df_localization/verification/index/"   class=""><span>Проверка полноты перевода</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/system_account/"   class=""><span>Ваши данные</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/notification/"   class=""><span>Уведомления</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Инструменты</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/system_backup/"   class=""><span>Резервные копии</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/compiler_process/"   class=""><span>Компиляция</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Доступ извне</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/api_user/"   class=""><span>Администраторы</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/api_role/"   class=""><span>Должности</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/api2_role/"   class=""><span>REST - Полномочия</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/api2_attribute/"   class=""><span>REST - Свойства</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/oauth_consumer/"   class=""><span>REST - Пользователи OAuth</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/oauth_authorizedTokens/"   class=""><span>REST - Токены OAuth</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/oauth_admin_token/"   class=""><span>REST - Приложения</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/system_design/"   class=""><span>Оформление витрины</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Импорт/Экспорт</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/import/"   class=""><span>Импорт</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/export/"   class=""><span>Экспорт</span></a>
+</li>
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/system_convert_gui/"   class=""><span>Стандартные программы</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/system_convert_profile/"   class=""><span>Нестандартные программы</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://craftwear.com.ua/index.php/admin/system_currency/"   class=""><span>Валюты</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/system_currency/"   class=""><span>Курсы</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/system_currencysymbol/"   class=""><span>Обозначения</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/system_email_template/"   class=""><span>Письма-оповещения</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/system_variable/"   class=""><span>Пользовательские переменные</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Администраторы</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/permissions_user/"   class=""><span>Администраторы</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/permissions_role/"   class=""><span>Должности</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Бесплатные модули</span></a>
+<ul >
+<li  class="  level2"> <a href="http://craftwear.com.ua/index.php/admin/extension_local/"   class=""><span>Установка / удаление</span></a>
+</li>
+<li  class="  last level2"> <a href="http://craftwear.com.ua/index.php/admin/extension_custom/"   class=""><span>Опубликовать свой модуль (для программистов)</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/cache/"   class=""><span>Кэширование</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/process/list/"   class=""><span>Расчётные таблицы</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/system_store/"   class=""><span>Магазины</span></a>
+</li>
+<li  class="  level1"> <a href="http://craftwear.com.ua/index.php/admin/sales_order_status/"   class=""><span>Перечень состояний заказов</span></a>
+</li>
+<li  class="  last level1"> <a href="http://craftwear.com.ua/index.php/admin/system_config/"   class=""><span>Настройки</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/ru_RU/Mage_Adminhtml/dashboard/index/">Помощь по странице</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

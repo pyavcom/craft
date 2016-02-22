@@ -1,0 +1,8 @@
+<ol class="stock-filter-values" id="<?php echo $this->getVar(); ?>">   
+		<li>
+			<?php echo $this->__('Show stock:');?>
+			<a id="af-showinstock" href="javascript:void(0)" class="af-stock-staus-a"><?php echo $this->__('In Stock');?></a>
+			<a id="af-showallstock" href="javascript:void(0)" class="af-stock-staus-a"><?php echo $this->__('All Stock');?></a>
+			<input type="checkbox" class="stock-checkbox no-display" name="instock-input" id="instock-input" <?php echo $this->isChecked(); ?> />			
+		</li>      
+</ol>

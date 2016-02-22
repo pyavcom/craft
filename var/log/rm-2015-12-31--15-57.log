@@ -1,0 +1,10 @@
+URL:                 http://craftwear.com.ua/searchautocomplete/suggest/result/?q=%D0%96%D0%95%D0%9D%D0%A1%D0%9A%D0%90%D0%AF%20%D0%A2%D0%9E%D0%9B%D0%A1%D0%A2%D0%9E%D0%92%D0%9A%D0%90%20CRAFT%C2%AE%20FLEX%20(192477_2900
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2015-12-31 15:57:52 MSK
+Оформительская тема: default / default
+***********************************
+[E_PARSE] syntax error, unexpected 'nofollow' (T_STRING), expecting ',' or ';'
+File: /home3/pyavcom/public_html/craft3/app/design/frontend/default/theme392/template/searchautocomplete/suggest.phtml
+Line: 17
+***********************************

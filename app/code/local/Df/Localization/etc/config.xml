@@ -1,0 +1,178 @@
+<?xml version='1.0'?>
+<config>
+	<modules>
+		<Df_Localization>
+			<version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+		</Df_Localization>
+	</modules>
+	<global>
+		<blocks><df_localization><class>Df_Localization_Block</class></df_localization></blocks>
+		<helpers><df_localization><class>Df_Localization_Helper</class></df_localization></helpers>
+		<models><df_localization><class>Df_Localization_Model</class></df_localization></models>
+	</global>
+	<admin>
+		<routers>
+			<df_localization>
+				<use>admin</use>
+				<args>
+					<module>Df_Localization</module>
+					<frontName>df_localization</frontName>
+				</args>
+			</df_localization>
+		</routers>
+	</admin>
+	<adminhtml>
+		<layout>
+			<updates>
+				<df_localization><file>df/localization.xml</file></df_localization>
+			</updates>
+		</layout>
+	</adminhtml>
+	<frontend>
+		<routers>
+			<df-localization>
+				<use>standard</use>
+				<args>
+					<module>Df_Localization</module>
+					<frontName>df-localization</frontName>
+				</args>
+			</df-localization>
+		</routers>
+	</frontend>
+	<default>
+		<df_localization>
+			<frontend>
+				<rm_translation__enabled>1</rm_translation__enabled>
+				<rm_translation__set_as_primary>1</rm_translation__set_as_primary>
+				<allow_interference>developer-mode</allow_interference>
+				<hide_decimals>0</hide_decimals>
+			</frontend>
+			<admin>
+				<rm_translation__enabled>1</rm_translation__enabled>
+				<rm_translation__set_as_primary>1</rm_translation__set_as_primary>
+				<allow_interference>developer-mode</allow_interference>
+				<hide_decimals>0</hide_decimals>
+			</admin>
+			<email>
+				<rm_translation__enabled>1</rm_translation__enabled>
+				<hide_decimals>0</hide_decimals>
+			</email>
+		</df_localization>
+	</default>
+	<df>
+		<admin>
+			<notifiers>
+				<localization__theme>Df_Localization_Model_Notifier_Theme</localization__theme>
+			</notifiers>
+		</admin>
+	</df>
+	<rm>
+		<translation>
+			<default>
+				<!--
+				 	koolthememaster Caramel Store
+					http://themeforest.net/item/caramel-store/1957358
+					http://magento-forum.ru/forum/298/
+				-->
+				<caramel>koolthememaster/Caramel.xml</caramel>
+				<!--
+				 	8theme Gadget
+					http://8theme.com/magento-template/gadget-magento-template.html
+					http://magento-forum.ru/forum/289/
+				-->
+				<gadget>8theme/Gadget.xml</gadget>
+				<!--
+				 	Gala TitanShop
+					http://themeforest.net/item/responsive-magento-theme-gala-titanshop/8202636
+					http://magento-forum.ru/forum/352/
+				-->
+				<galatitanshop>Gala/TitanShop.xml</galatitanshop>
+				<!--
+				 	TemplateMela Beauty
+				 	http://www.templatemela.com/demo/MAG080119
+				 	http://magento-forum.ru/forum/293/
+				-->
+				<MAG080119>TemplateMela/MAG080119.xml</MAG080119>
+				<!--
+				 	SNS Xsport
+				 	http://themeforest.net/item/sns-xsport-premium-responsive-magento-theme/8205296
+				 	http://demo.snstheme.com/theme/xsport/
+				 	http://magento-forum.ru/forum/355/
+				-->
+				<sns_xsport>Sns/Xsport.xml</sns_xsport>
+				<!--
+				 	TemplateMonster #43442
+				 	http://www.templatemonster.com/magento-themes/43442.html
+				 	http://magento-forum.ru/forum/302/
+				-->
+				<theme464>TemplateMonster/43442.xml</theme464>
+				<!--
+				 	CatTheme se105
+				 	http://demo.cattheme.com/se105/
+					http://magento-forum.ru/forum/292/
+				-->
+				<se105>CatTheme/se105.xml</se105>
+			</default>
+			<!--
+			 	8theme Mercado
+				http://8theme.com/magento-template/mercado-magento-theme2.html
+				http://magento-forum.ru/forum/288/
+			-->
+			<mercado>
+				<default>8theme/Mercado.xml</default>
+			</mercado>
+		</translation>
+		<design-theme-processors>
+			<gala-titanshop>
+				<title>ThemeForest Gala TitanShop</title>
+				<package>default</package>
+				<theme>galatitanshop</theme>
+				<dictionary>Gala/TitanShop.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</gala-titanshop>
+			<infortis-fortis>
+				<title>ThemeForest Infortis Fortis</title>
+				<package>fortis</package>
+				<dictionary>Infortis/Fortis.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</infortis-fortis>
+			<!--
+			<infortis-ultimo>
+				<title>ThemeForest Infortis Ultimo</title>
+				<package>ultimo</package>
+				<dictionary>Infortis/Ultimo.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</infortis-ultimo>
+			-->
+			<magento-default>
+				<title>Стандартная темы Default</title>
+				<package>default</package>
+				<theme>default</theme>
+				<dictionary>Magento/Default.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</magento-default>
+			<magento-modern>
+				<title>Стандартная тема Modern</title>
+				<package>default</package>
+				<theme>modern</theme>
+				<dictionary>Magento/Modern.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</magento-modern>
+			<magento-rwd>
+				<title>Стандартная тема Magento CE 1.9 (RWD)</title>
+				<package>rwd</package>
+				<theme>default</theme>
+				<dictionary>Magento/RWD.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</magento-rwd>
+			<sns-xsport>
+				<title>SNS Xsport</title>
+				<package>default</package>
+				<theme>sns_xsport</theme>
+				<dictionary>Sns/Xsport.xml</dictionary>
+				<class>Df_Localization_Model_Onetime_Processor</class>
+			</sns-xsport>
+		</design-theme-processors>
+	</rm>
+</config>

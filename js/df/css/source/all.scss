@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+	Обратите внимание, что правило @charset надо записывать именно с двойными кавычками
+	и именно в самом начале файла, без любых символов и пробелов впереди.
+*/
+@import '_reset';
+@import '../../js/source/plugins/fancybox/_core/_core';
+/*.rm-bootstrap {
+	@import '../lib/bootstrap/css/_bootstrap';
+	@import '../lib/bootstrap/css/_bootstrap-theme';
+} */
+.df-hidden {
+	display: none;
+}

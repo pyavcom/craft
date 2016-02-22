@@ -1,0 +1,41 @@
+<div class="entry-edit" style="width: 600px;">
+	<div class="entry-edit-head">
+		<h4><?php echo $this->getName();?></h4>
+	</div>
+	<fieldset>
+		<?php if($this->isUnit() && $this->getAttributeCode() != 'price'): ?>
+        <div class="field-row">	
+        	<input type="text" style="width: 300px;" class="text-field" id="unit[<?php echo $this->getAttributeId()?>]" name="unit[<?php echo $this->getAttributeId()?>]" value="<?php echo $this->getValue();?>" />
+        	<label for="unit[<?php echo $this->getAttributeId()?>]"><?php echo $this->__('Unit')?></label>
+        </div>
+        <div style="clear: both;"></div>
+        <?php endif;?>
+        <?php if($this->getAttributeCode() != 'price'): ?>
+        <div class="field-row">
+        	<label for="note[<?php echo $this->getAttributeId()?>]"><?php echo $this->__('Note')?></label>
+        	<textarea id="note[<?php echo $this->getAttributeId()?>]" name="note[<?php echo $this->getAttributeId()?>]" rows="3" cols="50"><?php echo $this->getNoteValue(); ?></textarea>
+        </div>
+        <div style="clear: both;"></div>
+        <?php //if($this->isHideafterCount()):?>
+        <div class="field-row">
+        	<input type="text" style="width: 300px;" class="text-field" id="hide[<?php echo $this->getAttributeId()?>]" name="hide[<?php echo $this->getAttributeId()?>]" value="<?php echo $this->getHideValue();?>" />
+        	<label for="hide[<?php echo $this->getAttributeId()?>]"><?php echo $this->__('Hide After Count')?></label>
+        </div>
+        <div style="clear: both;"></div>
+        <?php endif;?>
+        <?php if($this->isUnit()):?>
+        <div class="field-row">
+        	<?php echo $this->getSliderSelect();?>
+        	<label for="hideslider[<?php echo $this->getAttributeId()?>]"><?php echo $this->__('Mode Slider')?></label>
+        </div>
+        <div style="clear: both;"></div>
+        <?php if($this->getAttributeCode() != 'price'): ?>
+        <div class="field-row">        	
+        	<input type="hidden" name="decimal[<?php echo $this->getAttributeId()?>]" value="0" />
+        	<input type="checkbox" id="decimal[<?php echo $this->getAttributeId()?>]" name="decimal[<?php echo $this->getAttributeId()?>]" <?php if($this->getDecimal()):?>checked="checked"<?php endif;?> />
+        	<label for="decimal[<?php echo $this->getAttributeId()?>]"><?php echo $this->__('Is Decimal Number')?></label>
+        </div>
+        <?php endif;?>
+        <?php endif;?>
+	</fieldset>
+</div>

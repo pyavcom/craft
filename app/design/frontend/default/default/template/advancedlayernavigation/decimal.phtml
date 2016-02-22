@@ -1,0 +1,163 @@
+<?php if ($this->getItemsCount() && ($this->noCheckValues() || count($this->getValues()))): ?>
+<div class="filter-<?php echo $this->getVar()?>">
+      <div class="filter-name">
+            <span id="filter-<?php echo $this->getVar()?>" class="<?php if($this->getIsHidden()) :?>filter-hidden-value<?php endif?>"><?php echo $this->__($this->getName()); ?></span>
+            <?php if(trim(strlen($this->getNote()))):?>
+              	<span class="filter-note" title="<?php echo $this->getNote();?>"></span>
+                <?php endif;?>
+                <?php if($this->getShowCount()):?>
+              	<span id="show-count-<?php echo $this->getVar()?>" class="show-count-filter"><?php echo $this->__('Show All');?></span>
+            <?php endif;?> 
+        </div>
+        <div class="clearer"></div>
+        <div class="filter-values <?php if($this->getViewAll()):?>af-arrow-ud<?php endif;?>" id="filter-<?php echo $this->getVar()?>-value">
+        <ol class="decimal-filter-values af-fix-range <?php if($this->getIsHidden()) :?><?php if(!$this->getViewAll()):?>no-display<?php endif;?> a-fsliderclass<?php endif?>" id="<?php echo $this->getVar(); ?>">
+                <li class="af-price-input <?php if(!$this->getInputFields()):?>no-display<?php endif;?>">
+                <span><?php echo $this->__('From:');?></span>
+                <input class="input-text nav-decimal-from" type="text" maxlength="10" size="3" id="nav-decimal-from-<?php echo $this->getHtmlId(); ?>" value="<?php echo $this->getDecimalPangeFrom()?>" name="<?php echo $this->getHtmlId(); ?>-from"/>
+                <span class="nav-separator"> <?php echo $this->__('To:');?> </span>
+                <input class="input-text nav-decimal-to" type="text" maxlength="10" size="3" id="nav-decimal-to-<?php echo $this->getHtmlId(); ?>" value="<?php echo $this->getDecimalPangeTo()?>" name="<?php echo $this->getHtmlId(); ?>-to"/>
+                <?php echo $this->getUnit();?>
+                </li>            
+            <?php if($this->getSlider()):?>
+                <li class="af-decimal-slider-li">
+                	<div class="nav-slider" id="slider-range-<?php echo $this->getHtmlId(); ?>"></div>                	
+                </li>
+                <li class="af-price-range">
+                <span class="af-price-range-left">
+                <?php echo $this->getStartDecimalPangeFrom()?>
+                </span>
+                <span class="af-price-range-right">
+                <?php echo $this->getStartDecimalPangeTo()?>
+                </span>
+                <div class="clearer"></div>
+                </li>
+            <?php endif;?>
+        </ol>
+    <p class="af-bottom-filter"><?php if($this->getIsHidden()) :?><span class="filter-hidden-value-arrow"></span><?php endif?></p>
+    </div>
+</div>
+<script type="text/javascript">
+	jQuery(function() {
+		jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).slider({
+			range: true,
+			step: <?php echo $this->getStep(); ?>,
+			min: <?php echo $this->getStartDecimalPangeFrom()?>,
+			max: <?php echo $this->getStartDecimalPangeTo()?>,
+			values: [ <?php echo $this->getDecimalPangeFromValues()?>, <?php echo $this->getDecimalPangeToValues()?> ],
+			slide: function( event, ui ) {
+				if(ui.values[ 0 ] == jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).slider( "option" , "min" ) )
+				{
+					jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val('');
+					<?php if(!$this->getInputFields()): ?>
+					jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").html('').hide(); 
+					<?php endif;?>
+				} else {
+					jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val( ui.values[ 0 ]);
+					<?php if(!$this->getInputFields()): ?>
+					jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").html(ui.values[ 0 ] );
+					var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-first-handle" ).position();
+					jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10}).show();
+					<?php endif;?>
+				}
+
+				if(ui.values[ 1 ] == jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).slider( "option" , "max" ) )
+				{
+					jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>" ).val('');
+					<?php if(!$this->getInputFields()): ?>
+					jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").html('').hide();
+					<?php endif;?>
+				} else {
+					jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>" ).val( ui.values[ 1 ]);
+					<?php if(!$this->getInputFields()): ?>
+					jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").html( ui.values[ 1 ]);
+					var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-last-handle" ).position();
+					jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10}).show();
+					<?php endif;?>
+				}
+			},
+			create: function(event, ui) { 
+				jQuery("#slider-range-<?php echo $this->getHtmlId(); ?> a.ui-slider-handle:first").addClass("af-first-handle");
+				jQuery("#slider-range-<?php echo $this->getHtmlId(); ?> a.ui-slider-handle:last").addClass("af-last-handle");
+				<?php if(!$this->getInputFields()): ?>
+				jQuery("#slider-range-<?php echo $this->getHtmlId(); ?>").append("<div class='slider-value no-display' id='nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip'></div><div class='slider-value no-display' id='nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip'></div>");
+            	<?php endif;?>
+				}
+		});	
+		jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").change( function(){ 
+			var sl_min = jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val();
+			var sl_max = jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val();
+			jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).slider( "option", "values", [sl_min,sl_max] );
+			var pos = jQuery(this).position();
+			getFilterData(pos.top, pos.left);
+		});
+		jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").change( function(){
+			var sl_min = jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val();
+			var sl_max = jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val();
+			jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).slider( "option", "values", [sl_min,sl_max] );
+			var pos = jQuery(this).position();
+			getFilterData(pos.top, pos.left);
+		});	
+		jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).bind( "slidestop", function(event, ui) {
+			var pos = jQuery(this).position();
+			getFilterData(pos.top, pos.left);
+			<?php if(!$this->getInputFields()): ?>
+			jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").hide();
+			jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").hide();
+			<?php endif;?>
+			});	
+		<?php if(!$this->getInputFields()): ?>
+		jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).bind( "mouseenter", function(event, ui) {
+			if(jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-first-handle" ).position();
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-last-handle" ).position();
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").show();
+			}
+			if(jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-first-handle" ).position();
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-last-handle" ).position();
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").show();
+			}			
+			});	
+		jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).bind( "mousemove", function(event, ui) {
+			if(jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-first-handle" ).position();
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-last-handle" ).position();
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").show();
+			}
+			if(jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-first-handle" ).position();
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				var pos = jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?> .af-last-handle" ).position();
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").css({"left": pos.left - 10});
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").show();
+			}			
+			});
+		jQuery( "#slider-range-<?php echo $this->getHtmlId(); ?>" ).bind( "mouseleave", function(event, ui) {
+			if(jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				jQuery("#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").hide();
+			}
+			if(jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val().length)
+			{
+				jQuery("#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").hide();
+			}			
+			});	
+		jQuery(function (){
+			jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>-tooltip").html(jQuery( "#nav-decimal-from-<?php echo $this->getHtmlId(); ?>").val());
+			jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>-tooltip").html(jQuery( "#nav-decimal-to-<?php echo $this->getHtmlId(); ?>").val());
+			});
+		<?php endif;?>
+	});
+</script>
+<?php endif;?>

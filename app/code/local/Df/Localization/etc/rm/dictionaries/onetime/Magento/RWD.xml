@@ -1,0 +1,446 @@
+<?xml version='1.0'?>
+<dictionary>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>promotional-banner</id></block>
+		</conditions>
+		<actions>
+			<!-- Promotional Banner -->
+			<new_title>Промо-баннер</new_title>
+			<term>
+				<from>New Reductions on select merchandise</from>
+				<to>Новые скидки</to>
+			</term>
+			<term>
+				<from>SHOP NOW</from>
+				<to>открыть</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>footer_links_sm</id></block>
+		</conditions>
+		<actions>
+			<new_title>Ссылки в подвале</new_title>
+			<term>
+				<from>Connect With Us</from>
+				<to>Мы в соцсетях</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>homepage-image-carousel</id></block>
+		</conditions>
+		<actions>
+			<!-- Homepage Image Carousel -->
+			<new_title>Карусель на главной странице</new_title>
+			<term>
+				<from>SLIDE #01</from>
+				<to>Слайд №1</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>home-decor</id></block>
+		</conditions>
+		<actions>
+			<term>
+				<from><![CDATA[Home & Decor]]></from>
+				<to>Для дома и интерьера</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>dresses-skirts</id></block>
+		</conditions>
+		<actions>
+			<term>
+				<from><![CDATA[Dresses & Skirts]]></from>
+				<to>Платья и юбки</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>travel-gear-for-every-occasion</id></block>
+		</conditions>
+		<actions>
+			<!-- Travel Gear For Every Occasion -->
+			<new_title>Для путешествий</new_title>
+			<term>
+				<from><![CDATA[<strong style="display: block;    font-size: 24px;font-weight: 500; letter-spacing: 9px;">Travel gear</strong>For every occasion]]></from>
+				<to><![CDATA[<strong style="display: block;    font-size: 24px;font-weight: 500; letter-spacing: 9px;">Для путешествий</strong>]]></to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landing-bottom-promo-block</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Bottom Promo Block -->
+			<new_title>Целевая страница товарного раздела. Промо-блок в нижней части</new_title>
+			<term>
+				<from>50% OFF ALL SHOES!</from>
+				<to>Скидка 50% на всю обувь!</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-accessories-linksblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landingpage Accessories Links Block -->
+			<new_title>Целевая страница аксессуаров. Блок с ссылками</new_title>
+			<term>
+				<from>Eyewear</from>
+				<to>Очки</to>
+			</term>
+			<term>
+				<from>Jewelry</from>
+				<to>Украшения</to>
+			</term>
+			<term>
+				<from>Shoes</from>
+				<to>Обувь</to>
+			</term>
+			<term>
+				<from>"Bags"</from>
+				<to>"Сумки"</to>
+			</term>
+			<term>
+				<from><![CDATA[Bags & Luggage]]></from>
+				<to>Сумки и чемоданы</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-accessories-mainblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Accessories - Main Block -->
+			<new_title>Целевая страница аксессуаров. Главный блок</new_title>
+			<term>
+				<from>"Hold It - Jet setting just got easier with our innovative travel gear and accessories</from>
+				<to>Собираетесь куда-то лететь? Обратите внимание на наши товарны для путешествий.</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-accessories</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Accessories -->
+			<new_title>Целевая страница аксессуаров</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>main-image-404-page</id></block>
+		</conditions>
+		<actions>
+			<!-- Main image 404 Page -->
+			<new_title>Пиктограмма при отсутствии страницы</new_title>
+			<term>
+				<from>"image404"</from>
+				<to>"Пиктограмма при отсутствии страницы"</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>plp-header</id></block>
+		</conditions>
+		<actions>
+			<!-- PLP Header -->
+			<new_title>Сообщение про новую коллекцию в шапке</new_title>
+			<term>
+				<from><![CDATA[OUR NEW COLLECTION <br/>IS HERE]]></from>
+				<to><![CDATA[Новая коллекция]]></to>
+			</term>
+			<term>
+				<from>SHOP NEW ARRIVALS</from>
+				<to>открыть</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>couponing</id></block>
+		</conditions>
+		<actions>
+			<!-- Couponing -->
+			<new_title>«Есть вопросы?» (отключен)</new_title>
+			<term>
+				<from>Have Questions?</from>
+				<to>Есть вопросы?</to>
+			</term>
+			<term>
+				<from>We'd Love to help.</from>
+				<to>С радостью поможем</to>
+			</term>
+			<term>
+				<from>EMAIL CUSTOMER SUPPORT</from>
+				<to>Служба поддержки</to>
+			</term>
+			<term>
+				<from><![CDATA[VIEW OUR RETURN &amp; EXCHANGE POLICY]]></from>
+				<to>Правила обмена и возврата</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-home</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Home -->
+			<new_title>Целевая страница. Товары для дома</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-home</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Home -->
+			<new_title>Целевая страница. Товары для дома и интерьера</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-home-mainblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Home - Main Block -->
+			<new_title>Целевая страница. Товары для дома и интерьера. Основной блок</new_title>
+			<term>
+				<from>Home Chic Home - luxury isn't only for hotel living</from>
+				<to>Роскошь как в отеле!</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-home-linksblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landingpage Home Links Block -->
+			<new_title>Целевая страница. Товары для дома и интерьера. Блок с ссылками</new_title>
+			<term>
+				<from><![CDATA[Books &amp; Music]]></from>
+				<to>Книги и музыка</to>
+			</term>
+			<term>
+				<from><![CDATA[Bed &amp; Bath]]></from>
+				<to>Для сна и ванны</to>
+			</term>
+			<term>
+				<from><![CDATA[Electronics]]></from>
+				<to>Гаджеты</to>
+			</term>
+			<term>
+				<from><![CDATA[Decorative Accents]]></from>
+				<to>Предметы интерьера</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-men</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Men -->
+			<new_title>Целевая страница. Мужская одежда</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-men-mainblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Men - Main Block -->
+			<new_title>Целевая страница. Мужская одежда. Основной блок</new_title>
+			<term>
+				<from>Bold New Blues - superior fabrics and tailored fits in subtle and standout hues</from>
+				<to>Новая коллекция деловой одежды</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-men-linksblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landingpage Men Links Block -->
+			<new_title>Целевая страница. Мужская одежда. Блок с ссылками</new_title>
+			<term>
+				<from>New Arrivals</from>
+				<to>Новая коллекция</to>
+			</term>
+			<term>
+				<from>Shirts</from>
+				<to>Рубашки</to>
+			</term>
+			<term>
+				<from>Tees, Knits and Polos</from>
+				<to>Майки, футболки и поло</to>
+			</term>
+			<term>
+				<from><![CDATA[Pants &amp; Denim]]></from>
+				<to>Брюки и джинсы</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-women</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Women -->
+			<new_title>Целевая страница. Женская одежда</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-women-mainblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Women - Main Block -->
+			<new_title>Целевая страница. Женская одежда. Основной блок</new_title>
+			<term>
+				<from>Bon Voyage - sleek and stylish selections for on-the-go</from>
+				<to>Стильная одежда для путешествий!</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-women-linksblock</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landingpage Women Links Block -->
+			<new_title>Целевая страница. Женская одежда. Блок с ссылками</new_title>
+			<term>
+				<from>New Arrivals</from>
+				<to>Новая коллекция</to>
+			</term>
+			<term>
+				<from><![CDATA[Tops &amp; Blouses]]></from>
+				<to>Топы и блузки</to>
+			</term>
+			<term>
+				<from><![CDATA[Pants &amp; Denim]]></from>
+				<to>Брюки и джинсы</to>
+			</term>
+			<term>
+				<from><![CDATA[Dresses &amp; Skirts]]></from>
+				<to>Платья и юбки</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>footer_links_company</id></block>
+		</conditions>
+		<actions>
+			<!-- Footer Links Company -->
+			<new_title>Подвал страницы. Колонка с ссылками о магазине/компании</new_title>
+			<term>
+				<from>Company</from>
+				<to>Компания</to>
+			</term>
+			<term>
+				<from>About Us</from>
+				<to>О нас</to>
+			</term>
+			<term>
+				<from>Contact Us</from>
+				<to>Контакты</to>
+			</term>
+			<term>
+				<from>Customer Service</from>
+				<to>Служба поддержки</to>
+			</term>
+			<term>
+				<from>Privacy Policy</from>
+				<to>Условия продажи</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>category-landingpage-vip</id></block>
+		</conditions>
+		<actions>
+			<!-- Category Landing Page Vip -->
+			<new_title>Целевая страница. Премиум</new_title>
+			<term>
+				<from>Sky Loung - exclusive prices visible to members only - become a member now</from>
+				<to>Закрытая распродажа для членов клуба</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>cms_menu</id></block>
+		</conditions>
+		<actions>
+			<!-- CMS Menu -->
+			<new_title>Меню. Раздел с ссылками о магазине/компании</new_title>
+			<term>
+				<from>Company</from>
+				<to>Компания</to>
+			</term>
+			<term>
+				<from>About Us</from>
+				<to>О нас</to>
+			</term>
+			<term>
+				<from>Contact us</from>
+				<to>Контакты</to>
+			</term>
+			<term>
+				<from>Customer Service</from>
+				<to>Служба поддержки</to>
+			</term>
+			<term>
+				<from>Privacy Policy</from>
+				<to>Условия продажи</to>
+			</term>
+		</actions>
+	</rule>
+</dictionary>

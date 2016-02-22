@@ -1,0 +1,20 @@
+
+
+                
+    <div class="price-box">
+                                
+                    <p class="old-price">
+                <span class="price-label">Обычная цена:</span>
+                <span class="price" id="old-price-340-widget-catalogsale-c9f1efced24972a076a450cd0f925e65">
+                    1 052 грн.                </span>
+            </p>
+
+                        <p class="special-price">
+                <span class="price-label">Цена со скидкой:</span>
+                <span class="price" id="product-price-340-widget-catalogsale-c9f1efced24972a076a450cd0f925e65">
+                    699 грн.                </span>
+            </p>
+                    
+    
+        </div>
+

@@ -1,0 +1,421 @@
+URL:                 http://craftwear.com.ua/index.php/admin/catalog_product/save/id/177/
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2016-01-14 13:30:51 MSK***********************************
+Warning: include(/home3/pyavcom/public_html/craft3/app/code/local/Df/Promotion/Model/Settings.php): failed to open stream: Too many open files in system  in /home3/pyavcom/public_html/craft3/lib/Varien/Autoload.php on line 93
+***********************************
+Файл:        lib/Varien/Autoload.php
+Строка:      93
+Субъект:     Varien_Autoload::autoload
+Объект:      mageCoreErrorHandler
+Контекст:    
+if ($this->_isIncludePathDefined) {
+            $classFile =  COMPILER_INCLUDE_PATH . DIRECTORY_SEPARATOR . $class;
+        } else {
+            $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
+        }
+        $classFile.= '.php';
+        //echo $classFile;die();
+        return include $classFile;
+    }
+
+    /**
+     * Register autoload scope
+     * This process allow include scope file which can contain classes
+     * definition which are used for this scope
+     *
+     * @param string $code scope code
+************************************
+Файл:        lib/Varien/Autoload.php
+Строка:      93
+Субъект:     Varien_Autoload::autoload
+Объект:      Varien_Autoload::autoload
+Контекст:    
+if ($this->_isIncludePathDefined) {
+            $classFile =  COMPILER_INCLUDE_PATH . DIRECTORY_SEPARATOR . $class;
+        } else {
+            $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
+        }
+        $classFile.= '.php';
+        //echo $classFile;die();
+        return include $classFile;
+    }
+
+    /**
+     * Register autoload scope
+     * This process allow include scope file which can contain classes
+     * definition which are used for this scope
+     *
+     * @param string $code scope code
+************************************
+Файл:        
+Строка:      0
+Субъект:     spl_autoload_call
+Объект:      Varien_Autoload::autoload
+Файл:        app/code/local/Df/Admin/Model/Settings.php
+Строка:      30
+Субъект:     Df_Admin_Model_Settings::promotion
+Объект:      spl_autoload_call
+Контекст:    
+	/** @return Df_Localization_Model_Settings */
+	public function localization() {return Df_Localization_Model_Settings::s();}
+	/** @return Df_Logging_Model_Settings */
+	public function logging() {return Df_Logging_Model_Settings::s();}
+	/** @return Df_Newsletter_Model_Settings */
+	public function newsletter() {return Df_Newsletter_Model_Settings::s();}
+	/** @return Df_Promotion_Model_Settings */
+	public function promotion() {return Df_Promotion_Model_Settings::s();}
+	/** @return Df_Reports_Model_Settings */
+	public function reports() {return Df_Reports_Model_Settings::s();}
+	/** @return Df_Sales_Model_Settings */
+	public function sales() {return Df_Sales_Model_Settings::s();}
+	/** @return Df_Seo_Model_Settings */
+	public function seo() {return Df_Seo_Model_Settings::s();}
+	/** @return Df_Shipping_Model_Settings */
+	public function shipping() {return Df_Shipping_Model_Settings::s();}
+************************************
+Файл:        app/code/local/Df/PromoGift/Model/Indexer.php
+Строка:      164
+Субъект:     Df_PromoGift_Model_Indexer::_processEvent
+Объект:      Df_Admin_Model_Settings::promotion
+Контекст:    
+		 */
+		try {
+			if (
+					df_enabled(Df_Core_Feature::PROMO_GIFT)
+				&&
+					df_module_enabled(Df_Core_Module::PROMO_GIFT)
+				&&
+					df_cfg()->promotion()->gifts()->getEnabled()
+			) {
+				/** @var string $entityType */
+				$entityType = $event->getEntity();
+				/** @var mixed $entity */
+				$entity = $event[Df_Index_Const::EVENT_PARAM__DATA_OBJECT];
+				/** @var string $eventType */
+				$eventType = $event->getType();
+				if (Mage_Core_Model_Website::ENTITY === $entityType) {
+************************************
+Файл:        app/code/core/Mage/Index/Model/Indexer/Abstract.php
+Строка:      103
+Субъект:     Mage_Index_Model_Indexer_Abstract::processEvent
+Объект:      Df_PromoGift_Model_Indexer::_processEvent
+Контекст:    
+*
+     * @param   Mage_Index_Model_Event $event
+     * @return  Mage_Index_Model_Indexer_Abstract
+     */
+    public function processEvent(Mage_Index_Model_Event $event)
+    {
+        if ($this->matchEvent($event)) {
+            $this->_processEvent($event);
+        }
+        return $this;
+    }
+
+    /**
+     * Check if event can be matched by process
+     *
+     * @param Mage_Index_Model_Event $event
+************************************
+Файл:        app/code/core/Mage/Index/Model/Process.php
+Строка:      279
+Субъект:     Mage_Index_Model_Process::processEvent
+Объект:      Mage_Index_Model_Indexer_Abstract::processEvent
+Контекст:    
+}
+
+        $this->_getResource()->updateProcessStartDate($this);
+        $this->_setEventNamespace($event);
+        $isError = false;
+
+        try {
+            $this->getIndexer()->processEvent($event);
+        } catch (Exception $e) {
+            $isError = true;
+        }
+        $event->resetData();
+        $this->_resetEventNamespace($event);
+        $this->_getResource()->updateProcessEndDate($this);
+        $event->addProcessId($this->getId(), $isError ? self::EVENT_STATUS_ERROR : self::EVENT_STATUS_DONE);
+************************************
+Файл:        app/code/core/Mage/Index/Model/Process.php
+Строка:      635
+Субъект:     Mage_Index_Model_Process::safeProcessEvent
+Объект:      Mage_Index_Model_Process::processEvent
+Контекст:    
+return $this;
+        }
+        if (!$this->matchEvent($event)) {
+            return $this;
+        }
+        $this->lock();
+        try {
+            $this->processEvent($event);
+            $this->unlock();
+        } catch (Exception $e) {
+            $this->unlock();
+            throw $e;
+        }
+        return $this;
+    }
+************************************
+Файл:        
+Строка:      0
+Субъект:     call_user_func_array
+Объект:      Mage_Index_Model_Process::safeProcessEvent
+Файл:        app/code/core/Mage/Index/Model/Indexer.php
+Строка:      324
+Субъект:     Mage_Index_Model_Indexer::_runAll
+Объект:      call_user_func_array
+Контекст:    
+}
+                        }
+                    }
+                }
+            }
+
+            if (!$hasLocks) {
+                call_user_func_array(array($process, $method), $args);
+                $processed[] = $code;
+            }
+        }
+    }
+
+    /**
+     * Enable/Disable keys in index tables
+     *
+************************************
+Файл:        app/code/core/Mage/Index/Model/Indexer.php
+Строка:      194
+Субъект:     Mage_Index_Model_Indexer::indexEvent
+Объект:      Mage_Index_Model_Indexer::_runAll
+Контекст:    
+* Index one event by all processes
+     *
+     * @param   Mage_Index_Model_Event $event
+     * @return  Mage_Index_Model_Indexer
+     */
+    public function indexEvent(Mage_Index_Model_Event $event)
+    {
+        $this->_runAll('safeProcessEvent', array($event));
+        return $this;
+    }
+
+    /**
+     * Register event in each indexing process process
+     *
+     * @param Mage_Index_Model_Event $event
+     */
+************************************
+Файл:        app/code/core/Mage/Index/Model/Indexer.php
+Строка:      263
+Субъект:     Mage_Index_Model_Indexer::processEntityAction
+Объект:      Mage_Index_Model_Indexer::indexEvent
+Контекст:    
+$this->_currentEvent = $event;
+                $this->_changeKeyStatus(false);
+            }
+
+            $resourceModel->beginTransaction();
+            $this->_allowTableChanges = false;
+            try {
+                $this->indexEvent($event);
+                $resourceModel->commit();
+            } catch (Exception $e) {
+                $resourceModel->rollBack();
+                if ($allowTableChanges) {
+                    $this->_allowTableChanges = true;
+                    $this->_changeKeyStatus(true);
+                    $this->_currentEvent = null;
+                }
+************************************
+Файл:        app/code/core/Mage/Catalog/Model/Product.php
+Строка:      552
+Субъект:     Mage_Catalog_Model_Product::_afterSave
+Объект:      Mage_Index_Model_Indexer::processEntityAction
+Контекст:    
+$this->getOptionInstance()->setProduct($this)
+            ->saveOptions();
+
+        $result = parent::_afterSave();
+
+        Mage::getSingleton('index/indexer')->processEntityAction(
+            $this, self::ENTITY, Mage_Index_Model_Event::TYPE_SAVE
+        );
+        return $result;
+    }
+
+    /**
+     * Clear chache related with product and protect delete from not admin
+     * Register indexing event before delete product
+     *
+     * @return Mage_Catalog_Model_Product
+************************************
+Файл:        app/code/core/Mage/Core/Model/Abstract.php
+Строка:      319
+Субъект:     Mage_Core_Model_Abstract::save
+Объект:      Mage_Catalog_Model_Product::_afterSave
+Контекст:    
+}
+        $this->_getResource()->beginTransaction();
+        $dataCommited = false;
+        try {
+            $this->_beforeSave();
+            if ($this->_dataSaveAllowed) {
+                $this->_getResource()->save($this);
+                $this->_afterSave();
+            }
+            $this->_getResource()->addCommitCallback(array($this, 'afterCommitCallback'))
+                ->commit();
+            $this->_hasDataChanges = false;
+            $dataCommited = true;
+        } catch (Exception $e) {
+            $this->_getResource()->rollBack();
+            $this->_hasDataChanges = true;
+************************************
+Файл:        app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php
+Строка:      714
+Субъект:     Mage_Adminhtml_Catalog_ProductController::saveAction
+Объект:      Mage_Core_Model_Abstract::save
+Контекст:    
+$data = $this->getRequest()->getPost();
+        if ($data) {
+            $this->_filterStockData($data['product']['stock_data']);
+
+            $product = $this->_initProductSave();
+
+            try {
+                $product->save();
+                $productId = $product->getId();
+
+                /**
+                 * Do copying data to stores
+                 */
+                if (isset($data['copy_to_stores'])) {
+                    foreach ($data['copy_to_stores'] as $storeTo=>$storeFrom) {
+                        $newProduct = Mage::getModel('catalog/product')
+************************************
+Файл:        app/code/core/Mage/Core/Controller/Varien/Action.php
+Строка:      419
+Субъект:     Mage_Core_Controller_Varien_Action::dispatch
+Объект:      Mage_Adminhtml_Catalog_ProductController::saveAction
+Контекст:    
+/**
+                 * preDispatch() didn't change the action, so we can continue
+                 */
+                if (!$this->getFlag('', self::FLAG_NO_DISPATCH)) {
+                    $_profilerKey = self::PROFILER_KEY.'::'.$this->getFullActionName();
+
+                    Varien_Profiler::start($_profilerKey);
+                    $this->$actionMethodName();
+                    Varien_Profiler::stop($_profilerKey);
+
+                    Varien_Profiler::start(self::PROFILER_KEY.'::postdispatch');
+                    $this->postDispatch();
+                    Varien_Profiler::stop(self::PROFILER_KEY.'::postdispatch');
+                }
+            }
+        }
+************************************
+Файл:        app/code/core/Mage/Core/Controller/Varien/Router/Standard.php
+Строка:      250
+Субъект:     Mage_Core_Controller_Varien_Router_Standard::match
+Объект:      Mage_Core_Controller_Varien_Action::dispatch
+Контекст:    
+// set parameters from pathinfo
+        for ($i = 3, $l = sizeof($p); $i < $l; $i += 2) {
+            $request->setParam($p[$i], isset($p[$i+1]) ? urldecode($p[$i+1]) : '');
+        }
+
+        // dispatch action
+        $request->setDispatched(true);
+        $controllerInstance->dispatch($action);
+
+        return true;
+    }
+
+    /**
+     * Get router default request path
+     * @return string
+     */
+************************************
+Файл:        app/code/core/Mage/Core/Controller/Varien/Front.php
+Строка:      176
+Субъект:     Mage_Core_Controller_Varien_Front::dispatch
+Объект:      Mage_Core_Controller_Varien_Router_Standard::match
+Контекст:    
+Varien_Profiler::start('mage::dispatch::config_url_rewrite');
+        $this->rewrite();
+        Varien_Profiler::stop('mage::dispatch::config_url_rewrite');
+        Varien_Profiler::start('mage::dispatch::routers_match');
+        $i = 0;
+        while (!$request->isDispatched() && $i++<100) {
+            foreach ($this->_routers as $router) {
+                if ($router->match($this->getRequest())) {
+                    break;
+                }
+            }
+        }
+        Varien_Profiler::stop('mage::dispatch::routers_match');
+        if ($i>100) {
+            Mage::throwException('Front controller reached 100 router match iterations');
+        }
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      354
+Субъект:     Mage_Core_Model_App::run
+Объект:      Mage_Core_Controller_Varien_Front::dispatch
+Контекст:    
+$scopeCode = isset($params['scope_code']) ? $params['scope_code'] : '';
+                $scopeType = isset($params['scope_type']) ? $params['scope_type'] : 'store';
+                $this->_initCurrentStore($scopeCode, $scopeType);
+                $this->_initRequest();
+                Mage_Core_Model_Resource_Setup::applyAllDataUpdates();
+            }
+
+            $this->getFrontController()->dispatch();
+        }
+        return $this;
+    }
+
+    /**
+     * Initialize PHP environment
+     *
+     * @return Mage_Core_Model_App
+************************************
+Файл:        app/Mage.php
+Строка:      683
+Субъект:     Mage::run
+Объект:      Mage_Core_Model_App::run
+Контекст:    
+self::$_events = new Varien_Event_Collection();
+            self::_setIsInstalled($options);
+            self::_setConfigModel($options);
+            self::$_app->run(array(
+                'scope_code' => $code,
+                'scope_type' => $type,
+                'options'    => $options,
+            ));
+            Varien_Profiler::stop('mage');
+        } catch (Mage_Core_Model_Session_Exception $e) {
+            header('Location: ' . self::getBaseUrl());
+            die();
+        } catch (Mage_Core_Model_Store_Exception $e) {
+            require_once(self::getBaseDir() . DS . 'errors' . DS . '404.php');
+            die();
+        } catch (Exception $e) {
+************************************
+Файл:        index.php
+Строка:      87
+Субъект:     
+Объект:      Mage::run
+Контекст:    
+/* Store or website code */
+$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+
+/* Run store or run website */
+$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+
+Mage::run($mageRunCode, $mageRunType);
+************************************

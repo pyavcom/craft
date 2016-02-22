@@ -1,0 +1,888 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Размерная сетка Craft</title>
+<meta name="description" content="Термобелье Craft имеет размерную сетку, ориентированную на спортивное телосложение. Как подобрать размер термобелья." />
+<meta name="keywords" content="как подобрать размер, как подобрать размер термобелье, размеры craft, размерная сетка craft" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://craftwear.com.ua/media/favicon/default/favicon.ico.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://craftwear.com.ua/media/favicon/default/favicon.ico.png" type="image/x-icon" />
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script> -->
+<script type="text/javascript" src="http://craftwear.com.ua/js/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/js/jquery/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+
+<!--<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/base/default/js/jquery-1.8.1.min.js"></script>-->
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.modal.1.4.1.min.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/mwheelIntent.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/sidebar_menu.js"></script>
+
+
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/scripts.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.color.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jqtransform.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/easyTooltip.js"></script>
+<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/jquery.jcarousel.min.js"></script>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="http://craftwear.com.ua/skin/frontend/default/theme392/js/AC_RunActiveContent.js" language="javascript"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://craftwear.com.ua/js/blank.html';
+    var BLANK_IMG = 'http://craftwear.com.ua/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/js/df/css/compiled/all.css?v=2.40.1" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/js/df/css/compiled/themes.css?v=2.40.1" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/prettyPhoto.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/js/fancybox/jquery.fancybox-1.3.4.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/rm/default/df/css/compiled/all.css?v=2.40.1" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/rm/default/df/legacy/banner/css/main.css?v=2.40.1" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/ecommerceteam/cloud-zoom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/easytabs.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/catalogsale.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/print.css" media="print" />
+<script type="text/javascript" src="http://craftwear.com.ua/media/js/8fe15932887ccf79add25f2f706e154a.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://craftwear.com.ua/skin/frontend/default/theme392/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://craftwear.com.ua/media/js/083bd58f3f136bde9f1169aaefa805b5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.craftwear.com.ua';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA","UA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0438\u0437 \u0441\u043f\u0438\u0441\u043a\u0430.","This is a required field.":"\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0434\u043b\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f.","Please enter a valid number in this field.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e (\u0438\u043c\u0435\u043d\u043d\u043e \u0447\u0438\u0441\u043b\u043e, \u0431\u0435\u0437 \u0431\u0443\u043a\u0432).","The value is not within the specified range.":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0432\u0445\u043e\u0434\u0438\u0442 \u0432 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0446\u0438\u0444\u0440\u044b. \u0418\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0438\u043b\u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432, \u043d\u0430\u043f\u043e\u0434\u043e\u0431\u0438\u0435 \u0442\u043e\u0447\u0435\u043a \u0438 \u0437\u0430\u043f\u044f\u0442\u044b\u0445.","Please use letters only (a-z or A-Z) in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z), \u0446\u0438\u0444\u0440\u044b (0-9) \u0438\u043b\u0438 \u043f\u043e\u0434\u0447\u0451\u0440\u043a\u0438\u0432\u0430\u043d\u0438\u044f(_). \u041f\u0435\u0440\u0432\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0431\u0443\u043a\u0432\u043e\u0439.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z) \u0438\u043b\u0438 \u0446\u0438\u0444\u0440\u044b (0-9). \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u044b.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z), \u0446\u0438\u0444\u0440\u044b (0-9), \u043f\u0440\u043e\u0431\u0435\u043b\u044b \u0438\u043b\u0438 #.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043d\u0435 \u0441\u043c\u043e\u0433\u043b\u0430 \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0442\u044c \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0412\u0430\u043c\u0438 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430. \u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430 \u0432 \u043a\u0430\u043a\u043e\u043c-\u043b\u0438\u0431\u043e \u043e\u0431\u0449\u0435\u0443\u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u043c \u0444\u043e\u0440\u043c\u0430\u0442\u0435.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0444\u0430\u043a\u0441\u0430. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, (123) 456-7890 \u0438\u043b\u0438 123-456-7890.","Please enter a valid date.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid email address. For example johndoe@domain.com.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u043f\u043e\u0447\u0442\u044b. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u00abivanov@mail.ru\u00bb.","Please use only visible characters and spaces.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0438\u0434\u0438\u043c\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0434\u043b\u0438\u043d\u043e\u0439 \u043d\u0435 \u043c\u0435\u043d\u0435\u0435 6 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0432 \u043d\u0430\u0447\u0430\u043b\u0435 \u0438 \u0432 \u043a\u043e\u043d\u0446\u0435 \u0441\u0442\u0440\u043e\u043a\u0438 \u043d\u0435 \u0443\u0447\u0438\u0442\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u043e\u0439.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0430\u0440\u043e\u043b\u044c \u0434\u043e\u043b\u0436\u0435\u043d \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u043a\u0430\u043a \u0431\u0443\u043a\u0432\u044b, \u0442\u0430\u043a \u0438 \u0446\u0438\u0444\u0440\u044b.","Please make sure your passwords match.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043e\u0434\u043d\u043e \u0438 \u0442\u043e \u0436\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u043e\u0438\u0445 \u043f\u043e\u043b\u044f\u0445 \u0434\u043b\u044f \u043f\u0430\u0440\u043e\u043b\u044f.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0435 \u0437\u0430\u0431\u0443\u0434\u044c\u0442\u0435 \u0443\u043a\u0430\u0437\u0430\u0442\u044c \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b (http:\/\/, https:\/\/ \u0438\u043b\u0438 ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, http:\/\/www.example.com \u0438\u043b\u0438 www.example.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"\u0414\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0432 \u0430\u0434\u0440\u0435\u0441\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b: \u043b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0435 \u0431\u0443\u043a\u0432\u044b, \u0446\u0438\u0444\u0440\u044b, \u0434\u0435\u0444\u0438\u0441, \u043f\u043e\u0434\u0447\u0451\u0440\u043a\u0438\u0432\u0430\u043d\u0438\u0435, \u043e\u0434\u043d\u0430 \u0442\u043e\u0447\u043a\u0430. \u041f\u0440\u0438\u043c\u0435\u0440\u044b: \u00abexample-page\u00bb, \u00abexample-page.html\u00bb \u0438\u043b\u0438 \u00abanotherlevel\/example-page\u00bb.","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 XML-\u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, something_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 9060 \u0438\u043b\u0438 90602-1234.","Please enter a valid zip code.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0434\u043b\u044f \u0434\u0430\u0442\u044b \u0444\u043e\u0440\u043c\u0430\u0442: dd\/mm\/yyyy. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 17\/03\/2006 \u0434\u043b\u044f 17-\u0433\u043e \u043c\u0430\u0440\u0442\u0430 2006 \u0433\u043e\u0434\u0430.","Please enter a valid $ amount. For example $100.00.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0435\u043d\u0435\u0436\u043d\u0443\u044e \u0432\u0435\u043b\u0438\u0447\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, $100.00.","Please select one of the above options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u044b\u0448\u0435\u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select one of the options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select State\/Province.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0431\u043b\u0430\u0441\u0442\u044c.","Please enter a number greater than 0 in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0.","Please enter a number 0 or greater in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0 \u0438\u043b\u0438 0.","Please enter a valid credit card number.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Credit card number does not match credit card type.":"\u041d\u043e\u043c\u0435\u0440 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u043c\u0443 \u0432\u0430\u043c\u0438 \u0442\u0438\u043f\u0443 \u043a\u0430\u0440\u0442\u044b. \u0422\u0430\u043a\u043e\u0435 \u043c\u043e\u0433\u043b\u043e \u0441\u043b\u0443\u0447\u0438\u0442\u044c\u0441\u044f, \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0435\u0441\u043b\u0438 \u0412\u044b \u0443\u043a\u0430\u0437\u0430\u043b\u0438 \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0442\u0438\u043f\u0430 \u043a\u0430\u0440\u0442\u044b \u00abVisa\u00bb, \u0430 \u043d\u043e\u043c\u0435\u0440 \u2014 \u043e\u0442 \u043a\u0430\u0440\u0442\u044b \u00abMasterCard\u00bb.","Card type does not match credit card number.":"\u041d\u043e\u043c\u0435\u0440 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u043c\u0443 \u0432\u0430\u043c\u0438 \u0442\u0438\u043f\u0443 \u043a\u0430\u0440\u0442\u044b. \u0422\u0430\u043a\u043e\u0435 \u043c\u043e\u0433\u043b\u043e \u0441\u043b\u0443\u0447\u0438\u0442\u044c\u0441\u044f, \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0435\u0441\u043b\u0438 \u0412\u044b \u0443\u043a\u0430\u0437\u0430\u043b\u0438 \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0442\u0438\u043f\u0430 \u043a\u0430\u0440\u0442\u044b \u00abVisa\u00bb, \u0430 \u043d\u043e\u043c\u0435\u0440 \u2014 \u043e\u0442 \u043a\u0430\u0440\u0442\u044b \u00abMasterCard\u00bb.","Incorrect credit card expiration date.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0435 \u043c\u0435\u0441\u044f\u0446 \u0438 \u0433\u043e\u0434 \u0438\u0441\u0442\u0435\u0447\u0435\u043d\u0438\u044f \u0441\u0440\u043e\u043a\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0412\u0430\u0448\u0435\u0439 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b. \u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044c \u0442\u0430\u043a\u0436\u0435, \u0447\u0442\u043e \u0441\u0440\u043e\u043a \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0412\u0430\u0448\u0435\u0439 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u0435\u0449\u0451 \u043d\u0435 \u0438\u0441\u0442\u0451\u043a.","Please enter a valid credit card verification number.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u0434 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u043f\u043e\u0434\u043b\u0438\u043d\u043d\u043e\u0441\u0442\u0438 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e CSS - \u0434\u043b\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 100px \u0438\u043b\u0438 77pt \u0438\u043b\u0438 20em \u0438\u043b\u0438 .5ex \u0438\u043b\u0438 50%.","Text length does not satisfy specified text range.":"\u0423\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0412\u0430\u043c\u0438 \u0442\u0435\u043a\u0441\u0442 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0434\u043b\u0438\u043d\u043d\u044b\u0439 \u0438\u043b\u0438 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0439.<br\/>\u041a\u0430\u043a \u043f\u0440\u0430\u0432\u0438\u043b\u043e, \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f \u043d\u0430 \u0434\u043b\u0438\u043d\u0443 \u0442\u0435\u043a\u0441\u0442\u0430 \u0443\u043a\u0430\u0437\u0430\u043d\u044b \u0432 \u043f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0438 \u043a \u043f\u043e\u043b\u044e \u0432\u0432\u043e\u0434\u0430, \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u0438\u0445 \u0432\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c\u043d\u043e.","Please enter a number lower than 100.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0447\u0438\u0441\u043b\u043e \u043c\u0435\u043d\u044c\u0448\u0435 100.","Please enter issue number or start date for switch\/solo card type.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0432\u043e\u043f\u0440\u043e\u0441\u0430 \u0438\u043b\u0438 \u0434\u0430\u0442\u0443 \u043d\u0430\u0447\u0430\u043b\u0430 \u0434\u043b\u044f \u0442\u0438\u043f\u0430 \u043a\u0430\u0440\u0442\u044b switch\/solo.","Please wait, loading...":"\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...","This date is a required value.":"\u042d\u0442\u0430 \u0434\u0430\u0442\u0430 - \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435.","Please enter a valid day (1-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c (1-%d).","Please enter a valid month (1-12).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043c\u0435\u0441\u044f\u0446 (1-12).","Please enter a valid year (1900-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0433\u043e\u0434 (1900-%d).","Please enter a valid full date":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u043f\u043e\u043b\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid date between %s and %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u043c\u0435\u0436\u0434\u0443 %s \u0438 %s","Please enter a valid date equal to or greater than %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u0431\u043e\u043b\u044c\u0448\u0435 \u0447\u0435\u043c %s","Please enter a valid date less than or equal to %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 \u0447\u0435\u043c %s","Complete":"\u0417\u0430\u0432\u0435\u0440\u0448\u0451\u043d","Add Products":"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0442\u043e\u0432\u0430\u0440\u044b","Please choose to register or to checkout as a guest":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u0434\u0435\u043b\u0430\u0439\u0442\u0435 \u0432\u044b\u0431\u043e\u0440: \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0438\u043b\u0438 \u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437 \u0431\u0435\u0437 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u043d\u0435\u0441\u0438\u0442\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0432 \u0430\u0434\u0440\u0435\u0441 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438.","Please specify shipping method.":"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0441\u043f\u043e\u0441\u043e\u0431 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438.","Your order cannot be completed at this time as there is no payment methods available for it.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u043e\u043f\u043b\u0430\u0442\u044b.","Insert Widget...":"\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0432\u0438\u0434\u0436\u0435\u0442...","Please specify payment method.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u043a\u0430\u0436\u0438\u0442\u0435 \u043c\u0435\u0442\u043e\u0434 \u043e\u043f\u043b\u0430\u0442\u044b."});
+        //]]></script><script type="text/javascript">
+$(function() {
+
+	var marquee = $("#marquee"); 
+	marquee.css({"overflow": "hidden", "width": "100%"});
+
+	// оболочка для текста ввиде span (IE не любит дивы с inline-block)
+	marquee.wrapInner("<span>");
+	marquee.find("span").css({ "width": "50%", "display": "inline-block", "text-align":"center" }); 
+	marquee.append(marquee.find("span").clone()); // тут у нас два span с текстом
+
+	marquee.wrapInner("<div>");
+	marquee.find("div").css("width", "200%");
+
+	var reset = function() {
+		$(this).css("margin-left", "0%");
+		$(this).animate({ "margin-left": "-100%" }, 12000, 'linear', reset);
+	};
+
+	reset.call(marquee.find("div"));
+
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-37682862-1']);
+  _gaq.push(['_setDomainName', 'craftwear.com.ua']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-37682862-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics --></head>
+<body class=" cms-page-view cms-craft-sizes">
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-37682862-1']);
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<style type='text/css'>
+	.sidebar .block-title {
+		text-transform: lowercase;
+	}
+	
+	.header .links, .header-container .quick-access .links a {
+		text-transform: lowercase;
+	}
+	
+	.category-products .ratings {
+		display: none;
+	}
+	
+	p.bugs {
+		display: none;
+	}
+</style>
+<script type='text/javascript'>
+	rm.namespace('rm.tweaks');
+	rm.tweaks.options = {"package":"default","theme":"default","version":{"rm":"2.40.1","core":"1.7.0.2"},"formKey":"zSvpjs54IPg8nTU2","skin":"theme392"};
+</script><div class="wrapper">
+<div class="wrapper-tail">
+<p id="back-top"> <a href="#top"><span></span></a> </p>
+<div class="tail-top">        <div class="page">
+        <div class="header-container">
+    <div class="header" style="padding:0px 0px 10px 0px;background:url('http://craftwear.com.ua/images/header1.jpg')">
+        <div class="header-row">
+         <h4 class="welcome-msg">Термобелье Craft купить у официального представителя в Украине. </h4>
+        <ul class="links">
+                                                        <li ><a rel="nofollow" href="http://craftwear.com.ua/checkout/cart/" title="Заказ" class="top-link-cart"><span>Заказ</span></a></li>
+                                <li ><a rel="nofollow" href="http://craftwear.com.ua/checkout/" title="Оформить заказ" class="top-link-checkout"><span>Оформить заказ</span></a></li>
+                                <li class=" last" ><a rel="nofollow" href="http://craftwear.com.ua/customer/account/login/" title="Войти в личный кабинет" ><span>Войти в личный кабинет</span></a></li>
+            </ul>
+    
+         </div>
+         <div class="clear"></div>
+                <a href="http://craftwear.com.ua/" title="Приобрести термобелье CRAFT в фирменном интернет-магазине" class="logo"><strong>Приобрести термобелье CRAFT в фирменном интернет-магазине</strong><img src="http://craftwear.com.ua/skin/frontend/default/theme392/images/header1_logo.png" alt="Приобрести термобелье CRAFT в фирменном интернет-магазине" /></a>
+
+                <div class="quick-access"> 
+           <div class="fright">
+                                               <div class="clear"></div>
+                <div class="block-cart-header">
+	<div class="block-cart-header-img">
+	<script type="text/javascript" src="http://craftwear.com.ua/skin/frontend/default/theme392/js/scripts.js"></script>
+	    	<h3>Заказ</h3>
+	    <div class="block-content">
+	    	    	    	    	        <p class="empty">Еще ничего не заказано.</p>
+	    	    </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--                -->
+                 <div class="clear"></div>
+             </div>
+                          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+            </div>
+    <div class="header-row-1">
+            <ul class="header-menu">
+<li><a href="http://craftwear.com.ua/" rel="nofollow"><img src="http://craftwear.com.ua/media/wysiwyg/homeicon.png" alt="В начало" /></a></li>
+<li><a href="http://craftwear.com.ua/whereweare" rel="nofollow">О магазине</a></li>
+<li><a href="http://craftwear.com.ua/oplata-i-dostavka" rel="nofollow">Оплата и доставка</a></li>
+<li><a href="http://craftwear.com.ua/craft-sizes" rel="nofollow">Подбор размера</a></li>
+<li><a href="http://craftwear.com.ua/uslovijapokupki" rel="nofollow" target="_self">Как померять <span style="text-decoration: underline;">термобелье</span></a></li>
+<li><a title="Craft мужское и женское термобелье европейского производителя." href="http://craftwear.com.ua/why-craft-better" rel="nofollow" target="_self"><span style="text-decoration: underline;">Термобелье</span> Craft</a></li>
+</ul>           <form id="search_mini_form" action="http://craftwear.com.ua/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Найти:</label>
+        <input id="search" type="text" name="q" value=""  class="input-text" />
+        <button type="submit" title="Найти" class="button"><span><span>Найти</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+<!--
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'что будем искать?');
+            searchForm.initAutocomplete('http://craftwear.com.ua/searchautocomplete/suggest/result/', 'search_autocomplete');
+        //]]>
+        </script>
+-->
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'что будем искать?');
+            searchForm.initAutocomplete('http://craftwear.com.ua/searchautocomplete/suggest/result/', 'search_autocomplete');
+        //]]>
+        </script>
+
+    </div>
+</form>
+        </div>
+ </div>
+        <div class="main-container col3-layout">
+            <div class="main">
+                <div class="breadcrumbs">
+    <ul>
+                    <li class="home">
+                            <a href="http://craftwear.com.ua/" title="Перейти на главную страницу">Главная</a>
+                                        <span>/ </span>
+                        </li>
+                    <li class="cms_page">
+                            <strong>Размерная сетка Craft</strong>
+                                    </li>
+            </ul>
+</div>
+                <div class="col-left sidebar"><div class="nav-container block">
+	<div class="block-title">
+        <strong><span>Категории</span></strong>
+    </div>
+<div style="background-color:#dee9f5;">
+    <ul id="nav">
+        <li  class="level0 nav-1 first level-top parent id-category-node-15"><a  href="http://craftwear.com.ua/layer1-man.html"  class="level-top" ><span>Мужское термобелье</span></a><ul class="level0"><li  class="level1 nav-1-1 first id-category-node-18"><a rel='nofollow' href="http://craftwear.com.ua/layer1-man/layer1-man-packs.html" ><span>Повседневное </span></a></li><li  class="level1 nav-1-2 parent id-category-node-16"><a rel='nofollow' href="http://craftwear.com.ua/layer1-man/layer1-man-shirts.html" ><span>Термофутболки</span></a><ul class="level1"><li  class="level2 nav-1-2-1 first id-category-node-19"><a rel='nofollow' href="http://craftwear.com.ua/layer1-man/layer1-man-shirts/man-be-active-functional.html" ><span>Влагоотводящие</span></a></li><li  class="level2 nav-1-2-2 last id-category-node-20"><a rel='nofollow' href="http://craftwear.com.ua/layer1-man/layer1-man-shirts/man-warm.html" ><span>Теплосберегающие</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-16","category-node-15"];
+			</script>
+		</ul></li><li  class="level1 nav-1-3 last id-category-node-17"><a rel='nofollow' href="http://craftwear.com.ua/layer1-man/layer1-man-underpants.html" ><span>Термоштаны</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-15"];
+			</script>
+		</ul></li><li  class="level0 nav-2 level-top parent id-category-node-36"><a  href="http://craftwear.com.ua/layer1-woman.html"  class="level-top" ><span>Женское термобелье</span></a><ul class="level0"><li  class="level1 nav-2-1 first id-category-node-43"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/woman-pack.html" ><span>Повседневное </span></a></li><li  class="level1 nav-2-2 parent id-category-node-37"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/woman-shirts.html" ><span>Футболки</span></a><ul class="level1"><li  class="level2 nav-2-2-1 first id-category-node-38"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/woman-shirts/woman-active-shirts.html" ><span>Влагоотводящие</span></a></li><li  class="level2 nav-2-2-2 last id-category-node-40"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/woman-shirts/layer1-woman-warm.html" ><span>Теплосберегающее </span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-37","category-node-36"];
+			</script>
+		</ul></li><li  class="level1 nav-2-3 last parent id-category-node-39"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/layer1-woman-underpants.html" ><span>Лосины</span></a><ul class="level1"><li  class="level2 nav-2-3-1 first id-category-node-41"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/layer1-woman-underpants/layer1-woman-underpants.html" ><span>Влагоотводящие</span></a></li><li  class="level2 nav-2-3-2 last id-category-node-42"><a rel='nofollow' href="http://craftwear.com.ua/layer1-woman/layer1-woman-underpants/layer1-woman-warm-underpants.html" ><span>Согревающие</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-39","category-node-36"];
+			</script>
+		</ul></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-36"];
+			</script>
+		</ul></li><li  class="level0 nav-3 level-top id-category-node-44"><a  href="http://craftwear.com.ua/socks.html"  class="level-top" ><span>Термоноски </span></a></li><li  class="level0 nav-4 level-top parent id-category-node-23"><a  href="http://craftwear.com.ua/layer1.html"  class="level-top" ><span>1 Слой - термобелье </span></a><ul class="level0"><li  class="level1 nav-4-1 first id-category-node-51"><a rel='nofollow' href="http://craftwear.com.ua/layer1/komplekty-termobelya.html" ><span>Повседневное термобелье</span></a></li><li  class="level1 nav-4-2 parent id-category-node-25"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-be-active-2.html" ><span>Craft Be Active </span></a><ul class="level1"><li  class="level2 nav-4-2-1 first id-category-node-30"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-be-active-2/layer1-be-active-man.html" ><span>Мужчинам</span></a></li><li  class="level2 nav-4-2-2 last id-category-node-31"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-be-active-2/layer1-be-active-woman.html" ><span>Женщинам</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-25","category-node-23"];
+			</script>
+		</ul></li><li  class="level1 nav-4-3 parent id-category-node-24"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-active-extreme.html" ><span>Craft Be Active Extreme</span></a><ul class="level1"><li  class="level2 nav-4-3-1 first id-category-node-28"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-active-extreme/layer1-active-extreme-man.html" ><span>Мужчинам</span></a></li><li  class="level2 nav-4-3-2 last id-category-node-29"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-active-extreme/layer1-active-extreme-woman.html" ><span>Женщинам</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-24","category-node-23"];
+			</script>
+		</ul></li><li  class="level1 nav-4-4 parent id-category-node-26"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-keep-warm.html" ><span>Craft Keep Warm</span></a><ul class="level1"><li  class="level2 nav-4-4-1 first id-category-node-32"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-keep-warm/layer1-keep-warm-man.html" ><span>Мужчинам</span></a></li><li  class="level2 nav-4-4-2 last id-category-node-33"><a rel='nofollow' href="http://craftwear.com.ua/layer1/layer1-keep-warm/layer1-keep-warm-woman.html" ><span>Женщинам</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-26","category-node-23"];
+			</script>
+		</ul></li><li  class="level1 nav-4-5 last id-category-node-57"><a rel='nofollow' href="http://craftwear.com.ua/layer1/craft-warm-wool.html" ><span>Шерсть Craft Warm Wool </span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-23"];
+			</script>
+		</ul></li><li  class="level0 nav-5 level-top parent id-category-node-52"><a  href="http://craftwear.com.ua/termobelje-dlya-detej.html"  class="level-top" ><span>Детское термобелье </span></a><ul class="level0"><li  class="level1 nav-5-1 first last id-category-node-59"><a rel='nofollow' href="http://craftwear.com.ua/termobelje-dlya-detej/craft-detskoe-sherst.html" ><span>Детское шерстяное </span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-52"];
+			</script>
+		</ul></li><li  class="level0 nav-6 level-top parent id-category-node-50"><a  href="http://craftwear.com.ua/second-layer.html"  class="level-top" ><span>Термобелье polartec</span></a><ul class="level0"><li  class="level1 nav-6-1 first id-category-node-58"><a rel='nofollow' href="http://craftwear.com.ua/second-layer/zhenskoe-termobelje-polartec.html" ><span>Женское </span></a></li><li  class="level1 nav-6-2 last id-category-node-56"><a rel='nofollow' href="http://craftwear.com.ua/second-layer/muzhskoe-tolstoe-termobelje-polartec.html" ><span>Мужское </span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = ["category-node-50"];
+			</script>
+		</ul></li><li  class="level0 nav-7 level-top id-category-node-47"><a  href="http://craftwear.com.ua/termobelje-fitnes.html"  class="level-top" ><span>Одежда для фитнеса</span></a></li><li  class="level0 nav-8 last level-top id-category-node-46"><a  href="http://craftwear.com.ua/dlya-gornih-lig.html"  class="level-top" ><span>Лыжное термобельё</span></a></li>
+			<script type='text/javascript'>
+				rm.namespace('rm.topMenu');
+				rm.topMenu.activeNodePath = [];
+			</script>
+		    </ul>
+</div>
+</div>
+<div class="block block-cart">
+        <div class="block-title">
+        <strong><span>Заказ</span></strong>
+    </div>
+    <div class="block-content">
+                        <p class="empty">Еще ничего не заказано.</p>
+        </div>
+</div>
+</div>
+                <div class="col-wrapper">
+                                        <div class="col-main">
+                                                    <div class="page-title">
+        <h1>Размерная сетка Craft</h1>
+    </div>
+<div class="std"><div class="clear">Ярус</div></div><p><strong><img style="float: right; margin: 10px 0 10px 20px;" title="Размерная сетка Craft" src="http://craftwear.com.ua/media/wysiwyg/santimetr.jpg" alt="" /></strong></p>
+<p><span style="color: #0000ff; font-size: medium;"><strong>Термобельё Craft обладает великолепными стрейчевыми свойствами,</strong></span> <span style="color: #0000ff;"><strong><span style="font-size: medium;">которые скрадывают погрешности при подборе размера.</span> </strong></span>Так же размерные сетки ориентированы на высокорослых и худощавых людей (скандинавский типаж) и термобельё врядли будет коротким.<strong><br /></strong></p>
+<p>Но даже в этих условиях, просим Вас особое внимание уделить снятию мерок и подбору своего оптимального размера.</p>
+<p>Обращаем Ваше особое внимание, что нательное белье нельзя предварительно примерять, это запрещается санитарными нормами и законом о защите прав потребителей. Его так же нельзя вернуть либо обменять, поэтому, пожалуйста, уделите особое внимание выбору размера.<br />Устанавливая такие жесткие правила мы гарантируем что приобретенное Вами нательное белье будет абсолютно свежим.</p>
+<p><strong><span style="color: #ff0000;">Ниже приведены таблицы для выбора размеров по меркам. </span></strong></p>
+<p><span style="text-decoration: underline;"><strong><span style="color: #ff0000; text-decoration: underline;"><a href="#sizes">Как снимать мерки Вы увидите внизу этой страницы</a></span></strong>.</span></p>
+<div>
+<div>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="7"><strong>Размерная сетка CRAFT для МУЖЧИН<br /></strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>Размер</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>груди, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>талии, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>бедер, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Рост, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длина ноги с</strong><br /><strong>внутренней</strong><br /><strong>стороны, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длинна</strong><br /><strong>рукава от</strong><br /><strong>шеи, см</strong></td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XS</strong></td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">89</td>
+<td style="text-align: center;">172</td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">78</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>S</strong></td>
+<td style="text-align: center;">93</td>
+<td style="text-align: center;">81</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">176</td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">80</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>M</strong></td>
+<td style="text-align: center;">99</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">101</td>
+<td style="text-align: center;">180</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: center;">82</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>L</strong></td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">93</td>
+<td style="text-align: center;">107</td>
+<td style="text-align: center;">184</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">84</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XL</strong></td>
+<td style="text-align: center;">111</td>
+<td style="text-align: center;">99</td>
+<td style="text-align: center;">113</td>
+<td style="text-align: center;">188</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">86</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XXL</strong></td>
+<td style="text-align: center;">117</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">119</td>
+<td style="text-align: center;">192</td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">88</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="7"><strong>Размерная сетка CRAFT для ЖЕНЩИН 1<br /></strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>Размер</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>груди, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>талии, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>бедер, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Рост, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длина ноги с</strong><br /><strong>внутренней</strong><br /><strong>стороны, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длинна</strong><br /><strong>рукава от</strong><br /><strong>шеи, см</strong></td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XS</strong></td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">164</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>S</strong></td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">167</td>
+<td style="text-align: center;">81</td>
+<td style="text-align: center;">72</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>M</strong></td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">170</td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">74</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>L</strong></td>
+<td style="text-align: center;">96</td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">104</td>
+<td style="text-align: center;">173</td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">76</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XL</strong></td>
+<td style="text-align: center;">102</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">176</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;">78</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>XXL</strong></td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">96</td>
+<td style="text-align: center;">118</td>
+<td style="text-align: center;">179</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">80</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="6"><strong>Размерная сетка CRAFT для ЖЕНЩИН 2</strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>Размер</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>груди, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>талии, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>бедер, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Рост, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длинна</strong><br /><strong>рукава от</strong><br /><strong>шеи, см</strong></td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>34</strong></td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">68</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">166</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>36</strong></td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">168</td>
+<td style="text-align: center;">72</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>38</strong></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">96</td>
+<td style="text-align: center;">170</td>
+<td style="text-align: center;">74</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>40</strong></td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">172</td>
+<td style="text-align: center;">76</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>42</strong></td>
+<td style="text-align: center;">96</td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">104</td>
+<td style="text-align: center;">174</td>
+<td style="text-align: center;">78</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>44</strong></td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">108</td>
+<td style="text-align: center;">176</td>
+<td style="text-align: center;">80</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="7"><strong>Размерная сетка CRAFT для ДЕТЕЙ 1</strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>Размер<br />возраст / рост, см<br /></strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>груди, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>талии, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>бедер, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Рост, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длина ноги с</strong><br /><strong>внутренней</strong><br /><strong>стороны, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длинна</strong><br /><strong>рукава от</strong><br /><strong>шеи, см</strong></td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  0  -  1 / 74 - 80<br /></strong></td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">51</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">36</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  1  -  2 / 86 - 92<br /></strong></td>
+<td style="text-align: center;">56</td>
+<td style="text-align: center;">53</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  2  -  4 / 98 - 104<br /></strong></td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">104</td>
+<td style="text-align: center;">44</td>
+<td style="text-align: center;">44</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  4  -  6 / 110 - 116</strong></td>
+<td style="text-align: center;">61</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">116</td>
+<td style="text-align: center;">51</td>
+<td style="text-align: center;">48</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  6  -  8 / 122 - 128<br /></strong></td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">67</td>
+<td style="text-align: center;">128</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">52</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  8 - 10 / 134 - 140<br /></strong></td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">73</td>
+<td style="text-align: center;">140</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">57</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>10 - 12 / 146 - 152<br /></strong></td>
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">67</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">152</td>
+<td style="text-align: center;">71</td>
+<td style="text-align: center;">62</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>12 - 14 / 158 - 164</strong></td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;">164</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">68</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="6"><strong>Размерная сетка CRAFT для ДЕТЕЙ 2<br /></strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>Размер</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>груди, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>талии, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Обхват</strong><br /><strong>бедер, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Рост, см</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>Длинна</strong><br /><strong>рукава от</strong><br /><strong>шеи, см</strong></td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>  90</strong></td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>100</strong></td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">57</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">33</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>110</strong></td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">36,5</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>120</strong></td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">57</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>130</strong></td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">68</td>
+<td style="text-align: center;">130</td>
+<td style="text-align: center;">43,5</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>140</strong></td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">73</td>
+<td style="text-align: center;">140</td>
+<td style="text-align: center;">47</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>150</strong></td>
+<td style="text-align: center;">74</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">50,5</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>160</strong></td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">83</td>
+<td style="text-align: center;">160</td>
+<td style="text-align: center;">54</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 30px;"><strong>170</strong></td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">170</td>
+<td style="text-align: center;">57,5</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="5"><strong>Размерная сетка для носков<br /></strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>XS</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>S</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>M</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>L</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>XL</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">34  - 36</td>
+<td style="text-align: center;">37 - 39</td>
+<td style="text-align: center;">40  - 42</td>
+<td style="text-align: center;">43  - 45</td>
+<td style="text-align: center;">46  - 48</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table id="pyav_tab_1" style="color: #0f313f; border-color: #0f313f; border-width: 1px; background-color: #fffff7; width: 100%;" border="1" cellspacing="2" cellpadding="2" align="center"><caption> </caption>
+<tbody>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;" colspan="6"><strong>Размерная сетка для спортивных топиков, </strong>обхват под бюстом (G)<strong><br /></strong></td>
+</tr>
+<tr style="background-color: #c2edff;">
+<td style="vertical-align: middle; text-align: center;"><strong>XS</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>S</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>M</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>L</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>XL</strong></td>
+<td style="vertical-align: middle; text-align: center;"><strong>XXL</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;">90</td>
+</tr>
+</tbody>
+</table>
+<a name="sizes"></a>Как снимать мерки</div>
+<div style="width: 420px;"><img src="http://craftwear.com.ua/images/sizing_02.gif" alt="" width="420" height="358" /></div>
+</div>
+<div style="width: 700px;"><strong>A. Грудь</strong>
+<p style="font-size: 11px;">Сантиметровой лентой обхватите грудь вокруг, непосредственно под мышками, как показано на рисунке.</p>
+<strong>B. Талия</strong>
+<p style="font-size: 11px;">Обхватите сантиметровой лентой талию в самом узком месте.</p>
+<strong>С. Плечо и длина рукава.</strong>
+<p style="font-size: 11px;">Измерьте расстояние от нижней части шеи над верхушкой плеча,вниз по внешней стороне руки, <br />минуя локоть, до запястья.</p>
+<strong>C1. Длина рукава.</strong>
+<p style="font-size: 11px;">Измерьте расстояние от кончика плеча, вниз по внешней стороне руки, мимо локтя, и до запястья.</p>
+<strong>D. Бёдра.</strong>
+<p style="font-size: 11px;">В положении стоя, поставьте ноги вместе, измерьте лентой вокруг по наиболее выступающим точкам ягодиц.</p>
+<strong>E. Внутренняя сторона ноги</strong>
+<p style="font-size: 11px;">В положении стоя, ноги вместе, измерьте лентой от промежности до упора в пол, <br />стоять при этом нужно как можно ровнее.</p>
+<strong>F. Рост</strong></div>
+<div style="width: 700px;"><strong>G. Обхват под бюстом.</strong>
+<p style="font-size: 11px;">С помощью ленты замерьте объём бюста, примерно на сантиметр ниже груди.</p>
+</div>                    </div>
+                </div>
+                <div class="col-right sidebar"><div class="block block-list block-compare">
+<div class="block-title"><strong><span>Вопросы-ответы</span></strong></div>
+<div class="block-content">
+<p class="empty"><span style="text-decoration: underline;"><a href="http://craftwear.com.ua/termobelje-answers#Назначение термобелья">Назначение термобелья</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Виды термобелья">Виды термобелья</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Ведущие производители">Ведущие производители</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Почему Craft">Почему Craft</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Что такое трёхслойный принцып Craft">Что такое трёхслойный принцип Craft</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Где шьётся Craft">Где шьётся Craft?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Как выбирать">Как выбирать</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Почему синтетика а не хлопок">Почему синтетика а не хлопок?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Всегда ли кашлатится">Всегда ли кашлатится?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Дешево или дорого">Дешево или дорого?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Есть ли там батарейки">Есть ли там "батарейки"?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Как носить">Как носить?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Как ухаживать">Как ухаживать?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Долго ли служит">Долго ли служит?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Так ли важен бодимаппинг">Так ли важен бодимаппинг?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Флис или шерсть">Флис или шерсть?</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Виды флисовых тканей">Виды флисовых тканей</a></span></p>
+<p class="empty"><span style="text-decoration: underline;"><a rel="nofollow" href="http://craftwear.com.ua/termobelje-answers#Как сочитается флис и термобелье">Как сочитается флис и термобелье?</a></span></p>
+</div>
+</div><div class="block block-list block-compare">
+<div class="block-title"><strong><span><a name="polezno"></a>Полезно знать</span></strong></div>
+<div class="block-content">
+<p style="padding-bottom: 5px;"><a title="Как работает компрессионное термобелье" href="http://craftwear.com.ua/x-bionic-partial-compression" target="_blank"><span style="text-decoration: underline;">Как работает компрессионное термобелье</span></a></p>
+<p style="padding-bottom: 5px;"><a title="Чем отличается функциональное белье от трикотажа" href="http://craftwear.com.ua/termobelje-ili-trikotaj" target="_blank"><span style="text-decoration: underline;">Термобелье или трикотаж?</span></a></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Полезные советы по применению термобелья Craft" href="http://craftwear.com.ua/craft-principles" rel="nofollow" target="_blank">Как правильно носить функциональное белье Craft</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Помощь в подборе размера термобелья Крафт" href="http://craftwear.com.ua/craft-sizes" rel="nofollow" target="_blank">Размерная сетка Craft</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="История развития термобелья Craft" href="http://craftwear.com.ua/craft-sweden" rel="nofollow" target="_blank">Информация о Craft</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Функциональное термобелье Craft" href="http://craftwear.com.ua/functional-wear" rel="nofollow" target="_blank">Функциональная одежда</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Как устроено термобелье" href="http://craftwear.com.ua/functions" rel="nofollow" target="_blank">Функциональность термобелья и как она достигается</a></span></p>
+<p style="padding-bottom: 5px;"><a title="Как работает Актив Экстрим" href="http://craftwear.com.ua/what-is-active-extreme" rel="nofollow" target="_blank"><span style="text-decoration: underline;">Как работает Active Extreme</span></a></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Женское термобелье" href="http://craftwear.com.ua/termobelje-dlya-genschin" rel="nofollow" target="_blank">Женщинам о термобелье</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Ткани используемые для изготовления термобелья" href="http://craftwear.com.ua/typesoffibers" rel="nofollow" target="_blank">Виды волокон</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Оправдан ли выбор Крафта" href="http://craftwear.com.ua/why-craft-better" rel="nofollow" target="_blank">Почему стОит выбрать Craft</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Зачем спортсменам термобелье" href="http://craftwear.com.ua/whyneeded" rel="nofollow" target="_blank">Так ли необходимо термобелье спортсмену?</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Так ли нужны термоноски" href="http://craftwear.com.ua/termonoski_for_home" rel="nofollow" target="_blank">Термоноски на каждый день</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Роль потоотделения при выполнении физических упражнений" href="http://craftwear.com.ua/sweet-of-sportsmens" rel="nofollow" target="_blank">Принципы потоотделения у спортсменов</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Дышащая и греющая эластичность Polartec Power stretch" href="http://craftwear.com.ua/polartec-power-stretch" rel="nofollow" target="_self">Что особенного в тканях Polartec® Power Stretch®</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Что такое полиэстер Thermolite®" href="http://craftwear.com.ua/what-is-thermolite" rel="nofollow" target="_blank">Что такое теплоизолятор Thermolite®</a></span></p>
+<p style="padding-bottom: 5px;"><span style="text-decoration: underline;"><a title="Волокна полиэстера Thermolite отвечают за сбережение тепла" href="http://craftwear.com.ua/thermolite-fibers" rel="nofollow" target="_blank">Свойства волокон Thermolite</a></span></p>
+<p style="padding-bottom: 5px;"><a title="Шестиканальное волокно CoolMax" href="http://craftwear.com.ua/coolmax-in-craft" rel="nofollow" target="_blank"><span style="text-decoration: underline;">Волокна CoolMAX® в термобелье Craft</span></a></p>
+</div>
+</div></div>
+            </div>
+        </div>
+        
+<div class="footer-container">
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>
+
+  <div class="footer">
+    <div class="padd-footer">
+            <div class="wrapper">
+        <div class="footer-col list-col">
+                                </div>
+        <div class="footer-col-1 list-col"></div>
+        <div class="footer-col-2 list-col"> </div>
+        <div class="footer-col-3">
+                        <div class="wrapper">
+                                <!--<div class="paypal-logo">
+    <a href="#" title="Дополнительные параметры" onclick="javascript:window.open('https://www.paypal.com/ru/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','paypal','width=600,height=350,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes'); return false;"><img src="http://craftwear.com.ua/skin/frontend/default/theme392/images/media/logo-pay.png" alt="Дополнительные параметры" title="Дополнительные параметры" /></a>
+</div>-->
+            </div>
+        </div>
+      </div>
+    </div>
+    <address>
+    <center>Магазин фирменного термобелья от шведского производителя Craft.</center>    </address>
+      </div>
+</div>
+            </div>
+</div></div></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5475f5397913e7c7" async="async"></script>
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('2905-149-10-2817');/*]]>*/</script><noscript><a rel="nofollow" href="https://www.olark.com/site/2905-149-10-2817/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a rel="nofollow" href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code --></body>
+</html>

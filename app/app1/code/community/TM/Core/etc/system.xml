@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <templates_master>
+            <label>Templates-master</label>
+            <sort_order>195</sort_order>
+        </templates_master>
+    </tabs>
+</config>

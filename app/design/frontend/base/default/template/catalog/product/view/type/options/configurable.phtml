@@ -1,0 +1,120 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php
+$i = 0;
+$_product    = $this->getProduct();
+$_attributes = Mage::helper('core')->decorateArray($this->getAllowAttributes());
+
+
+$pyavsku = $_product->getSku();
+if (1 == 1) //SV_MAN_003_01 $pyavsku == "JP_1900263_1343"
+{
+   $pyav_class = $this->getJsonConfig();
+   $pyav_info = Mage::helper('core')->jsonDecode($pyav_class);
+?>
+<?php 
+   if ($_product->isSaleable() && count($_attributes))
+   { ?>
+    <dl>
+<?php 
+      foreach($_attributes as $_attribute)
+      {
+         $ai = $_attribute->getAttributeId();
+         if (($ai == 532)or($ai == 545)or($ai == 539))
+         {
+?>
+        <div><label class="required" style="padding-top:18px;padding-left:2px;width:44px;"><?php echo $_attribute->getLabel() ?></label></div>
+        <div>
+        <dd<?php $i++; if ($_attribute->decoratedIsLast){?> class="last"<?php }?> style="margin-left:2px;">
+            <div class="input-box">
+<?php    }
+         foreach ($pyav_info['attributes'][$ai]['options'] as $attrid => $option)
+         {
+            if ($ai == 76)
+            { ?>
+<input type='hidden' name="super_attribute[<?php echo $ai ?>]" id="attribute<?php echo $ai ?>" value="<?php echo $option['id']; ?>">
+<?php
+            }
+            if (($ai == 532)or($ai == 545)or($ai == 539))
+            {
+?>
+<input name="super_attribute[<?php echo $ai ?>]" type="radio" value="<?php echo $option['id']; ?>" id="<?php echo $option['id']; ?>"><label for="<?php echo $option['id']; ?>"><?php echo $option['label']; ?></label>
+<?php
+            }
+         } 
+         if (($ai == 532)or($ai == 545)or($ai == 539))
+         {
+         ?>
+              </div>
+        </dd>
+        </div>
+<?php    }
+      }
+?>
+    </dl>
+    <script type="text/javascript">
+        var spConfig = new Product.Config(<?php echo $this->getJsonConfig() ?>);
+    </script>
+<?php
+
+
+
+
+   }
+}
+else
+{ ?>
+
+
+
+
+
+
+<?php if ($_product->isSaleable() && count($_attributes)):?>
+    <dl>
+    <?php foreach($_attributes as $_attribute): ?>
+        <dt><label class="required"><em>*</em><?php echo $_attribute->getLabel() ?></label></dt>
+        <dd<?php if ($_attribute->decoratedIsLast){?> class="last"<?php }?>>
+            <div class="input-box">
+                <select name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]" id="attribute<?php echo $_attribute->getAttributeId() ?>" class="required-entry super-attribute-select">
+                    <option><?php echo $this->__('Choose an Option...') ?></option>
+                  </select>
+              </div>
+        </dd>
+    <?php endforeach; ?>
+    </dl>
+    <script type="text/javascript">
+        var spConfig = new Product.Config(<?php echo $this->getJsonConfig() ?>);
+    </script>
+<?php endif;?>
+
+
+
+
+<?php
+} ?>

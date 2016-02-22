@@ -1,0 +1,2576 @@
+<?xml version='1.0'?>
+<!--
+	Общий словарь для всех оформительских тем.
+	Автоматически применяется после применения словаря для конкретной оформительской темы.
+-->
+<dictionary>
+	<config>
+		<entry>
+			<path>catalog/custom_options/date_fields_order</path>
+			<original_value>m,d,y</original_value>
+			<value>d,m,y</value>
+		</entry>
+		<entry>
+			<path>catalog/custom_options/time_format</path>
+			<original_value>12h</original_value>
+			<value>24h</value>
+		</entry>
+		<entry>
+			<path>catalog/downloadable/samples_title</path>
+			<original_value>Samples</original_value>
+			<value>Образцы</value>
+		</entry>
+		<entry>
+			<path>catalog/downloadable/links_title</path>
+			<original_value>Links</original_value>
+			<value>Ссылки</value>
+		</entry>
+		<entry>
+			<path>design/footer/copyright</path>
+			<original_value><![CDATA[&copy; 2014 Magento Demo Store. All Rights Reserved.]]></original_value>
+			<value><![CDATA[&copy; 2014 Российская сборка Magento.]]></value>
+		</entry>
+		<entry>
+			<path>design/pagination/anchor_text_for_previous</path>
+			<original_value>Prev</original_value>
+			<value>назад</value>
+		</entry>
+		<entry>
+			<path>design/pagination/anchor_text_for_next</path>
+			<original_value>Next</original_value>
+			<value>вперёд</value>
+		</entry>
+		<entry>
+			<path>design/head/default_description</path>
+			<original_value>Default Description</original_value>
+			<value>редакция Magento для интернет-магазинов России и СНГ</value>
+		</entry>
+		<entry>
+			<path>design/head/default_keywords</path>
+			<original_value>Magento, Varien, E-commerce</original_value>
+			<value>Российская сборка Magento</value>
+		</entry>
+		<entry>
+			<path>design/head/default_title</path>
+			<original_value>Magento Commerce</original_value>
+			<value>Российская сборка Magento</value>
+		</entry>
+		<entry>
+			<path>design/head/demonotice</path>
+			<value>0</value>
+		</entry>
+		<entry>
+			<path>design/header/welcome</path>
+			<original_value>Welcome</original_value>
+			<value>Добро пожаловать!</value>
+		</entry>
+		<entry>
+			<path>design/header/welcome</path>
+			<original_value>Default welcome msg!</original_value>
+			<value>Добро пожаловать!</value>
+		</entry>
+		<entry>
+			<!-- меняем основную страну покупателей с США на Россию -->
+			<path>general/country/default</path>
+			<original_value>US</original_value>
+			<value>RU</value>
+		</entry>
+	</config>
+	<rule>
+		<conditions>
+			<type>store</type>
+			<store>
+				<code>default</code>
+			</store>
+		</conditions>
+		<actions>
+			<new_title>Русский</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>store</type>
+			<store>
+				<code>french</code>
+			</store>
+		</conditions>
+		<actions>
+			<new_title>Французский</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>store</type>
+			<store>
+				<code>german</code>
+			</store>
+		</conditions>
+		<actions>
+			<new_title>Немецкий</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>poll</type>
+			<poll>
+				<title>What is your favorite color</title>
+			</poll>
+		</conditions>
+		<actions>
+			<new_title>Ваш любимый цвет?</new_title>
+			<term><from>Black</from><to>Чёрный</to></term>
+			<term><from>Green</from><to>Зелёный</to></term>
+			<term><from>Magenta</from><to>Пурпурный</to></term>
+			<term><from>Red</from><to>Красный</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>poll</type>
+			<poll>
+				<title>What is your favorite Magento feature?</title>
+			</poll>
+		</conditions>
+		<actions>
+			<new_title>Ваша самая любимая функция Magento?</new_title>
+			<term><from>Layered Navigation</from><to>Пошаговая фильтрация</to></term>
+			<term><from>Price Rules</from><to>Ценовые правила</to></term>
+			<term><from>Category Management</from><to>Классификация товаров</to></term>
+			<term><from>Compare Products</from><to>Сравнение товаров</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Cameras</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Фото</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Cell Phones</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Телефон</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Computer</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Компьютер</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>CPU</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Процессор</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Default</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>По умолчанию</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Furniture</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Мебель</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Hard Drive</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Накопитель данных</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Monitors</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Монитор</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>RAM</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Оперативная память</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Shirts (General)</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Футболка / майка</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Shirts Other</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Майка</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Shirts T</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Футболка</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Warranties</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Гарантия</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name>Shoes</name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Обувь</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Books & Music]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Книги и музыка</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Accessories]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Аксессуары</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Bed & Bath]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Для спальни и ванны</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Clothing]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Одежда</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Electronics]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Электроника</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Eyewear]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Очки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Home & Decor]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Для дома и интерьера</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[Jewelry]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Украшения</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[caps]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Кепки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute_set</type>
+			<attribute_set>
+				<name><![CDATA[My Attribute Set]]></name>
+			</attribute_set>
+		</conditions>
+		<actions>
+			<new_title>Пример типа товаров</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Women</name>
+				<url_key>women</url_key>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Женщинам</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>New Arrivals</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Новая коллекция</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Tops & Blouses]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Топы и блузки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Pants & Denim]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Брюки и джинсы</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Dresses & Skirts]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Платья и юбки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Men</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Мужчинам</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Shirts</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Футболки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Tees, Knits and Polos</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Футболки, свитера и поло</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Blazers</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Блейзеры</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Accessories</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Аксессуары</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Eyewear</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Очки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Jewelry</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Украшения</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Shoes</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Обувь</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Bags & Luggage]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Сумки и чемоданы</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Home & Decor]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Для дома и интерьера</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Books & Music]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Книги и музыка</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[Bed & Bath]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Для спальни и ванны</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Electronics</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Гаджеты</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Decorative Accents</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Декор</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Sale</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Распродажа</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>VIP</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Премиум</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Furniture</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Мебель</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Living Room</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Для гостиной</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Bedroom</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Для спальни</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Cell Phones</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Телефоны</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Computers</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Компьютеры</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Hard Drives</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Накопители данных</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Build Your Own</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Конфигуратор системного блока</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Laptops</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Ноутбуки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Monitors</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Мониторы</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name><![CDATA[RAM / Memory]]></name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Оперативная память</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Cases</name>
+				<parent_url_key>computers</parent_url_key>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Корпуса</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Processors</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Процессоры</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Peripherals</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Периферия</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Apparel</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Одежда</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Mens</name>
+				<parent_url_key>shoes</parent_url_key>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Мужская</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Womens</name>
+				<parent_url_key>shoes</parent_url_key>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Женская</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Hoodies</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Худи</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Pants</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Брюки</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Household Items</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Предметы интерьера</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Cameras</name>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Фото</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>category</type>
+			<category>
+				<name>Digital Cameras</name>
+				<parent_url_key>cameras</parent_url_key>
+			</category>
+		</conditions>
+		<actions>
+			<new_title>Фотокамеры</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Activation Information -->
+				<code>activation_information</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>Инструкция по активации</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Accessories Size -->
+				<code>accessories_size</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Аксессуары] Размер</admin>
+				<frontend>Размер</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Accessories Type -->
+				<code>accessories_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Аксессуары] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Apparel Type -->
+				<code>apparel_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Одежда] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Blazers</from><to>Блейзеры</to></term>
+			<term><from>Blouses</from><to>Блузки</to></term>
+			<term><from>Denim</from><to>Джинсы</to></term>
+			<term><from>Dresses</from><to>Платья</to></term>
+			<term><from>Knits</from><to>Свитера</to></term>
+			<term><from>Outerwear</from><to>Верхняя одежда</to></term>
+			<term><from>Pants</from><to>Брюки</to></term>
+			<term><from>Polos</from><to>Поло</to></term>
+			<term><from>Shirts</from><to>Футболки</to></term>
+			<term><from>Skirts</from><to>Юбки</to></term>
+			<term><from>Tees</from><to>Футболки</to></term>
+			<term><from>Tops</from><to>Топы</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Author/Artist -->
+				<code>author_artist</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Музыка и книги] Автор / исполнитель</admin>
+				<frontend>Автор / исполнитель</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Bag & Luggage Type -->
+				<code>bag_luggage_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Сумки и чемоданы] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Backpacks</from><to>Рюкзаки</to></term>
+			<term><from>Briefcase</from><to>Портфели</to></term>
+			<term><from>Business</from><to>Деловые</to></term>
+			<term><from>Handbags</from><to>Сумочки</to></term>
+			<term><from>Laptop Bag</from><to>Для ноутбука</to></term>
+			<term><from>Luggage</from><to>Чемоданы</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Bedding Pattern -->
+				<code>bedding_pattern</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Постельное бельё] Орнамент</admin>
+				<frontend>Орнамент</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Bed & Bath Type -->
+				<code>bed_bath_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Для спальни или для ванны?</admin>
+				<frontend>Для спальни или для ванны?</frontend>
+			</new_title>
+			<term><from>Bath</from><to>Для ванны</to></term>
+			<term><from>Bed</from><to>Для спальни</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Books & Music Type -->
+				<code>books_music_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Музыка и книги] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Books</from><to>Книги</to></term>
+			<term><from>Music</from><to>Музыка</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Camera Megapixels -->
+				<code>camera_megapixels</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Фотокамера] Кол-во мегапикселей</admin>
+				<frontend>Кол-во мегапикселей</frontend>
+			</new_title>
+			<term><from>5.9MP and under</from><to>5.9 МП и меньше</to></term>
+			<term><from>6-7.9MP</from><to></to>6 - 7.9 МП</term>
+			<term><from>8-9.9MP</from><to>8 - 9.9 МП</to></term>
+			<term><from>10-11.9MP</from><to>10 - 11.9 МП</to></term>
+			<term><from>12-13.9MP</from><to>12 - 13.9 МП</to></term>
+			<term><from>14-17.9MP</from><to>14 - 17.9 МП</to></term>
+			<term><from>18MP and above</from><to>18 МП и больше</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Camera Type -->
+				<code>camera_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Фотокамера] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Compact</from><to>Компактные</to></term>
+			<term><from>Digital SLRs</from><to>Зеркальные</to></term>
+			<term><from><![CDATA[point & shoot]]></from><to>Мыльницы</to></term>
+			<term><from>Underwater</from><to>Подводные</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Featured Product -->
+				<code>color</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>Цвет</new_title>
+			<term><from>Black</from><to>Чёрный</to></term>
+			<term><from>Blue</from><to>Голубой</to></term>
+			<term><from>Brown</from><to>Коричневый</to></term>
+			<term><from>Gray</from><to>Серый</to></term>
+			<term><from>Green</from><to>Зелёный</to></term>
+			<term><from>Indigo</from><to>Индиго</to></term>
+			<term><from>Ivory</from><to>Слоновая кость</to></term>
+			<term><from>Khaki</from><to>Хаки</to></term>
+			<term><from>Oatmeal</from><to>Овсяный</to></term>
+			<term><from>Orange</from><to>Оранжевый</to></term>
+			<term><from>Pink</from><to>Розовый</to></term>
+			<term><from>Purple</from><to>Пурпурный</to></term>
+			<term><from>Red</from><to>Красный</to></term>
+			<term><from>Royal Blue</from><to>Ярко-синий</to></term>
+			<term><from>Silver</from><to>Серебряный</to></term>
+			<term><from>Taupe</from><to>Кротовый</to></term>
+			<term><from>White</from><to>Белый</to></term>
+			<term><from>Yellow</from><to>Жёлтый</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Decor Type -->
+				<code>decor_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Предметы интерьера] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Bowl</from><to>Чаша</to></term>
+			<term><from>N/A</from><to>не указано</to></term>
+			<term><from>Platter</from><to>Блюдо</to></term>
+			<term><from>Throw</from><to>Покрывало</to></term>
+			<term><from>Vase</from><to>Ваза</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Electronic Type -->
+				<code>electronic_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Электроника] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Accessories</from><to>Аксессуары</to></term>
+			<term><from>Camera</from><to>Фотокамеры</to></term>
+			<term><from>Media Players</from><to>Аудиоплееры</to></term>
+			<term><from>Personal Grooming</from><to>Электробритвы</to></term>
+			<term><from>Speakers + Earphones</from><to>Акустические системы и наушники</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>fit</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Брюки и джинсы] Фасон</admin>
+				<frontend>Фасон</frontend>
+			</new_title>
+			<term><from>Boot cut</from><to>Удлинённые</to></term>
+			<term><from>Cropped</from><to>Укороченные</to></term>
+			<term><from>Jeans</from><to>Джинсы</to></term>
+			<term><from>Leggings</from><to>Леггинсы</to></term>
+			<term><from>Regular</from><to>Обычные</to></term>
+			<term><from>Sharp</from><to>Зауженные</to></term>
+			<term><from>Skinny</from><to>Узкие</to></term>
+			<term><from>Slim</from><to>Слим</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>format</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Музыка] Формат носителя</admin>
+				<frontend>Формат носителя</frontend>
+			</new_title>
+			<term><from>Audio CD</from><to>Компакт-диск Lossless</to></term>
+			<term><from>Downloadable</from><to>Для скачивания</to></term>
+			<term><from>MP3</from><to>Компакт-диск MP3</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>frame_style</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Очки] Форма оправы</admin>
+				<frontend>Форма оправы</frontend>
+			</new_title>
+			<term><from>aviator</from><to>Авиаторы</to></term>
+			<term><from>rectangle</from><to>Прямоугольная</to></term>
+			<term><from>round</from><to>Круглая</to></term>
+			<term><from>square</from><to>Квадратная</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>gender</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Пол</admin>
+				<frontend>Пол</frontend>
+			</new_title>
+			<term><from>Female</from><to>Для женщин</to></term>
+			<term><from>Male</from><to>Для мужчин</to></term>
+			<term><from>Male or Female</from><to>Унисекс</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>gendered</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Пол (gendered)</admin>
+				<frontend>Пол</frontend>
+			</new_title>
+			<term><from>Female</from><to>Для женщин</to></term>
+			<term><from>Male</from><to>Для мужчин</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Genre -->
+				<code>genre</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Музыка и книги] Жанр</admin>
+				<frontend>Жанр</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Homeware style -->
+				<code>homeware_style</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Для дома и интерьера] Стиль</admin>
+				<frontend>Стиль</frontend>
+			</new_title>
+			<term><from>Modern</from><to>Модерн</to></term>
+			<term><from>Traditional</from><to>Классика</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Home & Decor Type -->
+				<code>home_decor_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Для дома и интерьера] Тип</admin>
+				<frontend>Тип товара для дома</frontend>
+			</new_title>
+			<term><from><![CDATA[Bed & Bath]]></from><to>Для спальни и ванны</to></term>
+			<term><from><![CDATA[Books & Music]]></from><to>Книги и музыка</to></term>
+			<term><from>Decorative Accents</from><to>Предметы интерьера</to></term>
+			<term><from>Electronics</from><to>Гаджеты</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Jewelry Type -->
+				<code>jewelry_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Украшения] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Bracelets</from><to>Браслеты</to></term>
+			<term><from>cufflinks</from><to>Запонки</to></term>
+			<term><from>Earrings</from><to>Серьги</to></term>
+			<term><from>Key Chains</from><to>Брелки</to></term>
+			<term><from>Necklaces</from><to>Ожерелья</to></term>
+			<term><from>Rings</from><to>Кольца</to></term>
+			<term><from>Watches</from><to>Часы</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Lens Type -->
+				<code>lens_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Очки] Тип стёкол</admin>
+				<frontend>Тип стёкол</frontend>
+			</new_title>
+			<term><from>Impact Resistant</from><to>Противоударные</to></term>
+			<term><from>Polarized</from><to>Поляризованные</to></term>
+			<term><from>Scratch Resistant</from><to>Нецарапающиеся</to></term>
+			<term><from>UVA/UVB protection</from><to>С защитой от ультрафиолетового излучения</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Luggage Size -->
+				<code>luggage_size</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Чемоданы] Размер (в дюймах)</admin>
+				<frontend>Размер (в дюймах)</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Luggage Style -->
+				<code>luggage_style</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Чемоданы] Стиль (luggage_style)</admin>
+				<frontend>Стиль</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Luggage Travel Style -->
+				<code>luggage_travel_style</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Чемоданы] Стиль (luggage_travel_style)</admin>
+				<frontend>Стиль</frontend>
+			</new_title>
+			<term><from>classic</from><to>Классический</to></term>
+			<term><from>colorful</from><to>Яркий</to></term>
+			<term><from>Fashion</from><to>Дизайнерский</to></term>
+			<term><from>Sporty</from><to>Спортивный</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Material -->
+				<code>material</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Материал</admin>
+				<frontend>Материал</frontend>
+			</new_title>
+			<term><from>Aloe</from><to>Алоэ</to></term>
+			<term><from>Cashmere</from><to>Кашемир</to></term>
+			<term><from>Ceramic</from><to>Керамика</to></term>
+			<term><from>China</from><to>Костяной фарфор</to></term>
+			<term><from>Cotton</from><to>Хлопок</to></term>
+			<term><from>Crystal</from><to>Хрусталь</to></term>
+			<term><from>Glass</from><to>Стекло</to></term>
+			<term><from>Gold</from><to>Золото</to></term>
+			<term><from>Leather</from><to>Кожа</to></term>
+			<term><from>Metal</from><to>Металл</to></term>
+			<term><from>Microfiber</from><to>Микроволокно</to></term>
+			<term><from>Nylon</from><to>Нейлон</to></term>
+			<term><from>Other</from><to>Другой</to></term>
+			<term><from>Pattern Leather</from><to>Лакированная кожа</to></term>
+			<term><from>Pearl</from><to>Жемчуг</to></term>
+			<term><from>Polyester</from><to>Полиэстер</to></term>
+			<term><from>Porcelain</from><to>Фарфор</to></term>
+			<term><from>Satin</from><to>Атлас</to></term>
+			<term><from>Shea</from><to>Масляное дерево</to></term>
+			<term><from>Silk</from><to>Шёлк</to></term>
+			<term><from>Stainless Steel</from><to>Нержавеющая сталь</to></term>
+			<term><from>Sterling Silver</from><to>Серебро 925-ой пробы</to></term>
+			<term><from>Suede</from><to>Замша</to></term>
+			<term><from>Velvet</from><to>Вельвет</to></term>
+			<term><from>Wood</from><to>Дерево</to></term>
+			<term><from>Wool</from><to>Шерсть</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Necklace Length -->
+				<code>necklace_length</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Ожерелье] Длина (в дюймах)</admin>
+				<frontend>Длина (в дюймах)</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Occasion -->
+				<code>occasion</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Одежда] Стиль</admin>
+				<frontend>Стиль</frontend>
+			</new_title>
+			<term><from>Career</from><to>Деловая</to></term>
+			<term><from>Casual</from><to>Повседневный</to></term>
+			<term><from>Evening</from><to>Вечерний</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Shoe Size -->
+				<code>shoe_size</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Обувь] Размер</admin>
+				<frontend>Размер</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Shoe type -->
+				<code>shoe_type</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Обувь] Тип</admin>
+				<frontend>Тип</frontend>
+			</new_title>
+			<term><from>Athletic</from><to>Кроссовки</to></term>
+			<term><from>Biking</from><to>Для велоспорта</to></term>
+			<term><from>Boots</from><to>Ботинки</to></term>
+			<term><from>Casual</from><to>Повседневная</to></term>
+			<term><from>D'orsay</from><to>D'Orsay</to></term>
+			<term><from>Dress</from><to>К костюму</to></term>
+			<term><from>Flat</from><to>Туфли на плоской подошве</to></term>
+			<term><from>Loafers</from><to>Лоферы</to></term>
+			<term><from>Platform</from><to>На платфоре</to></term>
+			<term><from>Pumps</from><to>Туфли-лодочки</to></term>
+			<term><from>Sandal</from><to>Сандалии</to></term>
+			<term><from>Sling Back</from><to>Босоножки</to></term>
+			<term><from>Slippers</from><to>Тапочки</to></term>
+			<term><from>Sneakers</from><to>Сникеры</to></term>
+			<term><from>Wedges</from><to>На танкетке</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Sleeve Length -->
+				<code>sleeve_length</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Длина рукава</admin>
+				<frontend>Длина рукава</frontend>
+			</new_title>
+			<term><from>3/4 Sleeve</from><to>Длиной 3/4</to></term>
+			<term><from>Long Sleeve</from><to>С длинным рукавом</to></term>
+			<term><from>Short Sleeve</from><to>С коротким рукавом</to></term>
+			<term><from>Sleeveless</from><to>Без рукавов</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<code>style</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Украшения] Стиль</admin>
+				<frontend>Стиль</frontend>
+			</new_title>
+			<term><from>Bangle</from><to>Браслет Bangle (жесткий, без застёжки)</to></term>
+			<term><from>Chain</from><to>Цепочка</to></term>
+			<term><from>Clean</from><to>Clean</to></term>
+			<term><from>Drop</from><to>Подвески</to></term>
+			<term><from>Hoop</from><to>Серьги-обручи</to></term>
+			<term><from>Pendant</from><to>рукавов</to></term>
+			<term><from>Sporty</from><to>Кулоны</to></term>
+			<term><from>Standout</from><to>Бижутерия</to></term>
+			<term><from>Statement</from><to>Ожерелья</to></term>
+			<term><from>Strand</from><to>Бусы</to></term>
+			<term><from>Stud</from><to>Запонки</to></term>
+			<term><from>Techie/Nerdy</from><to>Для гиков</to></term>
+			<term><from>Trendy</from><to>Моднявые</to></term>
+			<term><from>Wide</from><to>Широкие</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Brand -->
+				<code>computer_manufacturers</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Компьютер] Производитель</admin>
+				<frontend>Производитель</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Contrast Ratio -->
+				<code>contrast_ratio</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<!-- перевод взял с Яндекс.Маркета -->
+				<admin>[Монитор] Контрастность</admin>
+				<frontend>Контрастность</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Country of Origin -->
+				<code>country_orgin</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Страна происхождения</admin>
+				<frontend>Страна происхождения</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- CPU Speed -->
+				<code>cpu_speed</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<!-- перевод взял с Яндекс.Маркета -->
+				<admin>[Процессор] Частота процессора</admin>
+				<frontend>Частота процессора</frontend>
+			</new_title>
+			<term><from>GHz</from><to>ГГц</to></term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Dimensions -->
+				<code>dimension</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Фотокамера] Размеры</admin>
+				<frontend>Размеры</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Finish -->
+				<code>finish</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Мебель] Отделка</admin>
+				<frontend>Отделка</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Finish -->
+				<code>finish</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Мебель] Отделка</admin>
+				<frontend>Отделка</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Disk Speed -->
+				<code>harddrive_speed</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Накопитель данных] Скорость вращения</admin>
+				<!-- перевод взял с Яндекс.Маркета -->
+				<frontend>Скорость вращения</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Hardrive -->
+				<code>hardrive</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Компьютер] Накопитель данных</admin>
+				<frontend>Накопитель данных</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- In Depth -->
+				<code>in_depth</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Фотокамеры] Подробности</admin>
+				<frontend>Подробности</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Megapixels -->
+				<code>megapixels</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Фотокамера] Кол-во мегапикселей</admin>
+				<frontend>Кол-во мегапикселей</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Max Resolution -->
+				<code>max_resolution</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Монитор] Макс. разрешение</admin>
+				<!-- перевод взял с Яндекс.Маркета -->
+				<frontend>Макс. разрешение</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Memory -->
+				<code>memory</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Компьютер] Оперативная память</admin>
+				<frontend>Оперативная память</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Model -->
+				<code>model</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Обувь] Модель</admin>
+				<frontend>Модель</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Processor -->
+				<code>processor</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Компьютер] Процессор</admin>
+				<frontend>Процессор</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- RAM SIze -->
+				<code>ram_size</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Компьютер] Оперативная память</admin>
+				<frontend>Оперативная память</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Response Time -->
+				<code>response_time</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Монитор] Время отклика</admin>
+				<frontend>Время отклика</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Room -->
+				<code>room</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Мебель] Назначение</admin>
+				<frontend>Назначение</frontend>
+				<term><from>Bathroom</from><to>Для ванной</to></term>
+				<term><from>Bedroom</from><to>Для спальни</to></term>
+				<term><from>Dining Room</from><to>Для столовой</to></term>
+				<term><from>Kids Room</from><to>Для детской</to></term>
+				<term><from>Kitchen</from><to>Для кухни</to></term>
+				<term><from>Living Room</from><to>Для гостиной</to></term>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Screensize -->
+				<code>screensize</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Монитор] Размер экрана</admin>
+				<!-- перевод взял с Яндекс.Маркета -->
+				<frontend>Размер экрана</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- shape -->
+				<code>shape</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Форма</admin>
+				<frontend>Форма</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- shape -->
+				<code>shape</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>Форма</admin>
+				<frontend>Форма</frontend>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>attribute</type>
+			<attribute>
+				<!-- Shirt Size -->
+				<code>shirt_size</code>
+			</attribute>
+		</conditions>
+		<actions>
+			<new_title>
+				<admin>[Футболка] Размер</admin>
+				<frontend>Размер</frontend>
+				<term><from>Small</from><to>S</to></term>
+				<term><from>Medium</from><to>M</to></term>
+				<term><from>Large</from><to>L</to></term>
+			</new_title>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>home</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>Главная</new_title>
+			<term>
+				<from>Best Selling Products</from>
+				<to>Тренды сезона</to>
+			</term>
+			<term>
+				<from><![CDATA[Sony VAIO VGN-TXN27N/B 11.1" Notebook PC]]></from>
+				<to><![CDATA[Ноутбук Sony VAIO VGN-TXN27N/B 11.1"]]></to>
+			</term>
+			<term>
+				<from><![CDATA[See all <a href="{{store direct_url="electronics/computers/laptops.html"}}">Laptops</a>]]></from>
+				<to><![CDATA[все <a href="{{store direct_url="electronics/computers/laptops.html"}}">ноутбуки</a>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Nine West Women's Lucero Pump]]></from>
+				<to><![CDATA[вечерние туфли Nine West]]></to>
+			</term>
+			<term>
+				<from><![CDATA[See all <a href="{{store direct_url="apparel/shoes.html"}}">Shoes</a>]]></from>
+				<to><![CDATA[вся <a href="{{store direct_url="apparel/shoes.html"}}">обувь</a>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[See all <a href="{{store direct_url="electronics/cameras/digital-cameras.html"}}">Digital Cameras</a>]]></from>
+				<to><![CDATA[все <a href="{{store direct_url="electronics/cameras/digital-cameras.html"}}">фотокамеры</a>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[See all <a href="{{store direct_url="apparel/shirts.html"}}">Shirts</a>]]></from>
+				<to><![CDATA[все <a href="{{store direct_url="apparel/shirts.html"}}">футболки</a>]]></to>
+			</term>
+			<term>
+				<from>Coalesce: Functioning On Impatience T-Shirt</from>
+				<to>Футболка «Моя грудная клетка»</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>about-magento-demo-store</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>О компании</new_title>
+			<term>
+				<from>About Magento Store</from>
+				<to>О нас</to>
+			</term>
+			<term>
+				<from>To all of you, from all of us at Magento Store - Thank you and Happy eCommerce!</from>
+				<to>С наилучшими пожеланиями,</to>
+			</term>
+			<term>
+				<from>John Doe</from>
+				<to>Иван Петров</to>
+			</term>
+			<term>
+				<from>Some important guy</from>
+				<to>Директор магазина</to>
+			</term>
+			<term>
+				<from>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta.</from>
+				<to>Кластерное вибрато, в том числе, композиционно. Плавно-мобильное голосовое поле, в первом приближении, мгновенно. Разносторонняя пятиступенчатая громкостная пирамида представляет собой разнокомпонентный хамбакер. Асинхронное ритмическое поле использует гипнотический рифф. Фишка, по определению, выстраивает фьюжн.</to>
+			</term>
+			<term>
+				<from>Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper</from>
+				<to>Ротор векторного поля восстанавливает интеграл Дирихле. Наряду с этим, пустое подмножество притягивает многочлен. Умножение двух векторов (векторное), конечно, естественно поддерживает коллинеарный полином. Теорема Ферма, исключая очевидный случай, синхронизирует определитель системы линейных уравнений. Умножение двух векторов (скалярное), в первом приближении, существенно стабилизирует эмпирический интеграл от функции комплексной переменной. Неравенство Бернулли допускает неопределенный интеграл, что неудивительно.</to>
+			</term>
+			<term>
+				<from><![CDATA[>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit.<]]></from>
+				<to><![CDATA[>Умножение двух векторов (скалярное) необходимо и достаточно. Линейное программирование в принципе восстанавливает параллельный разрыв функции. Абсолютно сходящийся ряд охватывает лист Мёбиуса. Математический анализ, исключая очевидный случай, изменяет параллельный криволинейный интеграл.<]]></to>
+			</term>
+			<term>
+				<from>Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</from>
+				<to>Неравенство Бернулли, конечно, естественно нейтрализует максимум. Эпсилон окрестность, общеизвестно, положительна. Лемма, очевидно, детерменирована. Целое число стремительно определяет неопровержимый вектор. Минимум, следовательно, обоснован необходимостью. Абсолютно сходящийся ряд трансформирует многомерный интеграл по бесконечной области.</to>
+			</term>
+			<term>
+				<from>Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus. Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi. Vestibulum sapien dolor, aliquet nec, porta ac, malesuada a, libero. Praesent feugiat purus eget est. Nulla facilisi. Vestibulum tincidunt sapien eu velit. Mauris purus. Maecenas eget mauris eu orci accumsan feugiat. Pellentesque eget velit. Nunc tincidunt.</from>
+				<to>Калиево-натриевый полевой шпат обедняет калиево-натриевый полевой шпат. Сталагмит интенсивно деформирует аллювий. Эта разница, вероятно, помогает объяснить, почему базис эрозии прекращает биогеохимический оз. Плита, особенно в верхах разреза, исключительна. Гранит постоянно варьирует кислый делювий. Согласно изостатической концепции Эйри, отложение целесообразно обогащает мощный рифт.</to>
+			</term>
+			<term>
+				<from>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper</from>
+				<to>Самонаблюдение, конечно, параллельно понимает филогенез. По их почти единодушному мнению, код неравномерен. Наши исследования позволяют сделать вывод о том, что предсознательное аннигилирует кризис, в полном соответствии с основными законами развития человека. Сублимация непоследовательно притягивает концептуальный инсайт. С феноменологической точки зрения, действие отталкивает сублимированный аутизм. Бихевиоризм отчуждает инсайт. </to>
+			</term>
+			<term>
+				<from><![CDATA[>Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus.<]]></from>
+				<to><![CDATA[>Онтогенез речи, на первый взгляд, интегрирует стресс. Филогенез выбирает ассоцианизм. Ассоцианизм прекрасно выбирает интеллект, Гоббс одним из первых осветил эту проблему с позиций психологии. НЛП позволяет вам точно определить какие изменения в субьективном опыте надо произвести, чтобы акцентуация вероятна. Акцентуация иллюстрирует бихевиоризм.<]]></to>
+			</term>
+			<term>
+				<from>Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi.</from>
+				<to>Гармоническое микророндо, как бы это ни казалось парадоксальным, трансформирует изоритмический сет.</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>customer-service</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>Сервисный центр</new_title>
+			<term>
+				<from>Customer Service</from>
+				<to>Сервисный центр</to>
+			</term>
+			<term>
+				<from><![CDATA[Shipping &amp; Delivery]]></from>
+				<to>Доставка</to>
+			</term>
+			<term>
+				<from><![CDATA[Privacy &amp; Security]]></from>
+				<to>Приватность</to>
+			</term>
+			<term>
+				<from><![CDATA[Returns &amp; Replacements]]></from>
+				<to>Возврат</to>
+			</term>
+			<term>
+				<from><![CDATA[Ordering]]></from>
+				<to>Как купить</to>
+			</term>
+			<term>
+				<from><![CDATA[Payment, Pricing &amp; Promotions]]></from>
+				<to>Способы оплаты</to>
+			</term>
+			<term>
+				<from><![CDATA[Viewing Orders]]></from>
+				<to>Отслеживание заказа</to>
+			</term>
+			<term>
+				<from><![CDATA[Updating Account Information]]></from>
+				<to>Личный кабинет</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>enable-cookies</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>Включите куки</new_title>
+			<term>
+				<from>Please enable cookies in your web browser to continue.</from>
+				<to>Для правильной работы интернет-магазина включите куки в Вашем браузере.</to>
+			</term>
+			<term>
+				<from>What are Cookies?</from>
+				<to>Что такое куки?</to>
+			</term>
+			<term>
+				<from>Cookies are short pieces of data that are sent to your computer when you visit a website. On later visits, this data is then returned to that website. Cookies allow us to recognize you automatically whenever you visit our site so that we can personalize your experience and provide you with better service. We also use cookies (and similar browser data, such as Flash cookies) for fraud prevention and other purposes. If your web browser is set to refuse cookies from our website, you will not be able to complete a purchase or take advantage of certain features of our website, such as storing items in your Shopping Cart or receiving personalized recommendations. As a result, we strongly encourage you to configure your web browser to accept cookies from our website.</from>
+				<to>Куки — это небольшие фрагменты данных, которые отправляются на Ваш компьютер
+при посещении сайта. При следующих посещениях эти данные возвращаются обратно на сайт.
+Куки позволяют нам узнавать Вас при посещении магазина для того, чтобы лучше Вас обслуживать.
+Когда Ваш браузер не принимает куки, интернет-магазин не в состоянии полноценно Вас обслуживать.
+В частности, без кук не будет работать функциональность корзины.</to>
+			</term>
+			<term>
+				<from>Enabling Cookies</from>
+				<to>Как включить куки?</to>
+			</term>
+			<term>
+				<from>Start Internet Explorer</from>
+				<to>Запустите Internet Explorer</to>
+			</term>
+			<term>
+				<from><![CDATA[Under the <strong>Tools</strong> menu, click <strong>Internet Options]]></from>
+				<to><![CDATA[В разделе меню <strong>Tools</strong> выбирите пункт <strong>Internet Options]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click the <strong>Privacy</strong> tab]]></from>
+				<to><![CDATA[Перейдите на вкладку <strong>Privacy</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click the <strong>Advanced</strong> button]]></from>
+				<to><![CDATA[Нажмите кнопку <strong>Advanced</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Put a check mark in the box for <strong>Override Automatic Cookie Handling</strong>, put another check mark in the <strong>Always accept session cookies </strong>box]]></from>
+				<to><![CDATA[Включите опции <strong>Override Automatic Cookie Handling</strong> и <strong>Always accept session cookies </strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click <strong>OK</strong>]]></from>
+				<to><![CDATA[Нажмите кнопку <strong>OK</strong>]]></to>
+			</term>
+			<term>
+				<from>Restart Internet Explore</from>
+				<to>Перезапустите Internet Explorer</to>
+			</term>
+			<term>
+				<from>Back to Top</from>
+				<to>промотать наверх</to>
+			</term>
+			<term>
+				<from><![CDATA[Select <strong>Internet Options</strong> from the Tools menu]]></from>
+				<to><![CDATA[В разделе меню <strong>Tools</strong> выберите пункт <strong>Internet Options</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click the <strong>Default</strong> button (or manually slide the bar down to <strong>Medium</strong>) under <strong>Settings</strong>. Click <strong>OK</strong>]]></from>
+				<to><![CDATA[В разделе <strong>Settings</strong> нажмите кнопку <strong>Default</strong> (или вручную переместите ползунок к значению <strong>Medium</strong>). Нажмите кнопку <strong>OK</strong>.]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Tools</strong>-menu in Mozilla]]></from>
+				<to><![CDATA[Нажмите в Firefox пункт меню <strong>Tools</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Options...</strong> item in the menu - a new window open]]></from>
+				<to><![CDATA[Нажмите на подпункт <strong>Options...</strong>. Откроется новое окно.]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Privacy</strong> selection in the left part of the window. (See image below)]]></from>
+				<to><![CDATA[В левой части нового окна нажмите на <strong>Privacy</strong> (смотрите картинку ниже)]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Expand the <strong>Cookies</strong> section]]></from>
+				<to><![CDATA[Раскройте блок <strong>Cookies</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Check the <strong>Enable cookies</strong> and <strong>Accept cookies normally</strong> checkboxes]]></from>
+				<to><![CDATA[Включите опции <strong>Enable cookies</strong> и <strong>Accept cookies normally</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Save changes by clicking <strong>Ok</strong>.]]></from>
+				<to><![CDATA[Нажмите кнопку <strong>OK</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Tools</strong> menu in Opera]]></from>
+				<to><![CDATA[Нажмите пункт меню <strong>Tools</strong>]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Preferences...</strong> item in the menu - a new window open]]></from>
+				<to><![CDATA[Нажмите <strong>Preferences...</strong>. Откроется новое окно.]]></to>
+			</term>
+			<term>
+				<from><![CDATA[Click on the <strong>Privacy</strong> selection near the bottom left of the window. (See image below)]]></from>
+				<to><![CDATA[В нижней левой части нового окна нажмите на <strong>Privacy</strong> (смотрите картинку ниже)]]></to>
+			</term>
+			<term>
+				<from><![CDATA[The <strong>Enable cookies</strong> checkbox must be checked, and <strong>Accept all cookies</strong> should be selected in the &quot;<strong>Normal cookies</strong>&quot; drop-down]]></from>
+				<to><![CDATA[В выпадающем меню &quot;<strong>Normal cookies</strong>&quot; включите опции <strong>Enable cookies</strong> и <strong>Accept all cookies</strong>]]></to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>no-route</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>Страница не найдена</new_title>
+			<term>
+				<from>Whoops, our bad...</from>
+				<to>Запрашиваемая Вами страница не найдена</to>
+			</term>
+			<term>
+				<from>The page you requested was not found, and we have a fine guess why.</from>
+				<to>Вы перешли по неправильной ссылке или страница была удалена.</to>
+			</term>
+			<term>
+				<from>If you typed the URL directly, please make sure the spelling is correct.</from>
+				<to>Если Вы ввели адрес страницы вручную в адресную строку браузера,
+то убедитесь в правильности написания этого адреса</to>
+			</term>
+			<term>
+				<from>If you clicked on a link to get here, the link is outdated.</from>
+				<to>Если же Вы попали сюда, нажав по ссылке, то, похоже, что эта ссылка устарела.</to>
+			</term>
+			<term>
+				<from>What can you do?</from>
+				<to>Что же делать?</to>
+			</term>
+			<term>
+				<from>Have no fear, help is near! There are many ways you can get back on track with Magento Store.</from>
+				<to>Вы легко можете найти то, что искали!</to>
+			</term>
+			<term>
+				<from>Have no fear, help is near! There are many ways you can get back on track with Magento Demo Store.</from>
+				<to>Вы легко можете найти то, что искали!</to>
+			</term>
+			<term>
+				<from><![CDATA[>Go back</a> to the previous page.]]></from>
+				<to><![CDATA[>Вернитесь</a> на предыдущую страницу.]]></to>
+			</term>
+			<term>
+				<from>Use the search bar at the top of the page to search for your products.</from>
+				<to>Воспользуйтесь формой поиска по товарам магазина, она расположена в верхней части любй страницы магазина</to>
+			</term>
+			<term>
+				<from>Follow these links to get you back on track!</from>
+				<to>Вы также можете перейти напрямую:</to>
+			</term>
+			<term>
+				<from>Store Home</from>
+				<to>на главную страницу магазина</to>
+			</term>
+			<term>
+				<from>My Account</from>
+				<to>в личный кабинет</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>page</type>
+			<page>
+				<url_key>privacy-policy-cookie-restriction-mode</url_key>
+			</page>
+		</conditions>
+		<actions>
+			<new_title>Конфиденциальность и защита информации</new_title>
+			<term>
+				<from><![CDATA[<p style="color: #ff0000; font-weight: bold; font-size: 13px">
+				    Please replace this text with you Privacy Policy.
+				    Please add any additional cookies your website uses below (e.g., Google Analytics)
+				</p>
+				<p>
+				    This privacy policy sets out how {{config path="general/store_information/name"}} uses and protects any information
+				    that you give {{config path="general/store_information/name"}} when you use this website.
+				    {{config path="general/store_information/name"}} is committed to ensuring that your privacy is protected.
+				    Should we ask you to provide certain information by which you can be identified when using this website,
+				    then you can be assured that it will only be used in accordance with this privacy statement.
+				    {{config path="general/store_information/name"}} may change this policy from time to time by updating this page.
+				    You should check this page from time to time to ensure that you are happy with any changes.
+				</p>
+				<h2>What we collect</h2>
+				<p>We may collect the following information:</p>
+				<ul>
+				    <li>name</li>
+				    <li>contact information including email address</li>
+				    <li>demographic information such as postcode, preferences and interests</li>
+				    <li>other information relevant to customer surveys and/or offers</li>
+				</ul>
+				<p>
+				    For the exhaustive list of cookies we collect see the <a href="#list">List of cookies we collect</a> section.
+				</p>
+				<h2>What we do with the information we gather</h2>
+				<p>
+				    We require this information to understand your needs and provide you with a better service,
+				    and in particular for the following reasons:
+				</p>
+				<ul>
+				    <li>Internal record keeping.</li>
+				    <li>We may use the information to improve our products and services.</li>
+				    <li>
+				        We may periodically send promotional emails about new products, special offers or other information which we
+				        think you may find interesting using the email address which you have provided.
+				    </li>
+				    <li>
+				        From time to time, we may also use your information to contact you for market research purposes.
+				        We may contact you by email, phone, fax or mail. We may use the information to customise the website
+				        according to your interests.
+				    </li>
+				</ul>
+				<h2>Security</h2>
+				<p>
+				    We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure,
+				    we have put in place suitable physical, electronic and managerial procedures to safeguard and secure
+				    the information we collect online.
+				</p>
+				<h2>How we use cookies</h2>
+				<p>
+				    A cookie is a small file which asks permission to be placed on your computer's hard drive.
+				    Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit
+				    a particular site. Cookies allow web applications to respond to you as an individual. The web application
+				    can tailor its operations to your needs, likes and dislikes by gathering and remembering information about
+				    your preferences.
+				</p>
+				<p>
+				    We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic
+				    and improve our website in order to tailor it to customer needs. We only use this information for statistical
+				    analysis purposes and then the data is removed from the system.
+				</p>
+				<p>
+				    Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful
+				    and which you do not. A cookie in no way gives us access to your computer or any information about you,
+				    other than the data you choose to share with us. You can choose to accept or decline cookies.
+				    Most web browsers automatically accept cookies, but you can usually modify your browser setting
+				    to decline cookies if you prefer. This may prevent you from taking full advantage of the website.
+				</p>
+				<h2>Links to other websites</h2>
+				<p>
+				    Our website may contain links to other websites of interest. However, once you have used these links
+				    to leave our site, you should note that we do not have any control over that other website.
+				    Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst
+				    visiting such sites and such sites are not governed by this privacy statement.
+				    You should exercise caution and look at the privacy statement applicable to the website in question.
+				</p>
+				<h2>Controlling your personal information</h2>
+				<p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+				<ul>
+				    <li>
+				        whenever you are asked to fill in a form on the website, look for the box that you can click to indicate
+				        that you do not want the information to be used by anybody for direct marketing purposes
+				    </li>
+				    <li>
+				        if you have previously agreed to us using your personal information for direct marketing purposes,
+				        you may change your mind at any time by writing to or emailing us at
+				        {{config path="trans_email/ident_general/email"}}
+				    </li>
+				</ul>
+				<p>
+				    We will not sell, distribute or lease your personal information to third parties unless we have your permission
+				    or are required by law to do so. We may use your personal information to send you promotional information
+				    about third parties which we think you may find interesting if you tell us that you wish this to happen.
+				</p>
+				<p>
+				    You may request details of personal information which we hold about you under the Data Protection Act 1998.
+				    A small fee will be payable. If you would like a copy of the information held on you please write to
+				    {{config path="general/store_information/address"}}.
+				</p>
+				<p>
+				    If you believe that any information we are holding on you is incorrect or incomplete,
+				    please write to or email us as soon as possible, at the above address.
+				    We will promptly correct any information found to be incorrect.
+				</p>
+				<h2><a name="list"></a>List of cookies we collect</h2>
+				<p>The table below lists the cookies we collect and what information they store.</p>
+				<table class="data-table">
+				    <thead>
+				        <tr>
+				            <th>COOKIE name</th>
+				            <th>COOKIE Description</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <th>CART</th>
+				            <td>The association with your shopping cart.</td>
+				        </tr>
+				        <tr>
+				            <th>CATEGORY_INFO</th>
+				            <td>Stores the category info on the page, that allows to display pages more quickly.</td>
+				        </tr>
+				        <tr>
+				            <th>COMPARE</th>
+				            <td>The items that you have in the Compare Products list.</td>
+				        </tr>
+				        <tr>
+				            <th>CURRENCY</th>
+				            <td>Your preferred currency</td>
+				        </tr>
+				        <tr>
+				            <th>CUSTOMER</th>
+				            <td>An encrypted version of your customer id with the store.</td>
+				        </tr>
+				        <tr>
+				            <th>CUSTOMER_AUTH</th>
+				            <td>An indicator if you are currently logged into the store.</td>
+				        </tr>
+				        <tr>
+				            <th>CUSTOMER_INFO</th>
+				            <td>An encrypted version of the customer group you belong to.</td>
+				        </tr>
+				        <tr>
+				            <th>CUSTOMER_SEGMENT_IDS</th>
+				            <td>Stores the Customer Segment ID</td>
+				        </tr>
+				        <tr>
+				            <th>EXTERNAL_NO_CACHE</th>
+				            <td>A flag, which indicates whether caching is disabled or not.</td>
+				        </tr>
+				        <tr>
+				            <th>FRONTEND</th>
+				            <td>You sesssion ID on the server.</td>
+				        </tr>
+				        <tr>
+				            <th>GUEST-VIEW</th>
+				            <td>Allows guests to edit their orders.</td>
+				        </tr>
+				        <tr>
+				            <th>LAST_CATEGORY</th>
+				            <td>The last category you visited.</td>
+				        </tr>
+				        <tr>
+				            <th>LAST_PRODUCT</th>
+				            <td>The most recent product you have viewed.</td>
+				        </tr>
+				        <tr>
+				            <th>NEWMESSAGE</th>
+				            <td>Indicates whether a new message has been received.</td>
+				        </tr>
+				        <tr>
+				            <th>NO_CACHE</th>
+				            <td>Indicates whether it is allowed to use cache.</td>
+				        </tr>
+				        <tr>
+				            <th>PERSISTENT_SHOPPING_CART</th>
+				            <td>A link to information about your cart and viewing history if you have asked the site.</td>
+				        </tr>
+				        <tr>
+				            <th>POLL</th>
+				            <td>The ID of any polls you have recently voted in.</td>
+				        </tr>
+				        <tr>
+				            <th>POLLN</th>
+				            <td>Information on what polls you have voted on.</td>
+				        </tr>
+				        <tr>
+				            <th>RECENTLYCOMPARED</th>
+				            <td>The items that you have recently compared.            </td>
+				        </tr>
+				        <tr>
+				            <th>STF</th>
+				            <td>Information on products you have emailed to friends.</td>
+				        </tr>
+				        <tr>
+				            <th>STORE</th>
+				            <td>The store view or language you have selected.</td>
+				        </tr>
+				        <tr>
+				            <th>USER_ALLOWED_SAVE_COOKIE</th>
+				            <td>Indicates whether a customer allowed to use cookies.</td>
+				        </tr>
+				        <tr>
+				            <th>VIEWED_PRODUCT_IDS</th>
+				            <td>The products that you have recently viewed.</td>
+				        </tr>
+				        <tr>
+				            <th>WISHLIST</th>
+				            <td>An encrypted list of products added to your Wishlist.</td>
+				        </tr>
+				        <tr>
+				            <th>WISHLIST_CNT</th>
+				            <td>The number of items in your Wishlist.</td>
+				        </tr>
+				    </tbody>
+				</table>]]></from>
+				<to><![CDATA[<p><span class="bold">Политика конфиденциальности</span></p>
+<p>Политика конфиденциальности ООО &laquo;ОнЛайн Трейд&raquo; действует в отношении персональных данных,
+	предоставляемых клиентами компании, как для оказания различного рода услуг, так и осуществления иного
+	взаимодействия, как правило, в электронном формате, а также при участии клиентов в акциях компании, оказании
+	технической поддержки клиенту и обслуживанию по гарантии.</p>
+
+<p>ООО &laquo;ОнЛайн Трейд&raquo; оставляет за собой право вносить изменения и дополнения в действующие положения
+	Политики конфиденциальности, при этом данные изменения и дополнения будут иметь преимущество над действующими
+	положениями Политики. Обращаем внимание, предоставляемые ООО &laquo;ОнЛайн Трейд&raquo; услуги могут содержать
+	ссылки на третьих лиц, имеющих собственные положения Политики защиты частной информации. В таких случаях
+	ООО &laquo;ОнЛайн Трейд&raquo; не несет ответственности за содержание и соблюдение положений Политики
+	конфиденциальности любой сторонней компании. Предоставляя ООО &laquo;ОнЛайн Трейд&raquo; свои персональные
+	данные, клиент дает полное согласие на их обработку способами, предусмотренными действующими положениями
+	Политики конфиденциальности компании.</p>
+
+<p><span class="bold">Порядок сбора, хранения и уничтожения персональных данных </span></p>
+
+<p>ООО &laquo;ОнЛайн Трейд&raquo; осуществляет сбор персональных данных только с согласия пользователя и
+	исключительно для предоставления клиенту сервиса или услуги, требующей информации частного характера: покупка в
+	интернет-магазине, участие в акциях, гарантийное и сервисное обслуживание. Для предотвращения утечки
+	персональных данных клиента ООО &laquo;ОнЛайн Трейд&raquo; использует полный спектр мер информационной
+	безопасности (технические и организационные).</p>
+
+<p>Максимальный срок хранения персональных данных клиента составляет 75 лет с момента получения компанией информации
+	частного характера. В других случаях компания хранит персональные данные клиента до прекращения своей
+	деятельности.</p>
+
+<p>Уничтожение, обезличивание или блокировка персональных данных или их части клиента производится для исключения
+	возможности дальнейшей обработки данной информации.</p>
+
+<p><span class="bold">ООО &laquo;ОнЛайн Трейд&raquo; осуществляет сбор персональных данных клиента в следующих категориях:</span>
+</p>
+
+<p><span class="bold">Техническая информация:</span></p>
+<ul>
+	<li>Время доступа и IP-адрес</li>
+	<li>Источники перехода на Интернет-ресурс компании</li>
+	<li>Интернет-страницы, которые посетил пользователь</li>
+	<li>Просмотры рекламных баннеров</li>
+	<li>Другая техническая информация, предоставленная браузером пользователя</li>
+	<li>Номер телефона клиента (в случае звонка на номера, указанные на сайте компании)</li>
+</ul>
+<p><span class="bold">При регистрации на сайте www.onlinetrade.ru, принадлежащем ООО &laquo;ОнЛайн Трейд&raquo;, компания осуществляет сбор персональной информации клиента, необходимой для аутентификации пользователя/персонализации услуг/доставки заказа/обратной связи с клиентом:</span>
+</p>
+<ul>
+	<li>Фамилия и имя пользователя</li>
+	<li>e-mail номер телефона адрес (в случае доставки товара по какому-либо адресу)</li>
+	<li>пароль от личного кабинета возраст</li>
+</ul>
+<p><span class="bold"> Информация о действиях пользователя:</span></p>
+<ul>
+	<li>Сведения о соглашениях/договорах между клиентом и компанией</li>
+	<li>Информация о запросах и направленных в адрес компании обращениях</li>
+	<li>Данные о товарах, приобретенных клиентом и услугах, которыми клиент пользовался</li>
+	<li>Совершенные платежи и другая финансовая информация, предусмотренная законодательством РФ</li>
+</ul>
+<p><span class="bold">Цели обработки персональных данных клиентов ООО &laquo;ОнЛайн Трейд&raquo;:</span></p>
+<ul>
+	<li>Продажа продукции и предоставление других услуг клиенту</li>
+	<li>Учет клиентских пожеланий (при разработке нового продукта или услуги)</li>
+	<li>Осуществление обратной связи с клиентом</li>
+</ul>
+<p><span class="bold"> ООО &laquo;ОнЛайн Трейд&raquo; не предоставляет персональные данные клиентов третьим лицам, за исключением случаев:</span>
+</p>
+<ul>
+	<li>Получение прямого согласия пользователя на передачу его персональных данных третьему лицу</li>
+	<li>По требованию правоохранительных органов в соответствии с действующим законодательством</li>
+	<li>Слияние или поглощение компании</li>
+</ul>
+<p><span class="bold">Использование ООО &laquo;ОнЛайн Трейд&raquo; файлов Cookies и точечных маркеров</span></p>
+
+<p>Файлы Cookies дают возможность сбора следующей информации о клиенте: IP-адрес/операционная система/тип
+	браузера/адреса ссылающихся сайтов. Это необходимо для улучшения услуг, предоставляемых клиенту компании
+	(сохранение пароля на сайте www.onlinetrade.ru при закрытии браузера, анализ трафика и т.д.) Точечные маркеры
+	служат для графического отражения на сайте безличной информации о пользователях (счетчики посетителей/просмотров
+	на сайте). По своему желанию клиент в любой момент может предотвратить отслеживание своих действий, отключив
+	Cookies.</p>
+
+<p><span class="bold">Права пользователей в отношении персональных данных</span></p>
+
+<p>Всем клиентам ООО &laquo;ОнЛайн Трейд&raquo; доступна возможность редактирования персональных данных в своем
+	личном кабинете. В случае изъявления желания пользователя прекратить обработку его персональных данных, клиенту
+	необходимо обратиться в ООО &laquo;ОнЛайн Трейд&raquo;.</p>]]></to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>footer_links</id></block>
+		</conditions>
+		<actions>
+			<new_title>Ссылки в подвале</new_title>
+			<term>
+				<from>About Us</from>
+				<to>О нас</to>
+			</term>
+			<term>
+				<from>Customer Service</from>
+				<to>Сервисный центр</to>
+			</term>
+			<term>
+				<from>Privacy Policy</from>
+				<to>Условия продажи</to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>cookie_restriction_notice_block</id></block>
+		</conditions>
+		<actions>
+			<!-- Cookie restriction notice -->
+			<new_title>Сообщение о необходимости включить куки</new_title>
+			<term>
+				<from><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></from>
+				<to><![CDATA[<p>Пожалуйста, включите куки, нажав кнопку ниже.
+<br/>Куки необходимы для правильной работы интернет-магазина.</p>]]></to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>electronics-landing</id></block>
+		</conditions>
+		<actions>
+			<!-- Electronics Landing -->
+			<new_title>Целевая страница «Электроника»</new_title>
+			<term>
+				<from><![CDATA[alt="Cell Phones"]]></from>
+				<to><![CDATA[alt="Телефоны"]]></to>
+			</term>
+			<term>
+				<from><![CDATA[alt="Digital Cameras"]]></from>
+				<to><![CDATA[alt="Фотокамеры"]]></to>
+			</term>
+			<term>
+				<from><![CDATA[alt="Laptops"]]></from>
+				<to><![CDATA[alt="Ноутбуки"]]></to>
+			</term>
+		</actions>
+	</rule>
+	<rule>
+		<conditions>
+			<type>block</type>
+			<block><id>cellphones-landing</id></block>
+		</conditions>
+		<actions>
+			<!-- Cellphones Landing -->
+			<new_title>Целевая страница «Телефоны»</new_title>
+		</actions>
+	</rule>
+</dictionary>

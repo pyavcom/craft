@@ -1,0 +1,71 @@
+
+UNICODE MAGENTO EXTENSIONS:
+===========================
+
+ONE STEP CHECKOUT
+=================
+
+OneStepCheckout simplifies the checkout process of your Magento store.
+
+Checkout is often the most complicated part of placing an order online, 
+and many users end up abandoning their order. 
+Some customers will be motivated enough to purchase regardless of how difficult it is, 
+but others will be lost due to check-out complexity. 
+OneStepCheckout greatly simplifies this process, leading to an immediate increase in sales.
+
+SIMPLIFYING FEATURES:
+=====================
+
+To maximize profits, you should do everything you can to make sure your customers complete the purchase.
+
+* Reduce checkout steps from six to one.
+* Just a single step to complete checkout.
+* Simplify the checkout process.
+* Provide a better customer experience.
+* Avoid confusing customer with registration.
+
+* Configurable in your Magento admin panel.
+* Auto update totals (AJAX).
+* Enable newsletter subscription.
+* Customer login on checkout page.
+
+Tech Specification:
+===================
+Compatible: 1.4.0.1, 1.4.1.1, 1.4.2.0,
+            1.5.0.0, 1.5.1.0,
+            1.6.0.0, 1.6.1.0, 1.6.2.0,
+            1.7.0.0, 1.7.0.2
+
+General Features:
+=================
+
+1. Provide Opcheckout Title and descriptipn from admin configuration.
+2. One Step Process to complete the checkout.
+3. Subscribe to Newsletter from the checkout page.
+4. Newsletter subscription checkbox checked by default.
+5. Customers can comment before placing the order.
+6. Specified customer comment length.
+
+
+How to configure the Unicode One step Checkout ?
+================================================
+
+After installing Unicode One Step Checkout, 
+Go to Admin -> System -> Configuration -> Sales (at the left), 
+You will find a tab called “Opcheckout”. By clicking the tab, you can configure the 
+One Step Checkout module.
+
+General Fixes: / Common Issues :
+================================
+“Access Denied” in Administration Panel
+
+If you come across “Access Denied “ / “404 Error” message when trying to access the
+One Step Checkout page after installation, please follow the below steps:
+Go to Admin->System->Permission->Roles, edit the role then save and
+log-out. Log-in again in your admin panel after clearing your browser cache.
+
+
+
+
+              
+

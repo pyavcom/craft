@@ -1,0 +1,91 @@
+<?php echo $this->getLayout()->createBlock('adminhtml/store_switcher')->setUseConfirm(0)->setUseAjax(false)->toHtml() ; ?>
+<div class="entry-edit">
+<div class="entry-edit-head"><h4><?php echo $this->__('Layered Navigation Setup');?></h4></div>
+<fieldset>
+	<table cellspacing="0" class="form-list">
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Price Navigation Step Calculation')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="price_range_calculation" id="navigation_price_range_calculation">
+                	<option <?php if($this->getPangeCalc() == 'auto'): ?> selected="selected"<?php endif;?> value="auto"><?php echo $this->__('Automatic')?></option>
+                	<option <?php if($this->getPangeCalc() == 'manual'): ?> selected="selected"<?php endif;?>value="manual"><?php echo $this->__('Manual')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Default Price Navigation Step')?></label>
+			</td>
+			<td class="value">
+				<input type="text" class="input-text" value="<?php echo $this->getRangeStep();?>" name="price_range_step" id="price_range_step">
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Show Category')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="show_category" id="show_category">
+                	<option <?php if($this->getShowCategoryValue() == 'no'): ?> selected="selected"<?php endif;?> value="no"><?php echo $this->__('Hide')?></option>
+                	<option <?php if($this->getShowCategoryValue() == 'yes'): ?> selected="selected"<?php endif;?> value="yes"><?php echo $this->__('Show')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Show Stock Status')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="show_stock_status" id="show_stock_status">
+                	<option <?php if($this->getShowStockValue() == 'no'): ?> selected="selected"<?php endif;?> value="no"><?php echo $this->__('Hide')?></option>
+                	<option <?php if($this->getShowStockValue() == 'yes'): ?> selected="selected"<?php endif;?> value="yes"><?php echo $this->__('Show')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Hide Empty Attribute')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="hide_empty_attribute" id="hide_empty_attribute">
+                	<option <?php if($this->getHideEmptyAttributeValue() == 'no'): ?> selected="selected"<?php endif;?> value="no"><?php echo $this->__('Hide')?></option>
+                	<option <?php if($this->getHideEmptyAttributeValue() == 'yes'): ?> selected="selected"<?php endif;?> value="yes"><?php echo $this->__('Show')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('SEO')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="seo_url" id="seo_url">
+                	<option <?php if($this->getUrlSeo() == 'no'): ?> selected="selected"<?php endif;?> value="no"><?php echo $this->__('No')?></option>
+                	<option <?php if($this->getUrlSeo() == 'yes'): ?> selected="selected"<?php endif;?> value="yes"><?php echo $this->__('Yes')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Reload Mode')?></label>
+			</td>
+			<td class="value">
+				 <select class="select" name="reload" id="reload">
+                	<option <?php if($this->getReload() == '3'): ?> selected="selected"<?php endif;?> value="3"><?php echo $this->__('No Reload')?></option>
+                	<option <?php if($this->getReload() == '1'): ?> selected="selected"<?php endif;?> value="1"><?php echo $this->__('Fast Reload')?></option>
+                	<option <?php if($this->getReload() == '2'): ?> selected="selected"<?php endif;?> value="2"><?php echo $this->__('Reload After Timeout')?></option>
+                </select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">
+				<label><?php echo $this->__('Timeout')?></label>
+			</td>
+			<td class="value">
+				<input type="text" class="input-text" value="<?php echo $this->getTimeout();?>" name="timeout" id="timeout">
+			</td>
+		</tr>
+	</table>
+</fieldset>
+</div>

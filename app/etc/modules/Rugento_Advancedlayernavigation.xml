@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) <2014>, <Rugento.ru>
+ * License URL http://www.rugento.ru/oferta.html
+ * Support URL http://support.rugento.ru
+ * Support EMAIL support@rugento.ru
+ */
+-->
+<config>
+	<modules>
+		<Rugento_Advancedlayernavigation>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Rugento_Advancedlayernavigation>
+	</modules>
+</config>

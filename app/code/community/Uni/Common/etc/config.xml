@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Uni_Common>
+            <version>0.1.0</version>
+        </Uni_Common>
+    </modules>
+    <global>
+        <helpers>
+            <unicommon>
+                <class>Uni_Common_Helper</class>
+            </unicommon>
+        </helpers>
+    </global>
+    <default>
+        <unicommon>
+            <general>
+                <feed_url><![CDATA[aHR0cDovL3N0b3JlLnVuaWNvZGVzeXN0ZW1zLmluL21vZHVsZWRldGFpbHM=]]></feed_url>
+            </general>
+        </unicommon>
+    </default>
+</config>

@@ -1,0 +1,458 @@
+<?xml version='1.0'?>
+<config>
+	<modules>
+		<Df_Themes>
+			<version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+		</Df_Themes>
+	</modules>
+	<global>
+		<blocks>
+			<df_themes><class>Df_Themes_Block</class></df_themes>
+			<productlist>
+				<rewrite>
+					<list>Df_Themes_Block_Sns_ProductList_List</list>
+				</rewrite>
+			</productlist>
+			<slider>
+				<rewrite>
+					<list>Df_Themes_Block_Sns_Slider_List</list>
+				</rewrite>
+			</slider>
+		</blocks>
+		<helpers>
+			<df_themes><class>Df_Themes_Helper</class></df_themes>
+			<galatitanshopsettings>
+				<rewrite>
+					<data>Df_Themes_Helper_Gala_Galatitanshopsettings_Data</data>
+				</rewrite>
+			</galatitanshopsettings>
+			<multidealpro>
+				<rewrite>
+					<data>Df_Themes_Helper_EM_Multidealpro_Data</data>
+				</rewrite>
+			</multidealpro>
+			<xsport>
+				<rewrite>
+					<data>Df_Themes_Helper_Sns_Xsport_Data</data>
+				</rewrite>
+			</xsport>
+		</helpers>
+		<models><df_themes><class>Df_Themes_Model</class></df_themes></models>
+	</global>
+	<adminhtml>
+		<translate>
+			<modules>
+				<EM_LayeredNavigation>
+					<files><default>EM_LayeredNavigation.csv</default></files>
+				</EM_LayeredNavigation>
+				<Infortis_Ultimo>
+					<files><default>Infortis.csv</default></files>
+				</Infortis_Ultimo>
+				<!--
+				 	К сожалению, вынуждены указать в качестве модуля Mage_Adminhtml
+				 	вместо Infortis_UltraSlideshow,
+				 	потому что файл system.xml модуля Infortis_UltraSlideshow
+				 	не содержит указание модуля для перевода,
+				 	и поэтому для перевода используется модуль Mage_Adminhtml.
+				 	@see Mage_Adminhtml_Model_Config::getAttributeModule()
+				-->
+				<Mage_Adminhtml>
+					<files><Infortis>Infortis.csv</Infortis></files>
+				</Mage_Adminhtml>
+				<Megnor_AdvancedMenu>
+					<files><default>Megnor_AdvancedMenu.csv</default></files>
+				</Megnor_AdvancedMenu>
+				<Megnor_Bestseller>
+					<files><default>Megnor_Bestseller.csv</default></files>
+				</Megnor_Bestseller>
+				<Megnor_FeaturedProducts>
+					<files><default>Megnor_FeaturedProducts.csv</default></files>
+				</Megnor_FeaturedProducts>
+				<Megnor_Newproducts>
+					<files><default>Megnor_Newproducts.csv</default></files>
+				</Megnor_Newproducts>
+				<Megnor_Specialproducts>
+					<files><default>Megnor_Specialproducts.csv</default></files>
+				</Megnor_Specialproducts>
+				<!--
+				 	SNS Xsport
+				 	http://themeforest.net/item/sns-xsport-premium-responsive-magento-theme/8205296
+				 	http://demo.snstheme.com/theme/xsport/
+				 	http://magento-forum.ru/forum/355/
+				-->
+				<Sns_Ajaxcart>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Ajaxcart.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_ajaxcart>SNS/Ajaxcart.csv</sns_ajaxcart>
+						<checkout>Mage_Checkout.csv</checkout>
+					</files>
+				</Sns_Ajaxcart>
+				<Sns_Ajaxfilter>
+					<files>
+						<!--
+							В оригинале никакого языкового файла для модуля не указано.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_ajaxfilter>SNS/Ajaxfilter.csv</sns_ajaxfilter>
+					</files>
+				</Sns_Ajaxfilter>
+				<Sns_ProductList>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_ProductList.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_productlist>SNS/ProductList.csv</sns_productlist>
+					</files>
+				</Sns_ProductList>
+				<Sns_Producttabs>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Producttabs.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_producttabs>SNS/Producttabs.csv</sns_producttabs>
+					</files>
+				</Sns_Producttabs>
+				<Sns_Quickview>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Quickview.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_quickview>SNS/Quickview.csv</sns_quickview>
+					</files>
+				</Sns_Quickview>
+				<Sns_RevolutionSlider>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_RevolutionSlider.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_revolutionslider>SNS/RevolutionSlider.csv</sns_revolutionslider>
+					</files>
+				</Sns_RevolutionSlider>
+				<Sns_Slider>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Slider.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_slider>SNS/Slider.csv</sns_slider>
+					</files>
+				</Sns_Slider>
+				<Sns_Twitter>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Twitter.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_twitter>SNS/Twitter.csv</sns_twitter>
+					</files>
+				</Sns_Twitter>
+				<Sns_Xsport>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Xsport.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<default>SNS.csv</default>
+						<sns_xsport>SNS/Xsport.csv</sns_xsport>
+					</files>
+				</Sns_Xsport>
+				<Thirty4_CatalogSale>
+					<files><default>Thirty4_CatalogSale.csv</default></files>
+				</Thirty4_CatalogSale>
+				<TM_AjaxSearch>
+					<files><default>TM_AjaxSearch.csv</default></files>
+				</TM_AjaxSearch>
+			</modules>
+		</translate>
+	</adminhtml>
+	<frontend>
+		<layout>
+			<updates>
+				<df_themes>
+					<file>df/themes.xml</file>
+				</df_themes>
+			</updates>
+		</layout>
+		<translate>
+			<modules>
+				<EM_Ajaxcart>
+					<files>
+						<catalog>Mage_Catalog.csv</catalog>
+						<checkout>Mage_Checkout.csv</checkout>
+					</files>
+				</EM_Ajaxcart>
+				<EM_Ajaxproducts>
+					<files>
+						<default>EM_Ajaxproducts.csv</default>
+					</files>
+				</EM_Ajaxproducts>
+				<EM_Dynamicproducts>
+					<files>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</EM_Dynamicproducts>
+				<EM_LayeredNavigation>
+					<files><default>EM_LayeredNavigation.csv</default></files>
+				</EM_LayeredNavigation>
+				<EM_Multidealpro>
+					<files>
+						<!--
+						 	Обратите внимание на используемый приём:
+						 	мы указываем не один файл с переводом, а несколько.
+						 	Дополнительный файл Mage_Catalog.csv — для перевода стандартных фраз
+						 	вроде «Add to Cart», «Add to Wishlist», «Add to Compare».
+						-->
+						<catalog>Mage_Catalog.csv</catalog>
+						<default>EM_Multidealpro.csv</default>
+					</files>
+				</EM_Multidealpro>
+				<!-- Оформительская тема Gala TitanShop -->
+				<Gala_Galatitanshopsettings>
+					<files>
+						<checkout>Mage_Checkout.csv</checkout>
+						<default>Gala_TitanShop.csv</default>
+						<tag>Mage_Tag.csv</tag>
+					</files>
+				</Gala_Galatitanshopsettings>
+				<Infortis_CloudZoom>
+					<files><default>Infortis_CloudZoom.csv</default></files>
+				</Infortis_CloudZoom>
+				<Infortis_Fortis><files>
+					<default>Infortis.csv</default></files>
+				</Infortis_Fortis>
+				<Infortis_Ultimo>
+					<files><default>Infortis.csv</default></files>
+				</Infortis_Ultimo>
+				<Infortis_UltraMegamenu>
+					<files><default>Infortis.csv</default></files>
+				</Infortis_UltraMegamenu>
+				<!--
+					Magento CE по недосмотру не определяет файл перевода для модуля Mage_Captcha,
+					хотя сам файл Mage_Captcha.csv присутствует как в английском пакете,
+					так и для других языковых пакетов
+				-->
+				<Mage_Captcha><files><default>Mage_Captcha.csv</default></files></Mage_Captcha>
+				<Megnor_AdvancedMenu>
+					<files><default>Megnor_AdvancedMenu.csv</default></files>
+				</Megnor_AdvancedMenu>
+				<Megnor_Bestseller>
+					<files><default>Megnor_Bestseller.csv</default></files>
+				</Megnor_Bestseller>
+				<Megnor_FeaturedProducts>
+					<files><default>Megnor_FeaturedProducts.csv</default></files>
+				</Megnor_FeaturedProducts>
+				<Megnor_Newproducts>
+					<files><default>Megnor_Newproducts.csv</default></files>
+				</Megnor_Newproducts>
+				<Megnor_Specialproducts>
+					<files><default>Megnor_Specialproducts.csv</default></files>
+				</Megnor_Specialproducts>
+				<!--
+				 	SNS Xsport
+				 	http://themeforest.net/item/sns-xsport-premium-responsive-magento-theme/8205296
+				 	http://demo.snstheme.com/theme/xsport/
+				 	http://magento-forum.ru/forum/355/
+				-->
+				<Sns_Ajaxcart>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Ajaxcart.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_ajaxcart>SNS/Ajaxcart.csv</sns_ajaxcart>
+						<catalog>Mage_Catalog.csv</catalog>
+						<checkout>Mage_Checkout.csv</checkout>
+					</files>
+				</Sns_Ajaxcart>
+				<Sns_Ajaxfilter>
+					<files>
+						<!--
+							В оригинале никакого языкового файла для модуля не указано.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_ajaxfilter>SNS/Ajaxfilter.csv</sns_ajaxfilter>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_Ajaxfilter>
+				<Sns_ProductList>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_ProductList.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_productlist>SNS/ProductList.csv</sns_productlist>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_ProductList>
+				<Sns_Producttabs>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Producttabs.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_producttabs>SNS/Producttabs.csv</sns_producttabs>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_Producttabs>
+				<Sns_Quickview>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Quickview.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_quickview>SNS/Quickview.csv</sns_quickview>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_Quickview>
+				<Sns_RevolutionSlider>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_RevolutionSlider.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_revolutionslider>SNS/RevolutionSlider.csv</sns_revolutionslider>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_RevolutionSlider>
+				<Sns_Slider>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Slider.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_slider>SNS/Slider.csv</sns_slider>
+						<catalog>Mage_Catalog.csv</catalog>
+					</files>
+				</Sns_Slider>
+				<Sns_Twitter>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Twitter.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<sns>SNS.csv</sns>
+						<sns_twitter>SNS/Twitter.csv</sns_twitter>
+					</files>
+				</Sns_Twitter>
+				<Sns_Xsport>
+					<files>
+						<!--
+							В оригинале указан отсутствующий языковой файл Sns_Xsport.csv.
+							Нам удобнее сделать единый языковой файл для всех модулей тем SNS.
+						-->
+						<default>SNS.csv</default>
+						<sns_xsport>SNS/Xsport.csv</sns_xsport>
+					</files>
+				</Sns_Xsport>
+				<Thirty4_CatalogSale>
+					<files><default>Thirty4_CatalogSale.csv</default></files>
+				</Thirty4_CatalogSale>
+				<TM_AjaxSearch>
+					<files><default>TM_AjaxSearch.csv</default></files>
+				</TM_AjaxSearch>
+			</modules>
+		</translate>
+	</frontend>
+	<default>
+		<ajaxfilter_cfg>
+			<price_slider>
+				<goBtnText>применить</goBtnText>
+			</price_slider>
+		</ajaxfilter_cfg>
+		<!-- Оформительские темы TemplateMela:
+			Classy Shop (MAG090171)
+			Minimal Multi Purpose (MAG090180)
+		-->
+		<bestseller>
+			<sidebar>
+				<heading>Популярное</heading>
+			</sidebar>
+			<standalone>
+				<heading>Популярное</heading>
+			</standalone>
+			<listing_home>
+				<heading>Популярное</heading>
+			</listing_home>
+		</bestseller>
+		<cmspage>
+			<heading_block>Обратите внимание</heading_block>
+		</cmspage>
+		<featuredproducts>
+			<standalone>
+				<heading>Обратите внимание</heading>
+			</standalone>
+		</featuredproducts>
+		<manufacturer>
+			<sidebar>
+				<blocktitle>Производители</blocktitle>
+			</sidebar>
+		</manufacturer>
+		<!-- Оформительская тема «Blanco» -->
+		<mygeneral>
+			<generaloptions>
+				<additional_nav>Распродажа</additional_nav>
+			</generaloptions>
+		</mygeneral>
+		<!-- SNS Xsport -->
+		<productlist_cfg>
+			<general>
+				<!-- Best Seller -->
+				<title>Популярные товары</title>
+			</general>
+		</productlist_cfg>
+		<producttabs_cfg>
+			<general>
+				<!-- New Products -->
+				<title>Новинки</title>
+			</general>
+		</producttabs_cfg>
+		<!--
+			Оформительская тема Argento
+			@link http://argentotheme.com/
+		-->
+		<tm_ajaxsearch>
+			<general>
+				<searchfieldtext>что будем искать?</searchfieldtext>
+				<headertext>все товары по запросу</headertext>
+				<footertext>все товары по запросу</footertext>
+			</general>
+		</tm_ajaxsearch>
+		<!--
+			Оформительские темы Infortis Ultimo и Infortis Fortis
+			@link http://themeforest.net/item/ultimo-fluid-responsive-magento-theme/3231798?WT.ac=category_item&WT.seg_1=category_item&WT.z_author=infortis
+			Обратите внимание, что для перевода демо-данных
+			(когда англоязычные значения уже попали в БД и система не использует сначения по умолчанию ниже),
+			перевод осуществляется по словарю:
+			app/code/local/Df/Localization/etc/rm/dictionaries/onetime/Infortis/Fortis.xml
+		-->
+		<ultramegamenu>
+			<category_labels>
+				<label1>новинки продаж</label1>
+				<label2>лучшие цены</label2>
+			</category_labels>
+		</ultramegamenu>
+	</default>
+</config>

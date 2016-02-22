@@ -1,0 +1,150 @@
+<?xml version='1.0'?>
+<config>
+	<modules>
+		<Df_Adminhtml>
+			<version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+		</Df_Adminhtml>
+	</modules>
+	<global>
+		<blocks>
+			<df_adminhtml><class>Df_Adminhtml_Block</class></df_adminhtml>
+			<adminhtml>
+				<rewrite>
+					<catalog_product_edit_tab_categories>Df_Adminhtml_Block_Catalog_Product_Edit_Tab_Categories</catalog_product_edit_tab_categories>
+					<customer_edit_tab_account>Df_Adminhtml_Block_Customer_Edit_Tab_Account</customer_edit_tab_account>
+					<dashboard_tab_amounts>Df_Adminhtml_Block_Dashboard_Tab_Amounts</dashboard_tab_amounts>
+					<dashboard_tab_orders>Df_Adminhtml_Block_Dashboard_Tab_Orders</dashboard_tab_orders>
+					<notification_window>Df_Adminhtml_Block_Notification_Window</notification_window>
+					<page_head>Df_Adminhtml_Block_Page_Head</page_head>
+					<sales_order_grid>Df_Adminhtml_Block_Sales_Order_Grid</sales_order_grid>
+					<sales_order_view_items_renderer_default>Df_Adminhtml_Block_Sales_Order_View_Items_Renderer_Default</sales_order_view_items_renderer_default>
+					<sales_order_view_history>Df_Adminhtml_Block_Sales_Order_View_History</sales_order_view_history>
+					<system_config_form_field>Df_Adminhtml_Block_System_Config_Form_Field</system_config_form_field>
+					<system_convert_gui_edit_tab_wizard>Df_Adminhtml_Block_System_Convert_Gui_Edit_Tab_Wizard</system_convert_gui_edit_tab_wizard>
+					<tax_rate_importExport>Df_Adminhtml_Block_Tax_Rate_ImportExport</tax_rate_importExport>
+					<tax_rule_edit_form>Df_Adminhtml_Block_Tax_Rule_Edit_Form</tax_rule_edit_form>
+					<widget_grid_column_renderer_currency>Df_Adminhtml_Block_Widget_Grid_Column_Renderer_Currency</widget_grid_column_renderer_currency>
+					<widget_grid_column_renderer_price>Df_Adminhtml_Block_Widget_Grid_Column_Renderer_Price</widget_grid_column_renderer_price>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+		<helpers>
+			<adminhtml>
+				<rewrite>
+					<data>Df_Adminhtml_Helper_Data</data>
+				</rewrite>
+			</adminhtml>
+			<df_adminhtml><class>Df_Adminhtml_Helper</class></df_adminhtml>
+		</helpers>
+		<models>
+			<adminhtml>
+				<rewrite>
+					<!--
+						Цель перекрытия —
+						поддержка в Magento 1.4.0.1 ключа config_path,
+						который появился только в Magento 1.4.1.0
+					-->
+					<config_data>Df_Adminhtml_Model_Config_Data</config_data>
+					<!--
+						Цель перекрытия —
+						поддержка упорядочивания источников данных курсов валют
+						в соответствии с их весами, заданными в настроечных файлах модуля (config.xml).
+						Это позволяет нам, например, предложить администратору первым в списке
+						источников данных не Webservicex, а Банк России.
+					-->
+					<system_config_source_currency_service>Df_Adminhtml_Model_System_Config_Source_Currency_Service</system_config_source_currency_service>
+				</rewrite>
+			</adminhtml>
+			<df_adminhtml><class>Df_Adminhtml_Model</class></df_adminhtml>
+		</models>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Df_Adminhtml before='Mage_Adminhtml'>Df_Adminhtml</Df_Adminhtml>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+		<events>
+			<adminhtml_block_html_before>
+				<observers>
+					<df_adminhtml__adminhtml_block_html_before>
+						<type>singleton</type>
+						<class>df_adminhtml/dispatcher</class>
+						<method>adminhtml_block_html_before</method>
+					</df_adminhtml__adminhtml_block_html_before>
+				</observers>
+			</adminhtml_block_html_before>
+			<adminhtml_sales_order_create_process_data_before>
+				<observers>
+					<df_adminhtml__adminhtml_sales_order_create_process_data_before>
+						<type>singleton</type>
+						<class>df_adminhtml/dispatcher</class>
+						<method>adminhtml_sales_order_create_process_data_before</method>
+					</df_adminhtml__adminhtml_sales_order_create_process_data_before>
+				</observers>
+			</adminhtml_sales_order_create_process_data_before>
+			<adminhtml_widget_container_html_before>
+				<observers>
+					<df_adminhtml__adminhtml_widget_container_html_before>
+						<type>singleton</type>
+						<class>df_adminhtml/dispatcher</class>
+						<method>adminhtml_widget_container_html_before</method>
+					</df_adminhtml__adminhtml_widget_container_html_before>
+				</observers>
+			</adminhtml_widget_container_html_before>
+			<controller_action_predispatch>
+				<observers>
+					<df_adminhtml__controller_action_predispatch>
+						<type>singleton</type>
+						<class>df_adminhtml/dispatcher</class>
+						<method>controller_action_predispatch</method>
+					</df_adminhtml__controller_action_predispatch>
+				</observers>
+			</controller_action_predispatch>
+			<core_block_abstract_to_html_before>
+				<observers>
+					<df_adminhtml__core_block_abstract_to_html_before>
+						<type>singleton</type>
+						<class>df_adminhtml/dispatcher</class>
+						<method>core_block_abstract_to_html_before</method>
+					</df_adminhtml__core_block_abstract_to_html_before>
+				</observers>
+			</core_block_abstract_to_html_before>
+		</events>
+		<layout>
+			<updates>
+				<df_adminhtml module='Df_Adminhtml'><file>df/adminhtml.xml</file></df_adminhtml>
+			</updates>
+		</layout>
+		<translate>
+			<modules>
+				<Df_Adminhtml>
+					<files>
+<!--
+	Модуль Df_Page используется
+	только для переопределения функциональности модуля Mage_Adminhtml,
+	поэтому мы заимствуем перевод из модуля Mage_Adminhtml.
+	Раньше мы заимствовали перевод другим, более сложным способом:
+	добавляя в каждый переопределяемый блок метод следующего содержания:
+	/**
+	 * @override
+	 * @return string
+	 */
+	public function __() {$a = func_get_args(); return rm_translate($a, 'Mage_Adminhtml');}
+
+	Очевидно, новый способ гораздо проще.
+ -->
+						<default>Mage_Adminhtml.csv</default>
+					</files>
+				</Df_Adminhtml>
+			</modules>
+		</translate>
+	</adminhtml>
+</config>

@@ -1,0 +1,288 @@
+URL:                 http://craftwear.com.ua/searchautocomplete/suggest/result/?q=199899
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2016-01-14 14:16:07 MSK
+Оформительская тема: default / default
+***********************************
+Warning: include(/home3/pyavcom/public_html/craft3/app/code/local/Df/Admin/Model/Settings.php): failed to open stream: Too many open files in system  in /home3/pyavcom/public_html/craft3/lib/Varien/Autoload.php on line 93
+***********************************
+Файл:        lib/Varien/Autoload.php
+Строка:      93
+Субъект:     Varien_Autoload::autoload
+Объект:      mageCoreErrorHandler
+Контекст:    
+if ($this->_isIncludePathDefined) {
+            $classFile =  COMPILER_INCLUDE_PATH . DIRECTORY_SEPARATOR . $class;
+        } else {
+            $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
+        }
+        $classFile.= '.php';
+        //echo $classFile;die();
+        return include $classFile;
+    }
+
+    /**
+     * Register autoload scope
+     * This process allow include scope file which can contain classes
+     * definition which are used for this scope
+     *
+     * @param string $code scope code
+************************************
+Файл:        lib/Varien/Autoload.php
+Строка:      93
+Субъект:     Varien_Autoload::autoload
+Объект:      Varien_Autoload::autoload
+Контекст:    
+if ($this->_isIncludePathDefined) {
+            $classFile =  COMPILER_INCLUDE_PATH . DIRECTORY_SEPARATOR . $class;
+        } else {
+            $classFile = str_replace(' ', DIRECTORY_SEPARATOR, ucwords(str_replace('_', ' ', $class)));
+        }
+        $classFile.= '.php';
+        //echo $classFile;die();
+        return include $classFile;
+    }
+
+    /**
+     * Register autoload scope
+     * This process allow include scope file which can contain classes
+     * definition which are used for this scope
+     *
+     * @param string $code scope code
+************************************
+Файл:        
+Строка:      0
+Субъект:     spl_autoload_call
+Объект:      Varien_Autoload::autoload
+Файл:        app/code/local/Df/Core/lib/fp/other.php
+Строка:      90
+Субъект:     df_cfg
+Объект:      spl_autoload_call
+Контекст:    
+* которые и так очевидны (например, вызов данной функции, вызов df_bt() и т.п.)
+ *
+ * @return void
+ */
+function df_bt($levelsToSkip = 0) {df()->debug()->logCompactBacktrace($levelsToSkip + 1);}
+
+/** @return Df_Admin_Model_Settings */
+function df_cfg() {return Df_Admin_Model_Settings::s();}
+
+/** @return string */
+function df_current_url() {return df_mage()->core()->url()->getCurrentUrl();}
+
+/**
+ * @param mixed $value
+ * @return bool
+ */
+************************************
+Файл:        app/code/local/Df/Core/Model/Dispatcher.php
+Строка:      130
+Субъект:     Df_Core_Model_Dispatcher::controller_front_init_before
+Объект:      df_cfg
+Контекст:    
+	 */
+	public function controller_front_init_before(Varien_Event_Observer $observer) {
+		try {
+			Df_Core_Model_Lib::s()->init();
+			if (
+					df_module_enabled(Df_Core_Module::SPEED)
+				&&
+					df_cfg()->speed()->general()->enablePhpScriptsLoadChecking()
+			) {
+				Df_Core_Autoload::register();
+			}
+		}
+		catch(Exception $e) {
+			df_handle_entry_point_exception($e);
+		}
+	}
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      1338
+Субъект:     Mage_Core_Model_App::_callObserverMethod
+Объект:      Df_Core_Model_Dispatcher::controller_front_init_before
+Контекст:    
+* @param Varien_Event_Observer $observer
+     * @return Mage_Core_Model_App
+     * @throws Mage_Core_Exception
+     */
+    protected function _callObserverMethod($object, $method, $observer)
+    {
+        if (method_exists($object, $method)) {
+            $object->$method($observer);
+        } elseif (Mage::getIsDeveloperMode()) {
+            Mage::throwException('Method "'.$method.'" is not defined in "'.get_class($object).'"');
+        }
+        return $this;
+    }
+
+    public function setUpdateMode($value)
+    {
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      1317
+Субъект:     Mage_Core_Model_App::dispatchEvent
+Объект:      Mage_Core_Model_App::_callObserverMethod
+Контекст:    
+$object = Mage::getModel($obs['model']);
+                        $this->_callObserverMethod($object, $method, $observer);
+                        break;
+                    default:
+                        $method = $obs['method'];
+                        $observer->addData($args);
+                        $object = Mage::getSingleton($obs['model']);
+                        $this->_callObserverMethod($object, $method, $observer);
+                        break;
+                }
+                Varien_Profiler::stop('OBSERVER: '.$obsName);
+            }
+        }
+        return $this;
+    }
+************************************
+Файл:        app/Mage.php
+Строка:      447
+Субъект:     Mage::dispatchEvent
+Объект:      Mage_Core_Model_App::dispatchEvent
+Контекст:    
+* @param string $name
+     * @param array $data
+     * @return Mage_Core_Model_App
+     */
+    public static function dispatchEvent($name, array $data = array())
+    {
+        Varien_Profiler::start('DISPATCH EVENT:'.$name);
+        $result = self::app()->dispatchEvent($name, $data);
+        Varien_Profiler::stop('DISPATCH EVENT:'.$name);
+        return $result;
+    }
+
+    /**
+     * Retrieve model object
+     *
+     * @link    Mage_Core_Model_Config::getModelInstance
+************************************
+Файл:        app/code/core/Mage/Core/Controller/Varien/Front.php
+Строка:      128
+Субъект:     Mage_Core_Controller_Varien_Front::init
+Объект:      Mage::dispatchEvent
+Контекст:    
+/**
+     * Init Front Controller
+     *
+     * @return Mage_Core_Controller_Varien_Front
+     */
+    public function init()
+    {
+        Mage::dispatchEvent('controller_front_init_before', array('front'=>$this));
+
+        $routersInfo = Mage::app()->getStore()->getConfig(self::XML_STORE_ROUTERS_PATH);
+
+        Varien_Profiler::start('mage::app::init_front_controller::collect_routers');
+        foreach ($routersInfo as $routerCode => $routerInfo) {
+            if (isset($routerInfo['disabled']) && $routerInfo['disabled']) {
+                continue;
+            }
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      749
+Субъект:     Mage_Core_Model_App::_initFrontController
+Объект:      Mage_Core_Controller_Varien_Front::init
+Контекст:    
+* @return Mage_Core_Model_App
+     */
+    protected function _initFrontController()
+    {
+        $this->_frontController = new Mage_Core_Controller_Varien_Front();
+        Mage::register('controller', $this->_frontController);
+        Varien_Profiler::start('mage::app::init_front_controller');
+        $this->_frontController->init();
+        Varien_Profiler::stop('mage::app::init_front_controller');
+        return $this;
+    }
+
+    /**
+     * Redeclare custom error handler
+     *
+     * @param   string $handler
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      1094
+Субъект:     Mage_Core_Model_App::getFrontController
+Объект:      Mage_Core_Model_App::_initFrontController
+Контекст:    
+* Retrieve front controller object
+     *
+     * @return Mage_Core_Controller_Varien_Front
+     */
+    public function getFrontController()
+    {
+        if (!$this->_frontController) {
+            $this->_initFrontController();
+        }
+
+        return $this->_frontController;
+    }
+
+    /**
+     * Get core cache model
+     *
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      354
+Субъект:     Mage_Core_Model_App::run
+Объект:      Mage_Core_Model_App::getFrontController
+Контекст:    
+$scopeCode = isset($params['scope_code']) ? $params['scope_code'] : '';
+                $scopeType = isset($params['scope_type']) ? $params['scope_type'] : 'store';
+                $this->_initCurrentStore($scopeCode, $scopeType);
+                $this->_initRequest();
+                Mage_Core_Model_Resource_Setup::applyAllDataUpdates();
+            }
+
+            $this->getFrontController()->dispatch();
+        }
+        return $this;
+    }
+
+    /**
+     * Initialize PHP environment
+     *
+     * @return Mage_Core_Model_App
+************************************
+Файл:        app/Mage.php
+Строка:      683
+Субъект:     Mage::run
+Объект:      Mage_Core_Model_App::run
+Контекст:    
+self::$_events = new Varien_Event_Collection();
+            self::_setIsInstalled($options);
+            self::_setConfigModel($options);
+            self::$_app->run(array(
+                'scope_code' => $code,
+                'scope_type' => $type,
+                'options'    => $options,
+            ));
+            Varien_Profiler::stop('mage');
+        } catch (Mage_Core_Model_Session_Exception $e) {
+            header('Location: ' . self::getBaseUrl());
+            die();
+        } catch (Mage_Core_Model_Store_Exception $e) {
+            require_once(self::getBaseDir() . DS . 'errors' . DS . '404.php');
+            die();
+        } catch (Exception $e) {
+************************************
+Файл:        index.php
+Строка:      87
+Субъект:     
+Объект:      Mage::run
+Контекст:    
+/* Store or website code */
+$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+
+/* Run store or run website */
+$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+
+Mage::run($mageRunCode, $mageRunType);
+************************************

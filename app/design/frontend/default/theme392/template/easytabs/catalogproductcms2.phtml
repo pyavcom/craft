@@ -1,0 +1,13 @@
+<?php
+$cmsblockid = Mage::getStoreConfig('easy_tabs/customcms/tabidcms2');
+
+$product1 = Mage::registry('product');
+$manufacturer = $product1->getManufacturer();
+$manufacturer = $product1->getAttributeText('manufacturer');
+
+$cmsblockid = $cmsblockid.'_'.$manufacturer;
+
+if(!empty($cmsblockid)){
+        echo '<div class="product-specs">'.$this->getLayout()->createBlock('cms/block')->setBlockId($cmsblockid)->toHtml().'</div>';
+}
+?>

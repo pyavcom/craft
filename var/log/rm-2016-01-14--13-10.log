@@ -1,0 +1,8 @@
+URL:                 http://craftwear.com.ua/index.php/admin/cache/
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2016-01-14 13:10:34 MSK***********************************
+[E_ERROR] Undefined class constant 'Df_Varien_Simplexml_Element::_CLASS'
+File: /home3/pyavcom/public_html/craft3/app/code/local/Df/Admin/Model/ClassRewrite/Finder.php
+Line: 82
+***********************************

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<catalog_category_layered> 
+    <remove name="catalog.leftnav"/> 
+    <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/jquery.tools.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>js/layer.js</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/advfilter.css</name><params/></action>
+        </reference>   
+    <reference name="right">
+            <block type="advancedlayernavigation/catalog_layer_view" name="catalog.advancedlayernavigation" after="right.reports.product.compared" template="advancedlayernavigation/layer.phtml"/>
+    </reference>
+</catalog_category_layered> 
+<catalogsearch_result_index>
+    <remove name="catalogsearch.leftnav"/> 
+    <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/jquery.tools.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>js/layer.js</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/advfilter.css</name><params/></action>
+        </reference> 
+        <reference name="right">
+            <block type="advancedlayernavigation/catalogsearch_layer" name="catalog.advancedlayernavigation" after="right.reports.product.compared" template="advancedlayernavigation/layer.phtml"/>
+        </reference>
+</catalogsearch_result_index>
+<catalog_product_view>
+    <remove name="product.attributes"/>
+    <reference name="product.info">
+        <block type="advancedlayernavigation/catalog_product_view_attributes" name="product.attributes.filter" as="additional" after="description" template="advancedlayernavigation/catalog/product/view/attributes.phtml">
+               <action method="addToParentGroup"><group>detailed_info</group></action>
+        </block>
+    </reference>
+</catalog_product_view>
+</layout>

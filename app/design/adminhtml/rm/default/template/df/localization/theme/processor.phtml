@@ -1,0 +1,12 @@
+<?php /** @var Df_Localization_Block_Admin_Theme_Processor $this */ ?>
+<li class='<?php echo $this->getCssClass(); ?>'>
+	<div><?php echo $this->getTitle(); ?></div>
+	<?php if ($this->getLink()) { ?>
+		<div><a
+			href='<?php echo $this->getLink(); ?>'
+			title='<?php echo $this->getLinkTitle(); ?>'
+		><?php echo $this->getActionTitle(); ?></a></div>
+	<?php } else { ?>
+		<div><?php echo $this->getActionTitle(); ?></div>
+	<?php } ?>
+</li>

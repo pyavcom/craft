@@ -1,0 +1,34 @@
+<?php if($this->canShowBlock()): ?>
+    <div class="box block layered-nav advanced-navigation">
+        <div class="block-title">
+            <h3><?php echo $this->__('Shop by') ?></h3>
+        </div>
+        <div class="block-content">
+            <?php if($this->canShowOptions()): ?>
+                <div class="narrow-by">
+                    <?php foreach ($this->getFilters() as $_filter): ?>
+                          <?php echo $_filter->getHtml(); ?>
+                    <?php endforeach; ?>
+                    <input type="hidden" id="currentCategoryId" name="cat" value="<?php echo $this->getCurrentCategoryId();?>" />
+                </div>
+            <?php endif; ?>
+            <a href="#" class="nav-a-link nav-bottom-link"><?php echo $this->__('Show All Results');?></a>
+        </div>
+        <div id="nav-link" class="af-link-pos-<?php echo $this->getPosition();?>"><span class="af-search-a"></span><?php echo $this->__('Find');?> <span id="nav-link-count"></span> <span id="af-plural"></span> &nbsp;<a class="nav-a-link" href="#"><?php echo $this->__('Show');?></a></div>
+    </div>
+<?php endif; ?>
+<script type="text/javascript">
+    <?php if($this->getPosition() == 'left'):?>
+        var xleft = -jQuery('div.advanced-navigation').outerWidth(true) + 1; //XXX offset right
+    <?php else :?>
+        var xleft = jQuery('#nav-link').outerWidth(true); //XXX offset left
+    <?php endif;?>
+    var layerurl = '<?php echo $this->getAjaxUrl();?>';
+    var layshow = '<?php echo $this->__('Show All');?>';
+    var layhide = '<?php echo $this->__('Hide All');?>';
+    var afone = '<?php echo $this->__('One Product');?>';
+    var aftwo = '<?php echo $this->__('Two Product');?>';
+    var affri = '<?php echo $this->__('Fri Product');?>';
+    var timeoutlink = '<?php echo $this->getTimeout()?>';
+    var reload = '<?php echo $this->getReload()?>';
+</script>

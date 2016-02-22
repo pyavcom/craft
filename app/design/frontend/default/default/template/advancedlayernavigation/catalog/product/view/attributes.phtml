@@ -1,0 +1,24 @@
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct()
+?>
+<?php if($_additional = $this->getAdditionalData()): ?>
+    <h2><?php echo $this->__('Additional Information') ?></h2>
+    <table class="data-table" id="product-attribute-specs-table">
+        <col width="25%" />
+        <col />
+        <tbody>
+        <?php foreach ($_additional as $_data): ?>
+            <tr>
+                <th class="label"><?php echo $this->htmlEscape($this->__($_data['label'])) ?></th>                
+                <?php if($this->getDecimal($_data['code']) === false):?>
+                    <td class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+                <?php else:?>
+                    <td class="data"><?php echo round($_helper->productAttribute($_product, $_data['value'], $_data['code'])); ?> <?php echo $this->getDecimal($_data['code']);?></td>                   
+                <?php endif;?>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>
+<?php endif;?>

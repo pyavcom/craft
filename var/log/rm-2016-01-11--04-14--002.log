@@ -1,0 +1,310 @@
+URL:                 http://craftwear.com.ua/?�?�???????????????�?????�??????
+Версия Magento:      2.40.1 (1.7.0.2)
+Версия PHP:          5.4.43
+Время:               2016-01-11 04:14:55 MSK
+Оформительская тема: default / default
+***********************************
+Warning: json_encode(): Invalid UTF-8 sequence in argument  in /home3/pyavcom/public_html/craft3/app/code/local/Df/Core/lib/fp/serialize.php on line 68
+***********************************
+Файл:        
+Строка:      0
+Субъект:     json_encode
+Объект:      mageCoreErrorHandler
+Файл:        app/code/local/Df/Core/lib/fp/serialize.php
+Строка:      68
+Субъект:     rm_serialize_simple
+Объект:      json_encode
+Контекст:    
+		 * Поэтому использование Zend_Json::encode выглядит более правильным, чем json_encode.
+		 *
+		 * $this->saveData($key, Zend_Json::encode($value));
+		 *
+		 * P.S. Оно, конечно, правильнее, но @see json_encode() работает заметно быстрее,
+		 * чем обёртка @see Zend_Json::encode()
+		 */
+		: json_encode($data)
+	;
+}
+
+/**
+ * @param string $data
+ * @return mixed|Df_Core_Serializable|bool
+ */
+function rm_unserialize($data) {
+************************************
+Файл:        app/code/local/Df/Core/Model/Abstract.php
+Строка:      752
+Субъект:     Df_Core_Model_Abstract::cacheSaveProperty
+Объект:      rm_serialize_simple
+Контекст:    
+	 * @return void
+	 */
+	private function cacheSaveProperty($propertyName, $cacheKey) {
+		$cacheKey = $cacheKey . $propertyName;
+		/** @var string|bool $propertyValueSerialized */
+		$propertyValueSerialized =
+			isset($this->_cachedPropertiesSimpleMap[$propertyName])
+			? rm_serialize_simple($this->$propertyName)
+			: rm_serialize($this->$propertyName)
+		;
+		if ($propertyValueSerialized) {
+			Mage::app()->getCacheInstance()->save(
+				$data = $propertyValueSerialized
+				,$id = $cacheKey
+				,$tags = $this->getCacheTagsRm()
+				,$lifeTime = $lifeTime = $this->getCacheLifetime()
+************************************
+Файл:        app/code/local/Df/Core/Model/Abstract.php
+Строка:      736
+Субъект:     Df_Core_Model_Abstract::cacheSaveArea
+Объект:      Df_Core_Model_Abstract::cacheSaveProperty
+Контекст:    
+								 */
+								!isset($this->_cachedPropertiesLoaded[$propertyName])
+							||
+								isset($this->_cachedPropertiesModified[$propertyName])
+						)
+
+				) {
+					$this->cacheSaveProperty($propertyName, $cacheKey);
+				}
+			}
+		}
+	}
+
+	/**
+	 * @param string $propertyName
+	 * @param string $cacheKey
+************************************
+Файл:        app/code/local/Df/Core/Model/Abstract.php
+Строка:      703
+Субъект:     Df_Core_Model_Abstract::cacheSave
+Объект:      Df_Core_Model_Abstract::cacheSaveArea
+Контекст:    
+			 * (вызов Mage::app()->getStore() приводит к исключительной ситуации),
+			 * поэтому вызываем @see Df_Core_Model_Abstract::getCacheKeyPerStore()
+			 * только если в этом методе есть реальная потребность,
+			 * т.е. если класс действительно имеет свойства, подлежащие кэшированию в разрезе магазина,
+			 * и если текущий магазин уже инициализирован.
+			 */
+			if ($this->getPropertiesToCachePerStore() && Df_Core_Model_State::s()->isStoreInitialized()) {
+				$this->cacheSaveArea($this->getPropertiesToCachePerStore(), $this->getCacheKeyPerStore());
+			}
+		}
+		return $this;
+	}
+
+	/**
+	 * @buyer {buyer}
+	 * @param string[] $propertyNames
+************************************
+Файл:        app/code/local/Df/Core/Model/Abstract.php
+Строка:      49
+Субъект:     Df_Core_Model_Abstract::_destruct
+Объект:      Df_Core_Model_Abstract::cacheSave
+Контекст:    
+	 * метод @see Df_Core_Model_Abstract::_destruct()
+	 * будет вызван на событие «controller_front_send_response_after»:
+	 * @see Df_Core_Model_Dispatcher::controller_front_send_response_after().
+	 *
+	 * @override
+	 * @return void
+	 */
+	public function _destruct() {$this->cacheSave();}
+
+	/** @return string */
+	public function _getModuleName() {
+		if (!isset($this->{__METHOD__})) {
+			$this->{__METHOD__} = df_a(explode('_', get_class($this)), 1);
+		}
+		return $this->{__METHOD__};
+	}
+************************************
+Файл:        app/code/local/Df/Core/Model/GlobalSingletonDestructor.php
+Строка:      14
+Субъект:     Df_Core_Model_GlobalSingletonDestructor::process
+Объект:      Df_Core_Model_Abstract::_destruct
+Контекст:    
+* требуемые для сохранения кэша.
+ */
+class Df_Core_Model_GlobalSingletonDestructor extends Df_Core_Model_Abstract {
+	/** @return void */
+	public function process() {
+		foreach ($this->_objects as $object) {
+			/** @var Df_Core_Destructable $object */
+			$object->_destruct();
+		}
+	}
+
+	/**
+	 * Обратите внимание, что первый параметр вовсе необязательно будет иметь класс @see Varien_Object.
+	 * Например, класс @see Df_Eav_Model_Config,
+	 * который вызывает метод @see Df_Core_Model_GlobalSingletonDestructor::register() в своём конструкторе,
+	 * не имеет тип @see Varien_Object,
+************************************
+Файл:        app/code/local/Df/Core/Model/Dispatcher.php
+Строка:      154
+Субъект:     Df_Core_Model_Dispatcher::controller_front_send_response_after
+Объект:      Df_Core_Model_GlobalSingletonDestructor::process
+Контекст:    
+			 * Деинициализацию глобальных объектов-одиночек (например, сохранение кэша)
+			 * делаем не в деструкторе, а на событие controller_front_send_response_after.
+			 * Полагаться на деструктор для таких объектов нельзя,
+			 * потому что к моменту вызова деструктора для данного объекта-одиночки
+			 * сборщик Zend Engine мог уже уничтожить другие глобальные объекты,
+			 * требуемые для сохранения кэша.
+			 */
+			Df_Core_Model_GlobalSingletonDestructor::s()->process();
+		}
+		catch(Exception $e) {
+			df_handle_entry_point_exception($e);
+		}
+	}
+
+	/**
+	 * @param Varien_Event_Observer $observer
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      1338
+Субъект:     Mage_Core_Model_App::_callObserverMethod
+Объект:      Df_Core_Model_Dispatcher::controller_front_send_response_after
+Контекст:    
+* @param Varien_Event_Observer $observer
+     * @return Mage_Core_Model_App
+     * @throws Mage_Core_Exception
+     */
+    protected function _callObserverMethod($object, $method, $observer)
+    {
+        if (method_exists($object, $method)) {
+            $object->$method($observer);
+        } elseif (Mage::getIsDeveloperMode()) {
+            Mage::throwException('Method "'.$method.'" is not defined in "'.get_class($object).'"');
+        }
+        return $this;
+    }
+
+    public function setUpdateMode($value)
+    {
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      1317
+Субъект:     Mage_Core_Model_App::dispatchEvent
+Объект:      Mage_Core_Model_App::_callObserverMethod
+Контекст:    
+$object = Mage::getModel($obs['model']);
+                        $this->_callObserverMethod($object, $method, $observer);
+                        break;
+                    default:
+                        $method = $obs['method'];
+                        $observer->addData($args);
+                        $object = Mage::getSingleton($obs['model']);
+                        $this->_callObserverMethod($object, $method, $observer);
+                        break;
+                }
+                Varien_Profiler::stop('OBSERVER: '.$obsName);
+            }
+        }
+        return $this;
+    }
+************************************
+Файл:        app/Mage.php
+Строка:      447
+Субъект:     Mage::dispatchEvent
+Объект:      Mage_Core_Model_App::dispatchEvent
+Контекст:    
+* @param string $name
+     * @param array $data
+     * @return Mage_Core_Model_App
+     */
+    public static function dispatchEvent($name, array $data = array())
+    {
+        Varien_Profiler::start('DISPATCH EVENT:'.$name);
+        $result = self::app()->dispatchEvent($name, $data);
+        Varien_Profiler::stop('DISPATCH EVENT:'.$name);
+        return $result;
+    }
+
+    /**
+     * Retrieve model object
+     *
+     * @link    Mage_Core_Model_Config::getModelInstance
+************************************
+Файл:        app/code/core/Mage/Core/Controller/Varien/Front.php
+Строка:      190
+Субъект:     Mage_Core_Controller_Varien_Front::dispatch
+Объект:      Mage::dispatchEvent
+Контекст:    
+Mage::throwException('Front controller reached 100 router match iterations');
+        }
+        // This event gives possibility to launch something before sending output (allow cookie setting)
+        Mage::dispatchEvent('controller_front_send_response_before', array('front'=>$this));
+        Varien_Profiler::start('mage::app::dispatch::send_response');
+        $this->getResponse()->sendResponse();
+        Varien_Profiler::stop('mage::app::dispatch::send_response');
+        Mage::dispatchEvent('controller_front_send_response_after', array('front'=>$this));
+        return $this;
+    }
+
+    public function getRouterByRoute($routeName)
+    {
+        // empty route supplied - return base url
+        if (empty($routeName)) {
+            $router = $this->getRouter('standard');
+************************************
+Файл:        app/code/core/Mage/Core/Model/App.php
+Строка:      354
+Субъект:     Mage_Core_Model_App::run
+Объект:      Mage_Core_Controller_Varien_Front::dispatch
+Контекст:    
+$scopeCode = isset($params['scope_code']) ? $params['scope_code'] : '';
+                $scopeType = isset($params['scope_type']) ? $params['scope_type'] : 'store';
+                $this->_initCurrentStore($scopeCode, $scopeType);
+                $this->_initRequest();
+                Mage_Core_Model_Resource_Setup::applyAllDataUpdates();
+            }
+
+            $this->getFrontController()->dispatch();
+        }
+        return $this;
+    }
+
+    /**
+     * Initialize PHP environment
+     *
+     * @return Mage_Core_Model_App
+************************************
+Файл:        app/Mage.php
+Строка:      683
+Субъект:     Mage::run
+Объект:      Mage_Core_Model_App::run
+Контекст:    
+self::$_events = new Varien_Event_Collection();
+            self::_setIsInstalled($options);
+            self::_setConfigModel($options);
+            self::$_app->run(array(
+                'scope_code' => $code,
+                'scope_type' => $type,
+                'options'    => $options,
+            ));
+            Varien_Profiler::stop('mage');
+        } catch (Mage_Core_Model_Session_Exception $e) {
+            header('Location: ' . self::getBaseUrl());
+            die();
+        } catch (Mage_Core_Model_Store_Exception $e) {
+            require_once(self::getBaseDir() . DS . 'errors' . DS . '404.php');
+            die();
+        } catch (Exception $e) {
+************************************
+Файл:        index.php
+Строка:      87
+Субъект:     
+Объект:      Mage::run
+Контекст:    
+/* Store or website code */
+$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+
+/* Run store or run website */
+$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+
+Mage::run($mageRunCode, $mageRunType);
+************************************

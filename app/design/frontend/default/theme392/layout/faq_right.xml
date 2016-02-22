@@ -1,0 +1,5 @@
+<reference name="right">
+<block type=”cms/block” name=”cms_faq_right”>
+<action method=”setBlockId”><block_id>faq_right</block_id></action>
+</block>
+</reference>

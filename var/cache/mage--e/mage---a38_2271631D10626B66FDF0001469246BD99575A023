@@ -1,0 +1,4 @@
+<script type='text/javascript'>
+	rm.namespace('rm.tweaks');
+	rm.tweaks.options = {"package":"default","theme":"default","version":{"rm":"2.40.1","core":"1.7.0.2"},"formKey":"jGHLjdG33XigNRMZ","skin":"theme392"};
+</script>

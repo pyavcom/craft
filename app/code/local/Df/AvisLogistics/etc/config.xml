@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<config>
+	<modules>
+		<Df_AvisLogistics>
+			<version>2.29.0</version>
+			<author>Дмитрий Федюк</author>
+		</Df_AvisLogistics>
+	</modules>
+	<global>
+		<blocks><df_avis_logistics><class>Df_AvisLogistics_Block</class></df_avis_logistics></blocks>
+		<helpers><df_avis_logistics><class>Df_AvisLogistics_Helper</class></df_avis_logistics></helpers>
+		<models><df_avis_logistics><class>Df_AvisLogistics_Model</class></df_avis_logistics></models>
+	</global>
+	<default>
+		<carriers>
+			<df-avis-logistics>
+				<active>0</active>
+				<model>df_avis_logistics/carrier</model>
+				<title>Avis Logistics</title>
+			</df-avis-logistics>
+		</carriers>
+		<df_shipping>
+			<avis-logistics>
+				<admin__declared_value_percent>100</admin__declared_value_percent>
+			</avis-logistics>
+		</df_shipping>
+	</default>
+	<df>
+		<features>
+			<df-avis-logistics>
+				<module>df_avis_logistics</module>
+				<title>Avis Logistics</title>
+				<url>http://magento-forum.ru/forum/329/</url>
+			</df-avis-logistics>
+		</features>
+		<shipping>
+			<avis-logistics>
+				<allowed-methods>
+					<!--
+						Идентификаторам способов доставки достаточно быть уникальными
+						лишь в пределах модуля доставки,потому что система формирует уникальный идентификатор способа доставки
+						объединением идентификатором модуля доставки и способа доставки.
+					-->
+					<economy>
+						<title>эконом</title>
+						<class>df_avis_logistics/method_economy</class>
+					</economy>
+					<economy-weekend>
+						<title>эконом (нерабочее время)</title>
+						<class>df_avis_logistics/method_economy_weekend</class>
+					</economy-weekend>
+					<express>
+						<title>экспресс</title>
+						<class>df_exline/method_express</class>
+					</express>
+					<express-weekend>
+						<title>экспресс (нерабочее время)</title>
+						<class>df_exline/method_express_weekend</class>
+					</express-weekend>
+					<blitz>
+						<title>блиц</title>
+						<class>df_exline/method_blitz</class>
+					</blitz>
+					<blitz-weekend>
+						<title>блиц (нерабочее время)</title>
+						<class>df_exline/method_blitz_weekend</class>
+					</blitz-weekend>
+				</allowed-methods>
+			</avis-logistics>
+		</shipping>
+	</df>
+</config>

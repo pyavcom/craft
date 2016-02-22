@@ -1,0 +1,28 @@
+
+<div class="footer-container">
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>
+
+  <div class="footer">
+    <div class="padd-footer">
+            <div class="wrapper">
+        <div class="footer-col list-col">
+                                </div>
+        <div class="footer-col-1 list-col"></div>
+        <div class="footer-col-2 list-col"> </div>
+        <div class="footer-col-3">
+                        <div class="wrapper">
+                                <!--<div class="paypal-logo">
+    <a href="#" title="Дополнительные параметры" onclick="javascript:window.open('https://www.paypal.com/ru/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','paypal','width=600,height=350,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes'); return false;"><img src="http://craftwear.com.ua/skin/frontend/default/theme392/images/media/logo-pay.png" alt="Дополнительные параметры" title="Дополнительные параметры" /></a>
+</div>-->
+            </div>
+        </div>
+      </div>
+    </div>
+    <address>
+    <center>Магазин фирменного термобелья от шведского производителя Craft.</center>    </address>
+      </div>
+</div>
